@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name=" IE on WINDOWS SAUCELABS"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="373.211">
+  <properties />
+  
+  
+            <testcase name="Add_Product_To_Basket" time="286.080" classname="com.pamperedchef.scripts.AddproducttoBasket" />
+                <testcase name="Add_Product_To_Basket" time="87.131" classname="com.pamperedchef.scripts.AddproducttoBasket" />
+      
+</testsuite>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chromeWindowsLocal"
+           tests="22"
+           failures="2"
+           errors="0"
+           skipped="20"
+           time="0.000">
+  <properties />
+            <testcase name="afterTest" time="0.000" classname="com.Idexx.scripts.Home">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  com.automation.accelerators.TestEngineWeb.afterTest(TestEngineWeb.java:179)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:606)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:773)
+  org.testng.TestRunner.run(TestRunner.java:623)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:262)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="beforeTest" time="0.000" classname="com.Idexx.scripts.Home">
+                <failure type="org.openqa.selenium.SessionNotCreatedException"
+                  message="session not created exception
+from unknown error: Runtime.executionContextCreated has invalid &apos;context&apos;: {&quot;auxData&quot;:{&quot;frameId&quot;:&quot;12116.1&quot;,&quot;isDefault&quot;:true},&quot;id&quot;:1,&quot;name&quot;:&quot;&quot;,&quot;origin&quot;:&quot;://&quot;}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.26 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;HW1786&apos;, ip: &apos;10.62.67.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver"
+              >
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
+from unknown error: Runtime.executionContextCreated has invalid 'context': {"auxData":{"frameId":"12116.1","isDefault":true},"id":1,"name":"","origin":"://"}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.26 seconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'HW1786', ip: '10.62.67.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:138)
+  com.automation.accelerators.TestEngineWeb.setWebDriverForLocal(TestEngineWeb.java:253)
+  com.automation.accelerators.TestEngineWeb.beforeTest(TestEngineWeb.java:132)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:606)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+  org.testng.TestRunner.privateRun(TestRunner.java:773)
+  org.testng.TestRunner.run(TestRunner.java:623)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:262)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="login" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="logOut" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="logOut" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="login" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="afterMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="beforeMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="login" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="afterMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="afterMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="beforeMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="beforeMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="beforeMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="login" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="afterMethod" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="logOut" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="logOut" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="TestCustomize_RemoveTab" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="TestCustomize_AddTab" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="TestCustomize_RemoveTab" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+            <testcase name="TestCustomize_AddTab" time="0.0" classname="com.Idexx.scripts.Home">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

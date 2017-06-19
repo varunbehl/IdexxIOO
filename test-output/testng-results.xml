@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Idexx Automation test suite" duration-ms="1242805" started-at="2017-05-17T13:05:31Z" finished-at="2017-05-17T13:26:14Z">
+    <groups>
+    </groups>
+    <test name="chromeWindowsLocal" duration-ms="1242805" started-at="2017-05-17T13:05:31Z" finished-at="2017-05-17T13:26:14Z">
+      <class name="com.Idexx.scripts.Contacts">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="beforeSuite" is-config="true" duration-ms="41" started-at="2017-05-17T18:35:31Z" finished-at="2017-05-17T18:35:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51768776]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sequential]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Regression]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="beforeTest" is-config="true" duration-ms="23611" started-at="2017-05-17T18:35:31Z" finished-at="2017-05-17T18:35:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[46.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="beforeMethod" is-config="true" duration-ms="4555" started-at="2017-05-17T18:35:55Z" finished-at="2017-05-17T18:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Idexx.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="TestCreateUser" duration-ms="384719" started-at="2017-05-17T18:35:59Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-17T18:42:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PWD=Ditesting1234, LOB=CP, Language=6N, Job=7, Customer=305149, Sales Area=CZS1, Email=varun457_CZ_CP@mailinator.com, last name=CZ_CP_IOO , URL=https://qaobjednavky.idexx.cz, ZIP=664 63, Country=CZ, First name=IOO }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="afterMethod" is-config="true" duration-ms="5920" started-at="2017-05-17T18:42:24Z" finished-at="2017-05-17T18:42:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="beforeMethod" is-config="true" duration-ms="5847" started-at="2017-05-17T18:42:30Z" finished-at="2017-05-17T18:42:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Idexx.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="TestCreateUser" duration-ms="474302" started-at="2017-05-17T18:42:36Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-17T18:50:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PWD=Ditesting1234, LOB=CP, Language=EN, Job=7, Customer=9720, Sales Area=USS1, Email=varun454_US_CP@mailinator.com, last name=US_CP_IOO, URL=https://qaorder.idexx.com, ZIP=28027-6036, Country=US, First name=IOO }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="afterMethod" is-config="true" duration-ms="5976" started-at="2017-05-17T18:50:30Z" finished-at="2017-05-17T18:50:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="beforeMethod" is-config="true" duration-ms="4066" started-at="2017-05-17T18:50:36Z" finished-at="2017-05-17T18:50:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Idexx.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="TestCreateUser" duration-ms="169391" started-at="2017-05-17T18:50:40Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-17T18:53:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PWD=Ditesting1234, LOB=CE, Language=DE, Job=7, Customer=162433, Sales Area=ATS1, Email=varun455_AT_CE@mailinator.com, last name=AT_CE_IOO, URL=https://qabestellung.idexx.at, ZIP=1040, Country=AT, First name=IOO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="afterMethod" is-config="true" duration-ms="4944" started-at="2017-05-17T18:53:30Z" finished-at="2017-05-17T18:53:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="beforeMethod" is-config="true" duration-ms="5230" started-at="2017-05-17T18:53:34Z" finished-at="2017-05-17T18:53:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Idexx.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="TestCreateUser" duration-ms="148754" started-at="2017-05-17T18:53:40Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-17T18:56:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PWD=Ditesting1234, LOB=CE, Language=6N, Job=7, Customer=191562, Sales Area=AUS1, Email=varun456_AT_CE@mailinator.com, last name=AU_CE_IOO , URL=https://qaorder.idexx.com.au, ZIP=3630, Country=AU, First name=IOO }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Idexx.scripts.Contacts@592e843a]" name="afterMethod" is-config="true" duration-ms="5304" started-at="2017-05-17T18:56:08Z" finished-at="2017-05-17T18:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.Idexxpts.Contacts -->
+    </test> <!-- chromeWindowsLocal -->
+  </suite> <!-- Idexx Automation test suite -->
+</testng-results>

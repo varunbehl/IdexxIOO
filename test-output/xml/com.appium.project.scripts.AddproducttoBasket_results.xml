@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Safari Windows SAUCELABS"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="60.928">
+  <properties />
+  
+  
+            <testcase name="Add_Product_To_Basket" time="60.928" classname="com.appium.project.scripts.AddproducttoBasket" />
+      
+</testsuite>

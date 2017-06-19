@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FIREFOX on WINDOWS LOCAL"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="71.021">
+  <properties />
+  
+  
+            <testcase name="HostCartSessionVerfication" time="71.021" classname="com.pamperedchef.scripts.HostCartSessionVerification" />
+      
+</testsuite>

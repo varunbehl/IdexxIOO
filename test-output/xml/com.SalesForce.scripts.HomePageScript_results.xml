@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chromeWindowslocal"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="189.974">
+  <properties />
+  
+  
+            <testcase name="TestCustomize_AddTab" time="34.238" classname="com.Idexx.scripts.HomePageScript" />
+                <testcase name="TestCustomize_RemoveTab" time="44.233" classname="com.Idexx.scripts.HomePageScript" />
+                <testcase name="TestCustomize_AddTab" time="35.032" classname="com.Idexx.scripts.HomePageScript" />
+                <testcase name="TestCustomize_RemoveTab" time="43.972" classname="com.Idexx.scripts.HomePageScript" />
+                <testcase name="TestVerifyMyTaskAndCalenderSection" time="32.499" classname="com.Idexx.scripts.HomePageScript" />
+      
+</testsuite>

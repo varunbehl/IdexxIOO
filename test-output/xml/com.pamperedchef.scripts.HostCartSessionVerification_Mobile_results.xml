@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TaylorMade-android-GT-I9500"
+           tests="5"
+           failures="1"
+           errors="0"
+           skipped="4"
+           time="0.000">
+  <properties />
+            <testcase name="beforeTest" time="0.000" classname="com.pamperedchef.scripts.HostCartSessionVerification_Mobile">
+                <failure type="org.openqa.selenium.SessionNotCreatedException"
+                  message="A new session could not be created. (Original error: Did not get session redirect from Chromedriver) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.04 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;HW0990&apos;, ip: &apos;172.16.18.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: io.appium.java_client.android.AndroidDriver"
+              >
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Did not get session redirect from Chromedriver) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.04 seconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'HW0990', ip: '172.16.18.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: io.appium.java_client.android.AndroidDriver
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+  io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+  io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:39)
+  com.automation.accelerators.TestEngine.beforeTest(TestEngine.java:79)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.TestRunner.beforeRun(TestRunner.java:647)
+  org.testng.TestRunner.run(TestRunner.java:615)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="afterTest" time="0.0" classname="com.pamperedchef.scripts.HostCartSessionVerification_Mobile">
+          <skipped />
+    </testcase>
+            <testcase name="beforeMethod" time="0.0" classname="com.pamperedchef.scripts.HostCartSessionVerification_Mobile">
+          <skipped />
+    </testcase>
+            <testcase name="afterMethod" time="0.0" classname="com.pamperedchef.scripts.HostCartSessionVerification_Mobile">
+          <skipped />
+    </testcase>
+            <testcase name="HostCartSessionVerfication" time="0.0" classname="com.pamperedchef.scripts.HostCartSessionVerification_Mobile">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" guice-stage="DEVELOPMENT" name="Failed suite [PamperedChef]" parallel="tests">
+  <parameter name="automationName" value="Appium"/>
+  <parameter name="app" value="com.bytearc.SafariLauncher"/>
+  <parameter name="deviceID" value="0183afb2d0ce2b7b"/>
+  <parameter name="rotatable" value="true"/>
+  <parameter name="safariAllowPopups" value="false"/>
+  <parameter name="appiumUrl" value="http://127.0.0.1:4723/wd/hub"/>
+  <parameter name="mbrowser" value="chrome"/>
+  <parameter name="platformVersion" value="4.4"/>
+  <parameter name="safariIgnoreFraudWarning" value="true"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="deviceName" value="LG G2"/>
+  <parameter name="executionType" value="Sequential"/>
+  <parameter name="suiteExecuted" value="Regression"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="TaylorMade-android-GT-I9500(failed)" parallel="tests">
+    <parameter name="mbrowser" value="chrome"/>
+    <parameter name="automationName" value="Appium"/>
+    <parameter name="platformVersion" value="4.4"/>
+    <parameter name="app" value="com.bytearc.SafariLauncher"/>
+    <parameter name="safariIgnoreFraudWarning" value="true"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="LG G2"/>
+    <parameter name="deviceID" value="0183afb2d0ce2b7b"/>
+    <parameter name="rotatable" value="true"/>
+    <parameter name="appiumUrl" value="http://127.0.0.1:4723/wd/hub"/>
+    <parameter name="safariAllowPopups" value="false"/>
+    <classes>
+      <class name="com.pamperedchef.scripts.HostCartSessionVerification_Mobile">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="HostCartSessionVerfication"/>
+        </methods>
+      </class> <!-- com.pamperedchef.scripts.HostCartSessionVerification_Mobile -->
+    </classes>
+  </test> <!-- TaylorMade-android-GT-I9500(failed) -->
+</suite> <!-- Failed suite [PamperedChef] -->

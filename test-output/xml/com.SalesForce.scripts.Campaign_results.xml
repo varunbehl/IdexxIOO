@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CHROME on WINDOWS LOCAL"
+           tests="18"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="480.299">
+  <properties />
+  
+  
+            <testcase name="creatingNewCampaigninCampaign" time="37.996" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectSocialMediaCampaignTypeinCampaign" time="24.240" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectPRCampaignTypeinCampaign" time="24.149" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectCampaignTypeinCampaign" time="24.200" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="CreateaMailinCampaign" time="19.454" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="verifyErrorMessageinCampaign" time="27.962" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="verifyingCurrentPartnersinCampaign" time="28.823" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectConferenceProgramCampaignTypeinCampaign" time="24.343" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectReferralProgramCampaignTypeinCampaign" time="24.545" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="viewRecordsInLeadsPageinCampaign" time="24.844" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="creatingNewCampaign_SaveAndNewinCampaign" time="38.023" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="NotAbleToCreateRecordinCampaign" time="25.930" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectMailCampaignTypeinCampaign" time="24.219" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectWebinarCampaignTypeinCampaign" time="24.320" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectSignupCampaignTypeinCampaign" time="24.446" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="verifyCloningofCampaignsinCampaign" time="34.299" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectOtherCampaignTypeinCampaign" time="24.213" classname="com.Idexx.scripts.Campaign" />
+                <testcase name="selectPartnersCampaignTypeinCampaign" time="24.293" classname="com.Idexx.scripts.Campaign" />
+      
+</testsuite>

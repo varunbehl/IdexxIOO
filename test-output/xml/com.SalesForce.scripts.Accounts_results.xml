@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IEWindowsLocal"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="694.813">
+  <properties />
+  
+  
+            <testcase name="TestViewCompetitorProducts" time="7.876" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="TestCreateNewAccount" time="176.455" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="TestViewHierarchy" time="7.876" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="Test360viewofaccount" time="7.876" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="TestViewExistingAccount" time="7.954" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="TestViewAndEditMyAccounts" time="82.969" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="TestCreateContactForAnAccount" time="213.294" classname="com.Idexx.scripts.Accounts" />
+                <testcase name="TestCreateNewReport" time="190.513" classname="com.Idexx.scripts.Accounts" />
+      
+</testsuite>

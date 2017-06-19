@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name=" IE on WINDOWS SAUCELABS"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="291.293">
+  <properties />
+  
+  
+            <testcase name="validateTaxOnFood" time="97.201" classname="com.pamperedchef.scripts.VerifyFoodTax" />
+                <testcase name="validateTaxOnFood" time="194.092" classname="com.pamperedchef.scripts.VerifyFoodTax" />
+      
+</testsuite>

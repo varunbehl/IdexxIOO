@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [GATF]" parallel="tests">
+  <parameter name="automationName" value="Selenium"/>
+  <parameter name="browserVersion" value="5.1.7"/>
+  <parameter name="environment" value="cloudSauceLabs"/>
+  <parameter name="platformName" value="Windows 7"/>
+  <parameter name="browser" value="Safari"/>
+  <parameter name="executionType" value="Sequential"/>
+  <parameter name="suiteExecuted" value="Regression"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Safari Windows SAUCELABS(failed)" parallel="tests">
+    <parameter name="automationName" value="Selenium"/>
+    <parameter name="environment" value="cloudSauceLabs"/>
+    <parameter name="browserVersion" value="5.1.7"/>
+    <parameter name="platformName" value="Windows 7"/>
+    <parameter name="browser" value="Safari"/>
+    <classes>
+      <class name="com.appium.project.scripts.AddproducttoBasket">
+        <methods>
+          <include name="Add_Product_To_Basket"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.appium.project.scripts.AddproducttoBasket -->
+    </classes>
+  </test> <!-- Safari Windows SAUCELABS(failed) -->
+</suite> <!-- Failed suite [GATF] -->

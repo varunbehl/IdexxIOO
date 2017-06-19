@@ -1,0 +1,1775 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>ICAT - HTML Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Jul 13 23:17:50 EDT 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = clientName</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = deviceName</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = iterationMode</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = suiteName</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = onErrorAction</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = singleThreadExecution</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = AUT</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = baseUrl</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = baseUrl2</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = Waittime</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = browserName</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = version</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = platform</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = reportFormat</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationResult</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = folderScreenShot</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationClientLogo</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationCompanyLogo</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationFailedLogo</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationMinusLogo</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationPassedLogo</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationPlusLogo</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationWarningLogo</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = onSuccessScreenshot</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = userName</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = accessKey</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = cloudImplicitWait</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = cloudPageLoadTimeOut</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationCssFolder</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationJsFolder</td>
+</tr>
+
+<tr>
+<td>62</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">fileName = resources/gallopReporter.properties</td>
+</tr>
+
+<tr>
+<td>62</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.ConfigFileReadWrite category">com.automation.report.ConfigFileReadWrite</td>
+<td title="Message">key = locationImagesFolder</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.BrowserContext category">com.automation.report.BrowserContext</td>
+<td title="Message">New BrowserContext Instance Was Created And Placed In Map : BrowserContext.mapBrowserContext</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.BrowserContext category">com.automation.report.BrowserContext</td>
+<td title="Message">&lt;BrowserContext&gt;&lt;Name&gt; chrome&lt;/Name&gt;&lt;Version&gt; windows 7&lt;/Version&gt;&lt;Platform&gt;local&lt;/Platform&gt;&lt;/BrowserContext&gt;</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.BrowserContext category">com.automation.report.BrowserContext</td>
+<td title="Message">BrowserContext Info Being returned: &lt;BrowserContext&gt;&lt;Name&gt; chrome&lt;/Name&gt;&lt;Version&gt; windows 7&lt;/Version&gt;&lt;Platform&gt;local&lt;/Platform&gt;&lt;/BrowserContext&gt;</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.BrowserContext category">com.automation.report.BrowserContext</td>
+<td title="Message">&lt;BrowserContext&gt;&lt;Name&gt; chrome&lt;/Name&gt;&lt;Version&gt; windows 7&lt;/Version&gt;&lt;Platform&gt;local&lt;/Platform&gt;&lt;/BrowserContext&gt;</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.BrowserContext category">com.automation.report.BrowserContext</td>
+<td title="Message">BrowserContext Info Being returned: &lt;BrowserContext&gt;&lt;Name&gt; chrome&lt;/Name&gt;&lt;Version&gt; windows 7&lt;/Version&gt;&lt;Platform&gt;local&lt;/Platform&gt;&lt;/BrowserContext&gt;</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">instance member browserContext was set to : </td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.BrowserContext category">com.automation.report.BrowserContext</td>
+<td title="Message">&lt;BrowserContext&gt;&lt;Name&gt; chrome&lt;/Name&gt;&lt;Version&gt; windows 7&lt;/Version&gt;&lt;Platform&gt;local&lt;/Platform&gt;&lt;/BrowserContext&gt;</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">&lt;BrowserContext&gt;&lt;Name&gt; chrome&lt;/Name&gt;&lt;Version&gt; windows 7&lt;/Version&gt;&lt;Platform&gt;local&lt;/Platform&gt;&lt;/BrowserContext&gt;</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">Instance Of CReporter Created</td>
+</tr>
+
+<tr>
+<td>13823</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">reporter was placed into CReporter.mapBrowserContextReporter</td>
+</tr>
+
+<tr>
+<td>26784</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>45163</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>94921</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>97263</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>97778</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>118088</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>168595</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>170726</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>171225</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>197493</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>261003</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>263027</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>263526</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>298633</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>347804</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>349861</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>350360</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>367810</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>417568</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>419601</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>420100</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>436414</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>481836</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>483815</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>484330</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>502226</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>548032</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>550030</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>550560</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>567360</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>609701</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>611684</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>612199</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>629019</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>675528</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>677513</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>678027</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>694338</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>742371</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>744416</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>744931</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>761420</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>808351</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>810388</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>810919</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>827424</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>868278</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>870332</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>870846</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>888078</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>935176</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>937220</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>937735</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>956034</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1003864</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1005863</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1006393</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1024307</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1070174</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1072250</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1072812</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1090016</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1136251</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1138294</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1138840</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1156918</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1204888</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1206939</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1207470</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1224297</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1275022</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1277069</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1277615</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1294205</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1343022</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1345098</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1345628</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1362486</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1410283</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1412313</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1412875</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1431814</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1480299</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1482348</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1482878</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1500210</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1548555</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1550633</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1551179</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1567868</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1615975</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1618126</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1618672</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1635200</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1691834</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1693905</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1694467</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1711278</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1759429</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1761508</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1762070</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1779209</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1825383</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1827588</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1828150</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1844343</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1889180</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1891347</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1891893</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1910087</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1956451</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1958516</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1959077</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>1976114</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2021773</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2023992</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2024602</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2041049</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2089145</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2091693</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2092270</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2108448</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2154428</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2156510</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2157088</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2174552</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2221728</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2223804</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2224506</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2241017</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2286613</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2288753</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2289321</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2305948</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2351846</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2353967</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2354544</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2371717</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2418317</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2420505</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2421082</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2439127</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2485890</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2487951</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2488544</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>
+
+<tr>
+<td>2513016</td>
+<td title="TestNG thread">TestNG</td>
+<td title="Level">INFO</td>
+<td title="com.automation.report.CReporter category">com.automation.report.CReporter</td>
+<td title="Message">resultDir = results\CHROME-windows 7-local</td>
+</tr>

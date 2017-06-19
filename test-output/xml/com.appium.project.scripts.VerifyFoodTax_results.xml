@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TaylorMade-web3"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="107.053">
+  <properties />
+  
+  
+            <testcase name="validateTaxOnFood" time="107.053" classname="com.appium.project.scripts.VerifyFoodTax" />
+      
+</testsuite>

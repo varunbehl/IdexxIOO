@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  IE on WINDOWS LOCAL</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>IE on WINDOWS LOCAL</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 13 16:08:18 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33351 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.logOut()'><b>logOut</b><br>Test class: com.Idexx.scripts.Activity</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.Idexx.page.HomePage.Home_Page(HomePage.java:61)
+	at com.Idexx.libs.IdexxLib.doLogout(IdexxLib.java:110)
+	at com.Idexx.scripts.Activity.logOut(Activity.java:246)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1115963992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1115963992'><pre>java.lang.NullPointerException
+	at com.Idexx.page.HomePage.Home_Page(HomePage.java:61)
+	at com.Idexx.libs.IdexxLib.doLogout(IdexxLib.java:110)
+	at com.Idexx.scripts.Activity.logOut(Activity.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateActivityFromAccounts()'><b>CreateActivityFromAccounts</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {Subject=Activity, RunMode=Y, accountName=2016_gallop_02_newAccountActivity, RecordType=Sales Activity, Comments1=Activity from accounts, existing_contact=1605_gallop_contact_01, openActivities_Subject=Activity1, Comments=Creation of Activity from accounts}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateActivityFromContact()'><b>CreateActivityFromContact</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {newContactLastName=2016_gallop_02_newContact, Subject=Activity_sales_gallop, RecordType=Sales Activity, Comments=Creation of Activity from accounts, Comments1=Activity from accounts, RunMode=Y, existing_contact=1605_gallop_contact_01, accountName=2016_gallop_02_newAccountActivity, openActivities_Subject=Activity1}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateActivityFromOpportunity()'><b>CreateActivityFromOpportunity</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {OpportunityName=Gallop_LPD_Opportunity, Subject=Activity_sales_gallop, RecordType=Sales Activity, Comments1=Activity from accounts, Comments=Creation of Activity from accounts, Stage=1 Prospect, Opportunity_Type=New Business, Amount=1000, OpportunityRecordType=LPD Opportunity, RunMode=Y, existing_contact=1605_gallop_contact_01, accountName=2016_gallop_02_newAccountActivity, Desc=Welcome to gallop, openActivities_Subject=Activity1}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateSalesandSupportTask()'><b>CreateSalesandSupportTask</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {businessUnit=CAG, RunMode=Y, accountName=2016_gallop_01_newAccountActivity, openActivities_RelatedTo=2016_gallop_01_newAccountActivity, RecordType=Sales Activity, industry=Beef, openActivities_Subject=Activity_sales_gallop}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateSalesandSupportTaskContact()'><b>CreateSalesandSupportTaskContact</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {RunMode=Y, accountName=2016_gallop_01_newAccountActivity, openActivities_RelatedTo=2016_gallop_01_newAccountActivity, RecordType=Sales Activity, newContactLastName=2016_gallop_contact_activity_01, openActivities_Subject=Activity_sales_gallop}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateSalesandSupportTaskMultipleContact()'><b>CreateSalesandSupportTaskMultipleContact</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {businessUnit=CAG, RunMode=Y, accountName=2016_gallop_02_newAccountActivity, existing_contact2=1605_gallop_new_contact_01, existing_contact1=1605_gallop_contact_01, industry=Beef, openActivities_Subject=multiplecontacts}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.CreateSalesandSupportTaskOpportunity()'><b>CreateSalesandSupportTaskOpportunity</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {OpportunityName=Gallop_LPD_Opportunity, RecordType=Sales Activity, Stage=1 Prospect, Opportunity_Type=New Business, Amount=1000, OpportunityRecordType=LPD Opportunity, openActivities_RelatedTo=2016_gallop_01_newAccountActivity, RunMode=Y, accountName=2016_gallop_01_newAccountActivity, Desc=Welcome to gallop, openActivities_Subject=Activity_sales_gallop}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+<tr>
+<td title='com.Idexx.scripts.Activity.DifferentiationBetweenActivityAndTask()'><b>DifferentiationBetweenActivityAndTask</b><br>Test class: com.Idexx.scripts.Activity<br>Parameters: {Subject=Call, RecordType=Sales Activity, businessUnit=CAG, Comments=Creation of Activity from accounts, Comments1=Activity from accounts, RunMode=Y, industry=Beef, existing_contact=1605_gallop_contact_01, accountName=2016_gallop_03_newAccountActivity, openActivities_Subject=Gallop}</td>
+<td></td>
+<td>0</td>
+<td>com.Idexx.scripts.Activity@4efdd8b</td></tr>
+</table><p>
+</body>
+</html>

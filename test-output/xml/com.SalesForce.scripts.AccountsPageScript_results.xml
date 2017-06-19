@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chromeWindowslocal"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="476.584">
+  <properties />
+  
+  
+            <testcase name="Test360viewofaccount" time="56.794" classname="com.Idexx.scripts.AccountsPageScript" />
+                <testcase name="TestCreateNewAccount" time="109.732" classname="com.Idexx.scripts.AccountsPageScript" />
+                <testcase name="TestViewExistingAccount" time="43.119" classname="com.Idexx.scripts.AccountsPageScript" />
+                <testcase name="TestCreateContactForAnAccount" time="90.258" classname="com.Idexx.scripts.AccountsPageScript" />
+                <testcase name="TestViewCompetitorProducts" time="55.610" classname="com.Idexx.scripts.AccountsPageScript" />
+                <testcase name="TestViewHierarchy" time="67.773" classname="com.Idexx.scripts.AccountsPageScript" />
+                <testcase name="TestViewAndEditMyAccounts" time="53.298" classname="com.Idexx.scripts.AccountsPageScript" />
+      
+</testsuite>

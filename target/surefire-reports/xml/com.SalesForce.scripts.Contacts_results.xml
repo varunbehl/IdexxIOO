@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chromeWindowsLocal"
+           tests="74"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="563.204">
+  <properties />
+  
+  
+            <testcase name="TestCreateUser" time="4.128" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.027" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.011" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.246" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.016" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.021" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.109" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.316" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.685" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.010" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.011" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.025" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateContact" time="167.953" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.040" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.025" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.035" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.100" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.294" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.085" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.264" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.120" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.155" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.030" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.058" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestViewAllContacts" time="18.912" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.031" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.097" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestLinkContactWithMultipleAccounts" time="52.460" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateDuplicateContact" time="38.485" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.021" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.070" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.010" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.023" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.034" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.025" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.040" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.010" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.090" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.195" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.100" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.055" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.035" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.070" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.275" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.020" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.030" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.155" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.025" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.025" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.035" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.015" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.010" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.035" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.030" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.060" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.060" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.365" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.010" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.035" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.227" classname="com.SalesForce.scripts.Contacts" />
+                <testcase name="TestCreateUser" time="4.040" classname="com.SalesForce.scripts.Contacts" />
+      
+</testsuite>

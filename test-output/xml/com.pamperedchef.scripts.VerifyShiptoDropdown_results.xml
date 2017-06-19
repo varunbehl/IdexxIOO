@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CHROME on MAC SAUCELABS"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1035.031">
+  <properties />
+  
+  
+            <testcase name="VerifyShiptoDropdownValues" time="475.091" classname="com.pamperedchef.scripts.VerifyShiptoDropdown" />
+                <testcase name="VerifyShiptoDropdownValues" time="559.940" classname="com.pamperedchef.scripts.VerifyShiptoDropdown" />
+      
+</testsuite>

@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="74" passed="74">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Idexx Automation test suite" duration-ms="1745538" started-at="2017-05-12T09:15:14Z" finished-at="2017-05-12T09:44:19Z">
+    <groups>
+    </groups>
+    <test name="chromeWindowsLocal" duration-ms="1745538" started-at="2017-05-12T09:15:14Z" finished-at="2017-05-12T09:44:19Z">
+      <class name="com.SalesForce.scripts.Contacts">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeSuite" is-config="true" duration-ms="55" started-at="2017-05-12T14:45:14Z" finished-at="2017-05-12T14:45:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4007f65e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sequential]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Regression]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeTest" is-config="true" duration-ms="22979" started-at="2017-05-12T14:45:14Z" finished-at="2017-05-12T14:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[46.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="110" started-at="2017-05-12T14:45:37Z" finished-at="2017-05-12T14:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestViewAllContacts(java.util.Hashtable) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestViewAllContacts(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestViewAllContacts" duration-ms="18912" started-at="2017-05-12T14:45:37Z" data-provider="getTestDataFor_TestViewAllContacts" finished-at="2017-05-12T14:45:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y, contactName=1290_gallop}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestViewAllContacts -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="2453" started-at="2017-05-12T14:45:56Z" finished-at="2017-05-12T14:45:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="235" started-at="2017-05-12T14:45:59Z" finished-at="2017-05-12T14:45:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="95" started-at="2017-05-12T14:45:59Z" finished-at="2017-05-12T14:45:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateContact(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateContact(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateContact" duration-ms="167953" started-at="2017-05-12T14:45:59Z" data-provider="getTestDataFor_TestCreateContact" finished-at="2017-05-12T14:48:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{businessUnit=CAG, RunMode=Y, accountName=gallop_01, newContactLastName=gallop_new_contact_01, industry=Beef}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateContact -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10126" started-at="2017-05-12T14:48:47Z" finished-at="2017-05-12T14:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="75" started-at="2017-05-12T14:48:57Z" finished-at="2017-05-12T14:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="75" started-at="2017-05-12T14:48:57Z" finished-at="2017-05-12T14:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateDuplicateContact(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateDuplicateContact(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateDuplicateContact" duration-ms="38485" started-at="2017-05-12T14:48:57Z" data-provider="getTestDataFor_TestCreateDuplicateContact" finished-at="2017-05-12T14:49:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y, accountName=1258_gallop, newContactLastName=1258_gallop_contact_Duplicate}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateDuplicateContact -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10140" started-at="2017-05-12T14:49:36Z" finished-at="2017-05-12T14:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="90" started-at="2017-05-12T14:49:46Z" finished-at="2017-05-12T14:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="80" started-at="2017-05-12T14:49:46Z" finished-at="2017-05-12T14:49:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestLinkContactWithMultipleAccounts(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestLinkContactWithMultipleAccounts(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestLinkContactWithMultipleAccounts" duration-ms="52460" started-at="2017-05-12T14:49:46Z" data-provider="getTestDataFor_TestLinkContactWithMultipleAccounts" finished-at="2017-05-12T14:50:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{newAccountName=newAccount_1, RunMode=Y, industryDropdown=Dairy, bussinessUnitDropdown=CAG, contactName=1235_gallop_contact}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLinkContactWithMultipleAccounts -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10070" started-at="2017-05-12T14:50:38Z" finished-at="2017-05-12T14:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="80" started-at="2017-05-12T14:50:48Z" finished-at="2017-05-12T14:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2775" started-at="2017-05-12T14:50:49Z" finished-at="2017-05-12T14:50:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4030" started-at="2017-05-12T14:50:52Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:50:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com, Language=EN, First name=IOO , LOB=CP, Country=US, last name=row 2 or column 6 does not exist  in xls, Sales Area=USS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10045" started-at="2017-05-12T14:50:56Z" finished-at="2017-05-12T14:51:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="1920" started-at="2017-05-12T14:51:06Z" finished-at="2017-05-12T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="1345" started-at="2017-05-12T14:51:08Z" finished-at="2017-05-12T14:51:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4155" started-at="2017-05-12T14:51:09Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:51:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.at, Language=DE, First name=IOO , LOB=CE, Country=AT, last name=row 3 or column 6 does not exist  in xls, Sales Area=ATS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10200" started-at="2017-05-12T14:51:14Z" finished-at="2017-05-12T14:51:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="1830" started-at="2017-05-12T14:51:24Z" finished-at="2017-05-12T14:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="1705" started-at="2017-05-12T14:51:26Z" finished-at="2017-05-12T14:51:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4035" started-at="2017-05-12T14:51:27Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:51:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.at, Language=DE, First name=IOO , LOB=CF, Country=AT, last name=row 4 or column 6 does not exist  in xls, Sales Area=ATS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10305" started-at="2017-05-12T14:51:31Z" finished-at="2017-05-12T14:51:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="1820" started-at="2017-05-12T14:51:42Z" finished-at="2017-05-12T14:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2110" started-at="2017-05-12T14:51:43Z" finished-at="2017-05-12T14:51:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4275" started-at="2017-05-12T14:51:46Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:51:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.at, Language=DE, First name=IOO , LOB=CL, Country=AT, last name=row 5 or column 6 does not exist  in xls, Sales Area=ATS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10055" started-at="2017-05-12T14:51:50Z" finished-at="2017-05-12T14:52:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2785" started-at="2017-05-12T14:52:00Z" finished-at="2017-05-12T14:52:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2925" started-at="2017-05-12T14:52:03Z" finished-at="2017-05-12T14:52:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4040" started-at="2017-05-12T14:52:06Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:52:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.at, Language=DE, First name=IOO , LOB=CP, Country=AT, last name=row 6 or column 6 does not exist  in xls, Sales Area=ATS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10039" started-at="2017-05-12T14:52:10Z" finished-at="2017-05-12T14:52:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2925" started-at="2017-05-12T14:52:20Z" finished-at="2017-05-12T14:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2955" started-at="2017-05-12T14:52:23Z" finished-at="2017-05-12T14:52:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4025" started-at="2017-05-12T14:52:26Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:52:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com.au, Language=6N, First name=IOO , LOB=CE, Country=AU, last name=row 7 or column 6 does not exist  in xls, Sales Area=AUS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10083" started-at="2017-05-12T14:52:30Z" finished-at="2017-05-12T14:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2840" started-at="2017-05-12T14:52:40Z" finished-at="2017-05-12T14:52:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2750" started-at="2017-05-12T14:52:43Z" finished-at="2017-05-12T14:52:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T14:52:45Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:52:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com.au, Language=6N, First name=IOO , LOB=CL, Country=AU, last name=row 8 or column 6 does not exist  in xls, Sales Area=AUS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10035" started-at="2017-05-12T14:52:49Z" finished-at="2017-05-12T14:52:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2910" started-at="2017-05-12T14:52:59Z" finished-at="2017-05-12T14:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2830" started-at="2017-05-12T14:53:02Z" finished-at="2017-05-12T14:53:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4010" started-at="2017-05-12T14:53:05Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:53:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com.au, Language=6N, First name=IOO , LOB=CP, Country=AU, last name=row 9 or column 6 does not exist  in xls, Sales Area=AUS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10025" started-at="2017-05-12T14:53:09Z" finished-at="2017-05-12T14:53:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2620" started-at="2017-05-12T14:53:19Z" finished-at="2017-05-12T14:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3015" started-at="2017-05-12T14:53:22Z" finished-at="2017-05-12T14:53:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T14:53:25Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.be, Language=6N, First name=IOO , LOB=CE, Country=BE, last name=row 10 or column 6 does not exist  in xls, Sales Area=BES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10030" started-at="2017-05-12T14:53:29Z" finished-at="2017-05-12T14:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2865" started-at="2017-05-12T14:53:39Z" finished-at="2017-05-12T14:53:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3150" started-at="2017-05-12T14:53:42Z" finished-at="2017-05-12T14:53:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T14:53:45Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:53:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.be, Language=6N, First name=IOO , LOB=CF, Country=BE, last name=row 11 or column 6 does not exist  in xls, Sales Area=BES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10025" started-at="2017-05-12T14:53:49Z" finished-at="2017-05-12T14:53:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2715" started-at="2017-05-12T14:53:59Z" finished-at="2017-05-12T14:54:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2630" started-at="2017-05-12T14:54:02Z" finished-at="2017-05-12T14:54:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T14:54:04Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:54:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.be, Language=6N, First name=IOO , LOB=CL, Country=BE, last name=row 12 or column 6 does not exist  in xls, Sales Area=BES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10045" started-at="2017-05-12T14:54:08Z" finished-at="2017-05-12T14:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2760" started-at="2017-05-12T14:54:18Z" finished-at="2017-05-12T14:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2480" started-at="2017-05-12T14:54:21Z" finished-at="2017-05-12T14:54:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4025" started-at="2017-05-12T14:54:24Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:54:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.be, Language=6N, First name=IOO , LOB=CP, Country=BE, last name=row 13 or column 6 does not exist  in xls, Sales Area=BES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10045" started-at="2017-05-12T14:54:28Z" finished-at="2017-05-12T14:54:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3062" started-at="2017-05-12T14:54:38Z" finished-at="2017-05-12T14:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2320" started-at="2017-05-12T14:54:41Z" finished-at="2017-05-12T14:54:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4025" started-at="2017-05-12T14:54:43Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:54:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.ca, Language=6N, First name=IOO , LOB=CE, Country=CA, last name=row 14 or column 6 does not exist  in xls, Sales Area=CAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10045" started-at="2017-05-12T14:54:47Z" finished-at="2017-05-12T14:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2425" started-at="2017-05-12T14:54:57Z" finished-at="2017-05-12T14:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2615" started-at="2017-05-12T14:54:59Z" finished-at="2017-05-12T14:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4100" started-at="2017-05-12T14:55:02Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:55:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.ca, Language=6N, First name=IOO , LOB=CF, Country=CA, last name=row 15 or column 6 does not exist  in xls, Sales Area=CAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10124" started-at="2017-05-12T14:55:06Z" finished-at="2017-05-12T14:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2735" started-at="2017-05-12T14:55:16Z" finished-at="2017-05-12T14:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="1505" started-at="2017-05-12T14:55:19Z" finished-at="2017-05-12T14:55:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4120" started-at="2017-05-12T14:55:21Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:55:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.ca, Language=6N, First name=IOO , LOB=CL, Country=CA, last name=row 16 or column 6 does not exist  in xls, Sales Area=CAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10035" started-at="2017-05-12T14:55:25Z" finished-at="2017-05-12T14:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2935" started-at="2017-05-12T14:55:35Z" finished-at="2017-05-12T14:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3075" started-at="2017-05-12T14:55:38Z" finished-at="2017-05-12T14:55:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4030" started-at="2017-05-12T14:55:41Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:55:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.ch, Language=DE, First name=IOO , LOB=CE, Country=CH, last name=row 17 or column 6 does not exist  in xls, Sales Area=SWS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10464" started-at="2017-05-12T14:55:45Z" finished-at="2017-05-12T14:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="4283" started-at="2017-05-12T14:55:55Z" finished-at="2017-05-12T14:56:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="1870" started-at="2017-05-12T14:56:00Z" finished-at="2017-05-12T14:56:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4365" started-at="2017-05-12T14:56:01Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.ch, Language=DE, First name=IOO , LOB=CF, Country=CH, last name=row 18 or column 6 does not exist  in xls, Sales Area=SWS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10050" started-at="2017-05-12T14:56:06Z" finished-at="2017-05-12T14:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3032" started-at="2017-05-12T14:56:16Z" finished-at="2017-05-12T14:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3048" started-at="2017-05-12T14:56:19Z" finished-at="2017-05-12T14:56:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4100" started-at="2017-05-12T14:56:22Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:56:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.ch, Language=DE, First name=IOO , LOB=CL, Country=CH, last name=row 19 or column 6 does not exist  in xls, Sales Area=SWS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10022" started-at="2017-05-12T14:56:26Z" finished-at="2017-05-12T14:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2592" started-at="2017-05-12T14:56:36Z" finished-at="2017-05-12T14:56:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2912" started-at="2017-05-12T14:56:39Z" finished-at="2017-05-12T14:56:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4021" started-at="2017-05-12T14:56:41Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:56:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaobjednavky.idexx.cz, Language=6N, First name=IOO , LOB=CP, Country=CZ, last name=row 20 or column 6 does not exist  in xls, Sales Area=CZS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10091" started-at="2017-05-12T14:56:46Z" finished-at="2017-05-12T14:56:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2970" started-at="2017-05-12T14:56:56Z" finished-at="2017-05-12T14:56:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2748" started-at="2017-05-12T14:56:59Z" finished-at="2017-05-12T14:57:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4011" started-at="2017-05-12T14:57:01Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:57:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.de, Language=DE, First name=IOO , LOB=CE, Country=DE, last name=row 21 or column 6 does not exist  in xls, Sales Area=GES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10034" started-at="2017-05-12T14:57:05Z" finished-at="2017-05-12T14:57:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2855" started-at="2017-05-12T14:57:15Z" finished-at="2017-05-12T14:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2745" started-at="2017-05-12T14:57:18Z" finished-at="2017-05-12T14:57:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T14:57:21Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:57:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.de, Language=DE, First name=IOO , LOB=CF, Country=DE, last name=row 22 or column 6 does not exist  in xls, Sales Area=GES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10095" started-at="2017-05-12T14:57:25Z" finished-at="2017-05-12T14:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2615" started-at="2017-05-12T14:57:35Z" finished-at="2017-05-12T14:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3253" started-at="2017-05-12T14:57:38Z" finished-at="2017-05-12T14:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4060" started-at="2017-05-12T14:57:41Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:57:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.de, Language=DE, First name=IOO , LOB=CL, Country=DE, last name=row 23 or column 6 does not exist  in xls, Sales Area=GES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10050" started-at="2017-05-12T14:57:45Z" finished-at="2017-05-12T14:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2865" started-at="2017-05-12T14:57:55Z" finished-at="2017-05-12T14:57:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2796" started-at="2017-05-12T14:57:58Z" finished-at="2017-05-12T14:58:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4034" started-at="2017-05-12T14:58:01Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:58:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qabestellung.idexx.de, Language=DE, First name=IOO , LOB=CP, Country=DE, last name=row 24 or column 6 does not exist  in xls, Sales Area=GES1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10026" started-at="2017-05-12T14:58:05Z" finished-at="2017-05-12T14:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2955" started-at="2017-05-12T14:58:15Z" finished-at="2017-05-12T14:58:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3155" started-at="2017-05-12T14:58:18Z" finished-at="2017-05-12T14:58:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T14:58:21Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:58:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.dk, Language=6N, First name=IOO , LOB=CE, Country=DK, last name=row 25 or column 6 does not exist  in xls, Sales Area=DKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10044" started-at="2017-05-12T14:58:25Z" finished-at="2017-05-12T14:58:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2765" started-at="2017-05-12T14:58:35Z" finished-at="2017-05-12T14:58:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2905" started-at="2017-05-12T14:58:38Z" finished-at="2017-05-12T14:58:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4035" started-at="2017-05-12T14:58:41Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:58:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.dk, Language=6N, First name=IOO , LOB=CF, Country=DK, last name=row 26 or column 6 does not exist  in xls, Sales Area=DKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10130" started-at="2017-05-12T14:58:45Z" finished-at="2017-05-12T14:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3050" started-at="2017-05-12T14:58:55Z" finished-at="2017-05-12T14:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3055" started-at="2017-05-12T14:58:58Z" finished-at="2017-05-12T14:59:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4060" started-at="2017-05-12T14:59:01Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:59:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.dk, Language=6N, First name=IOO , LOB=CL, Country=DK, last name=row 27 or column 6 does not exist  in xls, Sales Area=DKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10090" started-at="2017-05-12T14:59:05Z" finished-at="2017-05-12T14:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2850" started-at="2017-05-12T14:59:15Z" finished-at="2017-05-12T14:59:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2130" started-at="2017-05-12T14:59:18Z" finished-at="2017-05-12T14:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4155" started-at="2017-05-12T14:59:20Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.dk, Language=6N, First name=IOO , LOB=CP, Country=DK, last name=row 28 or column 6 does not exist  in xls, Sales Area=DKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10080" started-at="2017-05-12T14:59:24Z" finished-at="2017-05-12T14:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2785" started-at="2017-05-12T14:59:34Z" finished-at="2017-05-12T14:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2965" started-at="2017-05-12T14:59:37Z" finished-at="2017-05-12T14:59:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4040" started-at="2017-05-12T14:59:40Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T14:59:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qapedido.idexx.es, Language=ES, First name=IOO , LOB=CE, Country=ES, last name=row 29 or column 6 does not exist  in xls, Sales Area=ESS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10075" started-at="2017-05-12T14:59:44Z" finished-at="2017-05-12T14:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3091" started-at="2017-05-12T14:59:54Z" finished-at="2017-05-12T14:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3225" started-at="2017-05-12T14:59:57Z" finished-at="2017-05-12T15:00:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T15:00:00Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:00:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qapedido.idexx.es, Language=ES, First name=IOO , LOB=CF, Country=ES, last name=row 30 or column 6 does not exist  in xls, Sales Area=ESS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10050" started-at="2017-05-12T15:00:04Z" finished-at="2017-05-12T15:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3000" started-at="2017-05-12T15:00:15Z" finished-at="2017-05-12T15:00:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3150" started-at="2017-05-12T15:00:18Z" finished-at="2017-05-12T15:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T15:00:21Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qapedido.idexx.es, Language=ES, First name=IOO , LOB=CL, Country=ES, last name=row 31 or column 6 does not exist  in xls, Sales Area=ESS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10026" started-at="2017-05-12T15:00:25Z" finished-at="2017-05-12T15:00:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3210" started-at="2017-05-12T15:00:35Z" finished-at="2017-05-12T15:00:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3075" started-at="2017-05-12T15:00:38Z" finished-at="2017-05-12T15:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T15:00:41Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:00:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qapedido.idexx.es, Language=ES, First name=IOO , LOB=CP, Country=ES, last name=row 32 or column 6 does not exist  in xls, Sales Area=ESS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10030" started-at="2017-05-12T15:00:45Z" finished-at="2017-05-12T15:00:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3260" started-at="2017-05-12T15:00:55Z" finished-at="2017-05-12T15:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2970" started-at="2017-05-12T15:00:58Z" finished-at="2017-05-12T15:01:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T15:01:01Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:01:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.fi, Language=6N, First name=IOO , LOB=CE, Country=FI, last name=row 33 or column 6 does not exist  in xls, Sales Area=FIS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10163" started-at="2017-05-12T15:01:05Z" finished-at="2017-05-12T15:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2930" started-at="2017-05-12T15:01:15Z" finished-at="2017-05-12T15:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2935" started-at="2017-05-12T15:01:18Z" finished-at="2017-05-12T15:01:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4025" started-at="2017-05-12T15:01:21Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:01:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.fi, Language=6N, First name=IOO , LOB=CF, Country=FI, last name=row 34 or column 6 does not exist  in xls, Sales Area=FIS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10060" started-at="2017-05-12T15:01:25Z" finished-at="2017-05-12T15:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2815" started-at="2017-05-12T15:01:35Z" finished-at="2017-05-12T15:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3355" started-at="2017-05-12T15:01:38Z" finished-at="2017-05-12T15:01:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4294" started-at="2017-05-12T15:01:42Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.fi, Language=6N, First name=IOO , LOB=CL, Country=FI, last name=row 35 or column 6 does not exist  in xls, Sales Area=FIS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="11023" started-at="2017-05-12T15:01:46Z" finished-at="2017-05-12T15:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2945" started-at="2017-05-12T15:01:57Z" finished-at="2017-05-12T15:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2552" started-at="2017-05-12T15:02:00Z" finished-at="2017-05-12T15:02:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4316" started-at="2017-05-12T15:02:02Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:02:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.fi, Language=6N, First name=IOO , LOB=CP, Country=FI, last name=row 36 or column 6 does not exist  in xls, Sales Area=FIS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10680" started-at="2017-05-12T15:02:07Z" finished-at="2017-05-12T15:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2995" started-at="2017-05-12T15:02:17Z" finished-at="2017-05-12T15:02:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2645" started-at="2017-05-12T15:02:20Z" finished-at="2017-05-12T15:02:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4195" started-at="2017-05-12T15:02:23Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:02:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qacommande.idexx.fr, Language=FR, First name=IOO , LOB=CE, Country=FR, last name=row 37 or column 6 does not exist  in xls, Sales Area=FRS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10130" started-at="2017-05-12T15:02:27Z" finished-at="2017-05-12T15:02:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3390" started-at="2017-05-12T15:02:37Z" finished-at="2017-05-12T15:02:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3035" started-at="2017-05-12T15:02:41Z" finished-at="2017-05-12T15:02:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4035" started-at="2017-05-12T15:02:44Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:02:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qacommande.idexx.fr, Language=FR, First name=IOO , LOB=CF, Country=FR, last name=row 38 or column 6 does not exist  in xls, Sales Area=FRS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10048" started-at="2017-05-12T15:02:48Z" finished-at="2017-05-12T15:02:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3340" started-at="2017-05-12T15:02:58Z" finished-at="2017-05-12T15:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2640" started-at="2017-05-12T15:03:01Z" finished-at="2017-05-12T15:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4685" started-at="2017-05-12T15:03:04Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qacommande.idexx.fr, Language=FR, First name=IOO , LOB=CL, Country=FR, last name=row 39 or column 6 does not exist  in xls, Sales Area=FRS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10409" started-at="2017-05-12T15:03:09Z" finished-at="2017-05-12T15:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3260" started-at="2017-05-12T15:03:19Z" finished-at="2017-05-12T15:03:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3085" started-at="2017-05-12T15:03:22Z" finished-at="2017-05-12T15:03:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4027" started-at="2017-05-12T15:03:25Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:03:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qacommande.idexx.fr, Language=FR, First name=IOO , LOB=CP, Country=FR, last name=row 40 or column 6 does not exist  in xls, Sales Area=FRS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10194" started-at="2017-05-12T15:03:29Z" finished-at="2017-05-12T15:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2724" started-at="2017-05-12T15:03:39Z" finished-at="2017-05-12T15:03:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3450" started-at="2017-05-12T15:03:42Z" finished-at="2017-05-12T15:03:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4010" started-at="2017-05-12T15:03:46Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:03:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.uk, Language=6N, First name=IOO , LOB=CE, Country=GB, last name=row 41 or column 6 does not exist  in xls, Sales Area=UKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10470" started-at="2017-05-12T15:03:50Z" finished-at="2017-05-12T15:04:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="418" started-at="2017-05-12T15:04:00Z" finished-at="2017-05-12T15:04:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2551" started-at="2017-05-12T15:04:01Z" finished-at="2017-05-12T15:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4023" started-at="2017-05-12T15:04:03Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:04:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.uk, Language=6N, First name=IOO , LOB=CF, Country=GB, last name=row 42 or column 6 does not exist  in xls, Sales Area=UKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10065" started-at="2017-05-12T15:04:07Z" finished-at="2017-05-12T15:04:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3465" started-at="2017-05-12T15:04:17Z" finished-at="2017-05-12T15:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3420" started-at="2017-05-12T15:04:21Z" finished-at="2017-05-12T15:04:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T15:04:24Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:04:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.uk, Language=6N, First name=IOO , LOB=CL, Country=GB, last name=row 43 or column 6 does not exist  in xls, Sales Area=UKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10050" started-at="2017-05-12T15:04:28Z" finished-at="2017-05-12T15:04:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3515" started-at="2017-05-12T15:04:38Z" finished-at="2017-05-12T15:04:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3435" started-at="2017-05-12T15:04:42Z" finished-at="2017-05-12T15:04:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4025" started-at="2017-05-12T15:04:45Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:04:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.uk, Language=6N, First name=IOO , LOB=CP, Country=GB, last name=row 44 or column 6 does not exist  in xls, Sales Area=UKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10075" started-at="2017-05-12T15:04:49Z" finished-at="2017-05-12T15:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3225" started-at="2017-05-12T15:04:59Z" finished-at="2017-05-12T15:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3200" started-at="2017-05-12T15:05:02Z" finished-at="2017-05-12T15:05:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4035" started-at="2017-05-12T15:05:06Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:05:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaordini.idexx.it, Language=IT, First name=IOO , LOB=CE, Country=IT, last name=row 45 or column 6 does not exist  in xls, Sales Area=ITS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10056" started-at="2017-05-12T15:05:10Z" finished-at="2017-05-12T15:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2265" started-at="2017-05-12T15:05:20Z" finished-at="2017-05-12T15:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2135" started-at="2017-05-12T15:05:22Z" finished-at="2017-05-12T15:05:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4010" started-at="2017-05-12T15:05:24Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:05:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaordini.idexx.it, Language=IT, First name=IOO , LOB=CF, Country=IT, last name=row 46 or column 6 does not exist  in xls, Sales Area=ITS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10025" started-at="2017-05-12T15:05:28Z" finished-at="2017-05-12T15:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3445" started-at="2017-05-12T15:05:38Z" finished-at="2017-05-12T15:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2850" started-at="2017-05-12T15:05:42Z" finished-at="2017-05-12T15:05:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4010" started-at="2017-05-12T15:05:44Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:05:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaordini.idexx.it, Language=IT, First name=IOO , LOB=CL, Country=IT, last name=row 47 or column 6 does not exist  in xls, Sales Area=ITS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10031" started-at="2017-05-12T15:05:48Z" finished-at="2017-05-12T15:05:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2595" started-at="2017-05-12T15:05:59Z" finished-at="2017-05-12T15:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2855" started-at="2017-05-12T15:06:01Z" finished-at="2017-05-12T15:06:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4030" started-at="2017-05-12T15:06:04Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:06:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaordini.idexx.it, Language=IT, First name=IOO , LOB=CP, Country=IT, last name=row 48 or column 6 does not exist  in xls, Sales Area=ITS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10035" started-at="2017-05-12T15:06:08Z" finished-at="2017-05-12T15:06:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3295" started-at="2017-05-12T15:06:18Z" finished-at="2017-05-12T15:06:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3420" started-at="2017-05-12T15:06:21Z" finished-at="2017-05-12T15:06:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4011" started-at="2017-05-12T15:06:25Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:06:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.nl, Language=6N, First name=IOO , LOB=CE, Country=NL, last name=row 49 or column 6 does not exist  in xls, Sales Area=NLS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10607" started-at="2017-05-12T15:06:29Z" finished-at="2017-05-12T15:06:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2167" started-at="2017-05-12T15:06:39Z" finished-at="2017-05-12T15:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2864" started-at="2017-05-12T15:06:42Z" finished-at="2017-05-12T15:06:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4010" started-at="2017-05-12T15:06:44Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:06:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.nl, Language=6N, First name=IOO , LOB=CF, Country=NL, last name=row 50 or column 6 does not exist  in xls, Sales Area=NLS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10086" started-at="2017-05-12T15:06:48Z" finished-at="2017-05-12T15:06:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2660" started-at="2017-05-12T15:06:58Z" finished-at="2017-05-12T15:07:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2784" started-at="2017-05-12T15:07:01Z" finished-at="2017-05-12T15:07:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4227" started-at="2017-05-12T15:07:04Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:07:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.nl, Language=6N, First name=IOO , LOB=CL, Country=NL, last name=row 51 or column 6 does not exist  in xls, Sales Area=NLS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10088" started-at="2017-05-12T15:07:08Z" finished-at="2017-05-12T15:07:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3663" started-at="2017-05-12T15:07:18Z" finished-at="2017-05-12T15:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3068" started-at="2017-05-12T15:07:22Z" finished-at="2017-05-12T15:07:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4058" started-at="2017-05-12T15:07:25Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:07:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.nl, Language=6N, First name=IOO , LOB=CP, Country=NL, last name=row 52 or column 6 does not exist  in xls, Sales Area=NLS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10050" started-at="2017-05-12T15:07:29Z" finished-at="2017-05-12T15:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3253" started-at="2017-05-12T15:07:39Z" finished-at="2017-05-12T15:07:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3380" started-at="2017-05-12T15:07:42Z" finished-at="2017-05-12T15:07:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T15:07:46Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.no, Language=6N, First name=IOO , LOB=CE, Country=NO, last name=row 53 or column 6 does not exist  in xls, Sales Area=NOS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10165" started-at="2017-05-12T15:07:50Z" finished-at="2017-05-12T15:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3595" started-at="2017-05-12T15:08:00Z" finished-at="2017-05-12T15:08:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3405" started-at="2017-05-12T15:08:03Z" finished-at="2017-05-12T15:08:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4264" started-at="2017-05-12T15:08:07Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:08:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.no, Language=6N, First name=IOO , LOB=CF, Country=NO, last name=row 54 or column 6 does not exist  in xls, Sales Area=NOS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10046" started-at="2017-05-12T15:08:11Z" finished-at="2017-05-12T15:08:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3490" started-at="2017-05-12T15:08:21Z" finished-at="2017-05-12T15:08:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3520" started-at="2017-05-12T15:08:25Z" finished-at="2017-05-12T15:08:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4070" started-at="2017-05-12T15:08:28Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:08:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.no, Language=6N, First name=IOO , LOB=CL, Country=NO, last name=row 55 or column 6 does not exist  in xls, Sales Area=NOS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10125" started-at="2017-05-12T15:08:32Z" finished-at="2017-05-12T15:08:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3610" started-at="2017-05-12T15:08:42Z" finished-at="2017-05-12T15:08:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3080" started-at="2017-05-12T15:08:46Z" finished-at="2017-05-12T15:08:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4021" started-at="2017-05-12T15:08:49Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:08:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.no, Language=6N, First name=IOO , LOB=CP, Country=NO, last name=row 56 or column 6 does not exist  in xls, Sales Area=NOS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10045" started-at="2017-05-12T15:08:53Z" finished-at="2017-05-12T15:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3480" started-at="2017-05-12T15:09:03Z" finished-at="2017-05-12T15:09:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3170" started-at="2017-05-12T15:09:07Z" finished-at="2017-05-12T15:09:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4035" started-at="2017-05-12T15:09:10Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:09:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.nz, Language=6N, First name=IOO , LOB=CE, Country=NZ, last name=row 57 or column 6 does not exist  in xls, Sales Area=NZS2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10150" started-at="2017-05-12T15:09:14Z" finished-at="2017-05-12T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3335" started-at="2017-05-12T15:09:24Z" finished-at="2017-05-12T15:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3335" started-at="2017-05-12T15:09:27Z" finished-at="2017-05-12T15:09:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4085" started-at="2017-05-12T15:09:31Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.nz, Language=6N, First name=IOO , LOB=CF, Country=NZ, last name=row 58 or column 6 does not exist  in xls, Sales Area=NZS2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10035" started-at="2017-05-12T15:09:35Z" finished-at="2017-05-12T15:09:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3700" started-at="2017-05-12T15:09:45Z" finished-at="2017-05-12T15:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3130" started-at="2017-05-12T15:09:49Z" finished-at="2017-05-12T15:09:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4070" started-at="2017-05-12T15:09:52Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:09:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.nz, Language=6N, First name=IOO , LOB=CP, Country=NZ, last name=row 59 or column 6 does not exist  in xls, Sales Area=NZS2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10150" started-at="2017-05-12T15:09:56Z" finished-at="2017-05-12T15:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3095" started-at="2017-05-12T15:10:06Z" finished-at="2017-05-12T15:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3210" started-at="2017-05-12T15:10:09Z" finished-at="2017-05-12T15:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4090" started-at="2017-05-12T15:10:12Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:10:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.nz, Language=6N, First name=IOO , LOB=CL, Country=NZ, last name=row 60 or column 6 does not exist  in xls, Sales Area=NZS2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10177" started-at="2017-05-12T15:10:16Z" finished-at="2017-05-12T15:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2445" started-at="2017-05-12T15:10:26Z" finished-at="2017-05-12T15:10:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2727" started-at="2017-05-12T15:10:29Z" finished-at="2017-05-12T15:10:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4109" started-at="2017-05-12T15:10:32Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:10:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.se, Language=6N, First name=IOO , LOB=CE, Country=SE, last name=row 61 or column 6 does not exist  in xls, Sales Area=SES2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10040" started-at="2017-05-12T15:10:36Z" finished-at="2017-05-12T15:10:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3365" started-at="2017-05-12T15:10:46Z" finished-at="2017-05-12T15:10:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2622" started-at="2017-05-12T15:10:49Z" finished-at="2017-05-12T15:10:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4031" started-at="2017-05-12T15:10:52Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.se, Language=6N, First name=IOO , LOB=CL, Country=SE, last name=row 62 or column 6 does not exist  in xls, Sales Area=SES2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10043" started-at="2017-05-12T15:10:56Z" finished-at="2017-05-12T15:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3770" started-at="2017-05-12T15:11:06Z" finished-at="2017-05-12T15:11:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3124" started-at="2017-05-12T15:11:10Z" finished-at="2017-05-12T15:11:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4097" started-at="2017-05-12T15:11:13Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:11:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.se, Language=6N, First name=IOO , LOB=CP, Country=SE, last name=row 63 or column 6 does not exist  in xls, Sales Area=SES2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10055" started-at="2017-05-12T15:11:17Z" finished-at="2017-05-12T15:11:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3665" started-at="2017-05-12T15:11:27Z" finished-at="2017-05-12T15:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3470" started-at="2017-05-12T15:11:31Z" finished-at="2017-05-12T15:11:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T15:11:34Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaobjednavky.idexx.sk, Language=6N, First name=IOO , LOB=CP, Country=SK, last name=row 64 or column 6 does not exist  in xls, Sales Area=SKS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10145" started-at="2017-05-12T15:11:38Z" finished-at="2017-05-12T15:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3452" started-at="2017-05-12T15:11:48Z" finished-at="2017-05-12T15:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3450" started-at="2017-05-12T15:11:52Z" finished-at="2017-05-12T15:11:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4015" started-at="2017-05-12T15:11:55Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:11:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com, Language=EN, First name=IOO , LOB=CE, Country=US, last name=row 65 or column 6 does not exist  in xls, Sales Area=USS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10035" started-at="2017-05-12T15:11:59Z" finished-at="2017-05-12T15:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3135" started-at="2017-05-12T15:12:09Z" finished-at="2017-05-12T15:12:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3560" started-at="2017-05-12T15:12:12Z" finished-at="2017-05-12T15:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4040" started-at="2017-05-12T15:12:16Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:12:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com, Language=EN, First name=IOO , LOB=CF, Country=US, last name=row 66 or column 6 does not exist  in xls, Sales Area=USS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10032" started-at="2017-05-12T15:12:20Z" finished-at="2017-05-12T15:12:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="2450" started-at="2017-05-12T15:12:30Z" finished-at="2017-05-12T15:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3270" started-at="2017-05-12T15:12:32Z" finished-at="2017-05-12T15:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4055" started-at="2017-05-12T15:12:36Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:12:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.com, Language=EN, First name=IOO , LOB=CL, Country=US, last name=row 67 or column 6 does not exist  in xls, Sales Area=USS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10020" started-at="2017-05-12T15:12:40Z" finished-at="2017-05-12T15:12:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3790" started-at="2017-05-12T15:12:50Z" finished-at="2017-05-12T15:12:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3850" started-at="2017-05-12T15:12:53Z" finished-at="2017-05-12T15:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4020" started-at="2017-05-12T15:12:57Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:13:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.za, Language=6N, First name=IOO , LOB=CE, Country=ZA, last name=row 68 or column 6 does not exist  in xls, Sales Area=SAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10158" started-at="2017-05-12T15:13:01Z" finished-at="2017-05-12T15:13:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3725" started-at="2017-05-12T15:13:11Z" finished-at="2017-05-12T15:13:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="2694" started-at="2017-05-12T15:13:15Z" finished-at="2017-05-12T15:13:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4128" started-at="2017-05-12T15:13:18Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:13:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.za, Language=6N, First name=IOO , LOB=CF, Country=ZA, last name=row 69 or column 6 does not exist  in xls, Sales Area=SAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10035" started-at="2017-05-12T15:13:22Z" finished-at="2017-05-12T15:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3665" started-at="2017-05-12T15:13:32Z" finished-at="2017-05-12T15:13:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3733" started-at="2017-05-12T15:13:36Z" finished-at="2017-05-12T15:13:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4246" started-at="2017-05-12T15:13:39Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:13:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.za, Language=6N, First name=IOO , LOB=CL, Country=ZA, last name=row 70 or column 6 does not exist  in xls, Sales Area=SAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10054" started-at="2017-05-12T15:13:44Z" finished-at="2017-05-12T15:13:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3801" started-at="2017-05-12T15:13:54Z" finished-at="2017-05-12T15:13:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="beforeMethod" is-config="true" duration-ms="3125" started-at="2017-05-12T15:13:58Z" finished-at="2017-05-12T15:14:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.SalesForce.scripts.Contacts.TestCreateUser(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCreateUser(java.util.Hashtable)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="TestCreateUser" duration-ms="4016" started-at="2017-05-12T15:14:01Z" data-provider="getTestDataFor_TestCreateUser" finished-at="2017-05-12T15:14:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{URL=https://qaorder.idexx.co.za, Language=6N, First name=IOO , LOB=CP, Country=ZA, last name=row 71 or column 6 does not exist  in xls, Sales Area=SAS1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="logout" is-config="true" duration-ms="10077" started-at="2017-05-12T15:14:05Z" finished-at="2017-05-12T15:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterMethod" is-config="true" duration-ms="3113" started-at="2017-05-12T15:14:15Z" finished-at="2017-05-12T15:14:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.SalesForce.scripts.Contacts@2a54a73f]" name="afterTest" is-config="true" duration-ms="1475" started-at="2017-05-12T15:14:18Z" finished-at="2017-05-12T15:14:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.SalesForce.scripts.Contacts -->
+    </test> <!-- chromeWindowsLocal -->
+  </suite> <!-- Idexx Automation test suite -->
+</testng-results>

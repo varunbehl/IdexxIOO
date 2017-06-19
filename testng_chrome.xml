@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name='Idexx Automation test suite' parallel='tests' thread-count='15'>
+
+<parameter name='suiteExecuted' value='Regression' />
+<parameter name='executionType' value='Sequential' />
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	<listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
+</listeners>
+	<test name="ChromeWindowsLocal" preserve-order='false'>
+			<parameter name="browser" value="chrome"></parameter>
+			<parameter name="automationName" value="selenium"></parameter>
+			<parameter name="browserVersion" value="46.0"></parameter>
+			<parameter name="platformName" value="windows 7"></parameter>
+			<parameter name="environment" value="local"></parameter>
+		 <classes>
+			<class name="com.Idexx.scripts.Login">
+				<methods>
+			<parameter name="userrole" value="FieldSalesRep-LPD"></parameter>
+					 <include name="TestLogin" />
+				</methods>
+			 </class>
+			<class name="com.Idexx.scripts.Home">
+				<methods>
+			<parameter name="userrole" value="FieldSalesRep-LPD"></parameter>
+					 <include name="TestCustomize_AddTab" />
+					 <include name="TestCustomize_RemoveTab" />
+					 <include name="TestVerifyMyTaskAndCalenderSection" />
+				</methods>
+			 </class>
+			<class name="com.Idexx.scripts.Accounts">
+				<methods>
+			<parameter name="userrole" value="FieldSalesRep-LPD"></parameter>
+					 <include name="TestCreateNewAccount" />
+					 <include name="TestViewExistingAccount" />
+					 <include name="TestViewAndEditMyAccounts" />
+					 <include name="TestViewHierarchy" />
+					 <include name="TestCreateContactForAnAccount" />
+					 <include name="TestCreateNewReport" />
+					 <include name="TestViewCompetitorProducts" />
+					  <include name="Test360viewofaccount" />
+				</methods>
+			 </class>
+			<class name="com.Idexx.scripts.Contacts">
+				<methods>
+			<parameter name="userrole" value="FieldSalesRep-LPD"></parameter>
+					 <include name="TestViewAllContacts" />
+					 <include name="TestCreateContact" /> 
+					 <include name="TestCreateDuplicateContact" />
+					  <include name="TestLinkContactWithMultipleAccounts" /> 
+				</methods>
+			 </class>
+			 <class name="com.Idexx.scripts.Opportunity">
+				<methods>
+			<parameter name="userrole" value="FieldSalesRep-LPD"></parameter>
+					 <include name="TestCreateLPDOpportunity" />
+					<!--  <include name="TestCreateTenderOpportunity" /> -->
+					 <include name="TestCreateNegativeWinBackOpportunity" />
+					 <include name="TestCreateNegativeWinBackOpportunityWorkflow" />
+				</methods>
+			 </class>
+			<class name="com.Idexx.scripts.Activity">
+				<methods>
+			<parameter name="userrole" value="InsideSalesRep-LPD"></parameter>
+					 <include name="CreateSalesandSupportTask" />
+					 <include name="CreateSalesandSupportTaskOpportunity" />
+					 <include name="CreateSalesandSupportTaskContact" />
+					 <include name="CreateSalesandSupportTaskMultipleContact" />
+					 <include name="CreateActivityFromAccounts" />
+					 <include name="CreateActivityFromOpportunity" />
+					 <include name="CreateActivityFromContact" /> 
+					  <include name="DifferentiationBetweenActivityAndTask" />
+				</methods>
+			 </class>
+			 <class name="com.Idexx.scripts.Case">
+				<methods>
+			<parameter name="userrole" value="CustomerSupportRep-LPD"></parameter>
+					  <include name="CreateCaseFromAccounts" />
+					 <include name="CreateCaseFromContact" />
+					 <include name="CreateCaseFromOpportunity" />
+					 <include name="TransferCase" />
+					 <include name="CaseEscalationRules" />
+				</methods>
+			 </class> 
+		 </classes>
+	</test>
+
+</suite>
