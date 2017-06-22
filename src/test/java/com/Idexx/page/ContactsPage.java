@@ -37,8 +37,12 @@ public class ContactsPage extends ActionEngine {
 	public static By savedOrdersLink;
 	public static By orderNowLink;
 	public static By orderNoVerify;
-
 	public static By deleteLink;
+
+	public static By reOrderOptionBtn;
+	public static By favoriteOrdersLink;
+	public static By newFavoriteOrdersBtn;
+
 
 	
 	
@@ -103,10 +107,14 @@ public class ContactsPage extends ActionEngine {
 		orderNameDialogeOKBtn=By.xpath("//*[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
 		myOrdersBtn=By.xpath("(//li[@class='zzjetborder']/a)[3]");
 		savedOrdersLink=By.xpath("((//li[@class='zzjetborder'])[3]/ul/li/a)[1]");
+
+
+		favoriteOrdersLink= By.xpath("(//li[@class='zzjetborder'])[2]/ul/li[2]/a");
 		orderNowLink=By.xpath("(//a[@class='zzlink_red'])[1]");
 		orderNoVerify=By.xpath("//*[@class='contentrow1 zzhide479_tr']/td");
 		deleteLink=By.xpath("(//a[contains(text(),'Delete')])[1]");
-
+		reOrderOptionBtn= By.xpath("(//li[@class='zzjetborder']/a)[2]");
+		newFavoriteOrdersBtn= By.xpath("//button[@type='button' and contains(text(),'New Favorite Order')]");
 
 
 
