@@ -316,6 +316,81 @@ public class Contacts extends ContactsLib {
 			e.printStackTrace();
 		}
 	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestCreateFavoriteOrder() {
+		return TestUtil.getData("TestCreateFavoriteOrder", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestCreateFavoriteOrder")
+	public void TestCreateFavoriteOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.9");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestCreateFavoriteOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"),data.get("FavoriteOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestCreateFavoriteOrderFromOrder() {
+		return TestUtil.getData("TestCreateFavoriteOrderFromOrder", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestCreateFavoriteOrderFromOrder")
+	public void TestCreateFavoriteOrderFromOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.10");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestCreateFavoriteOrderFromOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("PurchaseOrderNumber"), data.get("OrderName"),data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestCreateOrderFromFavOrder() {
+		return TestUtil.getData("TestCreateOrderFromFavOrder", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestCreateOrderFromFavOrder")
+	public void TestCreateOrderFromFavOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.11");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestCreateOrderFromFavOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("PurchaseOrderNumber"), data.get("OrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
 }
 
 
