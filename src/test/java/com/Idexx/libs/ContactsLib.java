@@ -583,5 +583,103 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		Thread.sleep(4000);
 
 	}
-	
+	public void TestCreateFavoriteOrder(String url, String email, String password,String customer,String ProdDesc, String favOdrName, String Quantity)throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		Driver.navigate().to("https://google.com");
+		Thread.sleep(3000);
+		Driver.navigate().to(url);
+		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
+		click(HomePage.signInBtn, "Click on Sign in btn");
+		Thread.sleep(3000);
+		type(ContactsPage.username, email, "Enter Username");
+		type(ContactsPage.password, password, "Enter Password");
+		Thread.sleep(2000);
+
+		click(ContactsPage.signIn, "Click Sign In button");
+		Thread.sleep(2000);
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.favoriteOrdersLink, "Click on favorite Orders link");
+		waitForElementPresent(ContactsPage.newFavoriteOrdersBtn, "Verify Saved Order number", 10);
+		click(ContactsPage.newFavoriteOrdersBtn, "Click on favorite Orders link");
+		waitForElementPresent(HomePage.favOrdernameField, "Verify Fav order name field ", 10);
+		type(HomePage.favOrdernameField, favOdrName, "Enter Favorite order");
+
+		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+		click(HomePage.searchIcon, "Click on search Icon");
+		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.favSaveBtn, "Verify Search result pop up ", 10);
+		click(HomePage.favSaveBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.favOrderConfirmationMsg, "Verify Favorite order confirmation ", 10);
+		//String val=getText(By.xpath("//span[contains(text(),'"+favOdrName+"')]"),"Fav order name text");
+
+		String val=getText( HomePage.favOrderNameText(favOdrName),"Fav order name text");
+		verify(val, favOdrName, "verify favorite order text");
+		Thread.sleep(3000);
+
+	}
+
+	public void TestCreateFavoriteOrderFromOrder(String url, String email, String password,String customer,String ProdDesc, String purchaseOdrNo, String ordName, String Quantity)throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		Driver.navigate().to("https://google.com");
+		Thread.sleep(3000);
+		Driver.navigate().to(url);
+		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
+		click(HomePage.signInBtn, "Click on Sign in btn");
+		Thread.sleep(3000);
+		type(ContactsPage.username, email, "Enter Username");
+		type(ContactsPage.password, password, "Enter Password");
+		Thread.sleep(2000);
+		click(ContactsPage.signIn, "Click Sign In button");
+		Thread.sleep(2000);
+		click(HomePage.orderNowBtn, "Click Order now button");
+		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+		click(HomePage.searchIcon, "Click on search Icon");
+		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.homeBtn, "Verify Home Button ", 10);
+		click(HomePage.homeBtn, "Click on Home button");
+		waitForElementPresent(HomePage.orderNowBtn, "Verify Order Now Button ", 10);
+		click(HomePage.orderNowBtn, "Click on Order Now button");
+		click(HomePage.viewOrderBtn, "Click on View Order button");
+		waitForElementPresent(HomePage.favOrdernameField, "Verify Purchase Order Number field ", 10);
+		type(HomePage.favOrdernameField, purchaseOdrNo, "Enter Purchase Order No order");
+		click(HomePage.addToFavOrderBtn, "Click on Add to Favorite Order button");
+		type(ContactsPage.orderNameField, ordName, "Enter Order Name");
+		click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+	}
+
+	public void TestCreateOrderFromFavOrder(String url, String email, String password,String customer,String ProdDesc, String purchaseOdrNo, String ordName, String Quantity)throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		TestCreateFavoriteOrder(url, email, password, customer, ProdDesc, ordName, Quantity);
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.favoriteOrdersLink, "Click on favorite Orders link");
+		waitForElementPresent(ContactsPage.orderNowLink, "Verify Order Now Link", 10);
+		click(ContactsPage.orderNowLink, "Click on Order Now link");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn, "Click on Submit order button");
+		waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
+		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);
+		Thread.sleep(2000);
+	}
 }
