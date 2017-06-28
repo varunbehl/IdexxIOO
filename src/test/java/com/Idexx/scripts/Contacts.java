@@ -391,6 +391,210 @@ public class Contacts extends ContactsLib {
 			e.printStackTrace();
 		}
 	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_TestCreateScheduleOrder() {
+		return TestUtil.getData("TestCreateScheduleOrder", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestCreateScheduleOrder")
+	public void TestCreateScheduleOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.12");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestCreateScheduleOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_TestEditScheduleOrderQty() {
+		return TestUtil.getData("TestEditScheduleOrderQty", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestEditScheduleOrderQty")
+	public void TestEditScheduleOrderQty(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.13");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestEditScheduleOrderQty(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestDeleteScheduleOrderQty() {
+		return TestUtil.getData("TestDeleteScheduleOrderQty", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestDeleteScheduleOrderQty")
+	public void TestDeleteScheduleOrderQty(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.14");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestDeleteScheduleOrderQty(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_TestCreateSecondScheduleOrder() {
+		return TestUtil.getData("TestCreateSecondScheduleOrder", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestCreateSecondScheduleOrder")
+	public void TestCreateSecondScheduleOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.15");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestCreateSecondScheduleOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestSkipShipment() {
+		return TestUtil.getData("TestSkipShipment", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestSkipShipment")
+	public void TestSkipShipment(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.16");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestSkipShipment(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_TestAddNewMaterial() {
+		return TestUtil.getData("TestAddNewMaterial", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestAddNewMaterial")
+	public void TestAddNewMaterial(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.17");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestAddNewMaterial(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestRemoveExistingMaterial() {
+		return TestUtil.getData("TestRemoveExistingMaterial", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestRemoveExistingMaterial")
+	public void TestRemoveExistingMaterial(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.18");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestRemoveExistingMaterial(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestChangeArrivalDate() {
+		return TestUtil.getData("TestChangeArrivalDate", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestChangeArrivalDate")
+	public void TestChangeArrivalDate(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.19");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestChangeArrivalDate(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
 }
 
 
