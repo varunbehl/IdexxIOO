@@ -1,8 +1,10 @@
 package com.Idexx.libs;
 
 import java.util.Hashtable;
+import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.xpath.operations.Bool;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -14,7 +16,7 @@ import com.Idexx.page.ContactsPage;
 import com.Idexx.page.HomePage;
 
 public class ContactsLib extends IdexxLib {
-
+	String ordNameValue;
 	public boolean viewAllContacts() throws Throwable {
 
 		boolean flag = true;
@@ -45,7 +47,7 @@ public class ContactsLib extends IdexxLib {
 		return flag;
 	}
 
-	public boolean createDuplicateContact(Hashtable<String,String> data, String accountName, String contactName) throws Throwable {
+	public boolean createDuplicateContact(Hashtable<String, String> data, String accountName, String contactName) throws Throwable {
 
 		boolean flag = true;
 		try {
@@ -60,7 +62,7 @@ public class ContactsLib extends IdexxLib {
 			Thread.sleep(3000);
 			new ContactsPage().Contacts_Page();
 			EnterContactInfo(data, accountName, contactName);
-			
+
 			click(ContactsPage.saveNewBtn,
 					"clicking on the save and new button");
 			Thread.sleep(3000);
@@ -92,14 +94,14 @@ public class ContactsLib extends IdexxLib {
 			new ContactsPage().Contacts_Page();
 			Thread.sleep(2000);
 
-			Select s =  new Select(Driver.findElement(ContactsPage.viewDropdown));
+			Select s = new Select(Driver.findElement(ContactsPage.viewDropdown));
 
-			String selectedValue  =		s.getFirstSelectedOption().getText();
-			System.out.println("selectedValue = " + selectedValue );
-			if(!(selectedValue.equalsIgnoreCase("All Contacts"))){
-			selectByVisibleText(ContactsPage.viewDropdown, "All Contacts",
-					"select All Contacts from the list");
-			Thread.sleep(2000);
+			String selectedValue = s.getFirstSelectedOption().getText();
+			System.out.println("selectedValue = " + selectedValue);
+			if (!(selectedValue.equalsIgnoreCase("All Contacts"))) {
+				selectByVisibleText(ContactsPage.viewDropdown, "All Contacts",
+						"select All Contacts from the list");
+				Thread.sleep(2000);
 			}
 			click(ContactsPage.goButton, "click on the go button");
 			Thread.sleep(3000);
@@ -122,81 +124,80 @@ public class ContactsLib extends IdexxLib {
 		return flag;
 	}
 
-	
-	
-public void EnterContactInfo(Hashtable<String, String> data, String accountName, String contactName) throws Throwable{
+
+	public void EnterContactInfo(Hashtable<String, String> data, String accountName, String contactName) throws Throwable {
 		
 	/*selectByVisibleText(ContactsPage.salutionDropDown, data.get("salutation"), "selecting Mr. from dropdown");
 	type(ContactsPage.firstName, data.get("firstName"), "entring the first name");*/
-	Thread.sleep(2000);
-	new ContactsPage().Contacts_Page();
-	System.out.println(contactName);
-	//type(ContactsPage.lastname, contactName, "entering the last name");
+		Thread.sleep(2000);
+		new ContactsPage().Contacts_Page();
+		System.out.println(contactName);
+		//type(ContactsPage.lastname, contactName, "entering the last name");
 	/*type(ContactsPage.middleName, data.get("middleName"), "entering the middle name");
 	type(ContactsPage.mobile, data.get("mobile"), "entering the mobile");
 	type(ContactsPage.email, data.get("email"), "entering the email");*/
-	type(ContactsPage.accountName, accountName, "entering the account name");
+		type(ContactsPage.accountName, accountName, "entering the account name");
 	}
 
-     public void linkContactWithMultipleAccounts(Hashtable<String, String> data) throws Throwable{
-	//	 Hashtable<String, String> data = TestUtil.getDataSignUp("TestLinkContactWithMultipleAccounts", "Contacts");
-		 new ContactsPage().Contacts_Page();
-					
-			click(ContactsPage.newAccountInAccountSection, "new account button in accounts section");
-			Thread.sleep(1000);
-			type(ContactsPage.newAccountName, data.get("newAccountName"), "subject ");
-			Driver.findElement(ContactsPage.primaryContact).clear();
-			selectByVisibleText(ContactsPage.businessUnitDropdown, data.get("bussinessUnitDropdown"), "select business unit dropdown");
-			selectByVisibleText(ContactsPage.industryDropdown, data.get("industryDropdown"), "select industry dropdown");
-			click(ContactsPage.saveBtn, "");
-	
-	 }
-	 
-     public boolean searchAndClickContactUsingGlobalSearch(String contactName) throws Throwable{
+	public void linkContactWithMultipleAccounts(Hashtable<String, String> data) throws Throwable {
+		//	 Hashtable<String, String> data = TestUtil.getDataSignUp("TestLinkContactWithMultipleAccounts", "Contacts");
+		new ContactsPage().Contacts_Page();
 
-    	 boolean found = false;
-    	 goToHomePage();
-    	 new HomePage().Home_Page();
-    	 type(HomePage.search, contactName, "search");
-    	 Thread.sleep(3000);
-    	 Driver.findElement(By.xpath(".//*[@id='phSearchInput']")).sendKeys(Keys.TAB);
-    	 Driver.findElement(By.xpath(".//*[@id='phSearchInput']")).sendKeys(Keys.ENTER);
-    	 Thread.sleep(5000);
-    	 if(!(isElementPresent(HomePage.contactsHyperlink, "Contacts hyperlink on the left side tab after search", true))){
-    		 Assert.fail("No Contact found.");
-    	 }else{
-    		 click(HomePage.contactsHyperlink, "Contacts hyperlink on the left side tab");
-    		 Thread.sleep(4000);
-    		// if(isElementPresent(HomePage.showMoreLink_contactsBody, "show more link in Contact section", true))
-    			 //{	click(HomePage.showMoreLink_contactsBody, "click on show more link .");
-    		//	 clickUsingJavascriptExecutor(HomePage.showMoreLink_contactsBody, "click on show more link .");
-    		 Thread.sleep(4000);
-    	 }
-    	 int count = Driver.findElements(By.xpath(".//*[@id='Contact_body']/table/tbody/tr")).size();
+		click(ContactsPage.newAccountInAccountSection, "new account button in accounts section");
+		Thread.sleep(1000);
+		type(ContactsPage.newAccountName, data.get("newAccountName"), "subject ");
+		Driver.findElement(ContactsPage.primaryContact).clear();
+		selectByVisibleText(ContactsPage.businessUnitDropdown, data.get("bussinessUnitDropdown"), "select business unit dropdown");
+		selectByVisibleText(ContactsPage.industryDropdown, data.get("industryDropdown"), "select industry dropdown");
+		click(ContactsPage.saveBtn, "");
 
-    	 for(int i = 2; i<=count;i++){
-    		 String text = Driver.findElement(By.xpath(".//*[@id='Contact_body']/table/tbody/tr["+i+"]/th/a")).getText();
-    		 System.out.println(text);
-    		 if(text.equalsIgnoreCase(contactName)){
-    			 WebElement element = Driver.findElement(By.xpath(".//*[@id='Contact_body']/table/tbody/tr["+i+"]/th/a"));
-    				JavascriptExecutor executor = (JavascriptExecutor)Driver;
-    				executor.executeScript("arguments[0].click();", element);
-    			 
-    			 
-    			 found = true;
-    			// driver.findElement(By.xpath(".//*[@id='Contact_body']/table/tbody/tr["+i+"]/th/a")).click();
-    			 Thread.sleep(3000);
-    			 System.out.println("clicked on Contact ...");
-    			 break;
-    		 }
-    	 }
-    	 new ContactsPage().Contacts_Page();
-    	 assertTextMatching(ContactsPage.topNameDisplayedOnContactHeader, contactName, "verifying the search result");
-  
-     return found;
-}
-	 
-	public void TestCreateAccount(String url, String lob, String fname, String lname, String email, String country, String password, String AccNumber, String postCode, String jobTitle) throws Throwable{
+	}
+
+	public boolean searchAndClickContactUsingGlobalSearch(String contactName) throws Throwable {
+
+		boolean found = false;
+		goToHomePage();
+		new HomePage().Home_Page();
+		type(HomePage.search, contactName, "search");
+		Thread.sleep(3000);
+		Driver.findElement(By.xpath(".//*[@id='phSearchInput']")).sendKeys(Keys.TAB);
+		Driver.findElement(By.xpath(".//*[@id='phSearchInput']")).sendKeys(Keys.ENTER);
+		Thread.sleep(5000);
+		if (!(isElementPresent(HomePage.contactsHyperlink, "Contacts hyperlink on the left side tab after search", true))) {
+			Assert.fail("No Contact found.");
+		} else {
+			click(HomePage.contactsHyperlink, "Contacts hyperlink on the left side tab");
+			Thread.sleep(4000);
+			// if(isElementPresent(HomePage.showMoreLink_contactsBody, "show more link in Contact section", true))
+			//{	click(HomePage.showMoreLink_contactsBody, "click on show more link .");
+			//	 clickUsingJavascriptExecutor(HomePage.showMoreLink_contactsBody, "click on show more link .");
+			Thread.sleep(4000);
+		}
+		int count = Driver.findElements(By.xpath(".//*[@id='Contact_body']/table/tbody/tr")).size();
+
+		for (int i = 2; i <= count; i++) {
+			String text = Driver.findElement(By.xpath(".//*[@id='Contact_body']/table/tbody/tr[" + i + "]/th/a")).getText();
+			System.out.println(text);
+			if (text.equalsIgnoreCase(contactName)) {
+				WebElement element = Driver.findElement(By.xpath(".//*[@id='Contact_body']/table/tbody/tr[" + i + "]/th/a"));
+				JavascriptExecutor executor = (JavascriptExecutor) Driver;
+				executor.executeScript("arguments[0].click();", element);
+
+
+				found = true;
+				// driver.findElement(By.xpath(".//*[@id='Contact_body']/table/tbody/tr["+i+"]/th/a")).click();
+				Thread.sleep(3000);
+				System.out.println("clicked on Contact ...");
+				break;
+			}
+		}
+		new ContactsPage().Contacts_Page();
+		assertTextMatching(ContactsPage.topNameDisplayedOnContactHeader, contactName, "verifying the search result");
+
+		return found;
+	}
+
+	public void TestCreateAccount(String url, String lob, String fname, String lname, String email, String country, String password, String AccNumber, String postCode, String jobTitle) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().CreateContactPage();
 		new ContactsPage().BusinessAffiliationPage();
@@ -208,18 +209,17 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		/*if (row=="Yes") {
 			JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on the logout link");
 		}*/
-		
-		
-		
+
+
 		waitForElementPresent(HomePage.createAccountBtn, "Verify Create Acc btn ", 10);
 		click(HomePage.createAccountBtn, "Click on Create acc btn");
 		Thread.sleep(3000);
 		waitForElementPresent(ContactsPage.firstName, "Verify first name field ", 10);
 		type(ContactsPage.firstName, fname, "Enter first name");
-		
+
 		waitForElementPresent(ContactsPage.lastName, "Verify last name field ", 10);
 		type(ContactsPage.lastName, lname, "Enter last name");
-		
+
 		waitForElementPresent(ContactsPage.email, "Verify email field ", 10);
 		type(ContactsPage.email, email, "Enter email");
 		waitForElementPresent(ContactsPage.confirmEmail, "Verify confEmail field ", 10);
@@ -229,9 +229,9 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		type(ContactsPage.pwd, password, "Set password");
 		click(ContactsPage.createAccountBtn, "Click on create account Button");
 		Thread.sleep(6000);
-		String act= Driver.findElement(By.id("success-heading")).getText();
+		String act = Driver.findElement(By.id("success-heading")).getText();
 		//assertTextStringMatching(act, "Almost done. Please check your email.");
-		
+
 		Driver.navigate().to("https://www.mailinator.com/");
 		type(By.id("inboxfield"), email, "Enter email");
 		Thread.sleep(5000);
@@ -242,210 +242,193 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		Driver.switchTo().frame("publicshowmaildivcontent");
 		click(By.xpath("//a[contains(@href,'https://np-profile.idexx.com/confirm/index.html')]"), "Click on the link");
 		Thread.sleep(2000);
-		 String originalHandle = Driver.getWindowHandle();
+		String originalHandle = Driver.getWindowHandle();
 
-		    //Do something to open new tabs
+		//Do something to open new tabs
 
-		    for(String handle : Driver.getWindowHandles()) {
-		        if (!handle.equals(originalHandle)) {
-		            Driver.switchTo().window(handle);
-		            type(ContactsPage.username, email, "Enter Username");
-		    	    type(ContactsPage.password, password, "Enter Password");
-		    	    Thread.sleep(2000);
+		for (String handle : Driver.getWindowHandles()) {
+			if (!handle.equals(originalHandle)) {
+				Driver.switchTo().window(handle);
+				type(ContactsPage.username, email, "Enter Username");
+				type(ContactsPage.password, password, "Enter Password");
+				Thread.sleep(2000);
 
-		    	    click(ContactsPage.signIn, "Click Sign In button");
-		    	    Thread.sleep(4000);
-		    	    //Integer.parseInt(AccNumber);
-		    	    type(ContactsPage.idexxAccountNumber, AccNumber, "Enter Customer Account number");
-		    	    
-		    	   
-		    	  
-		    	    
-		    	    type(ContactsPage.postCode, postCode, "Enter PostCode");
-		    	    
+				click(ContactsPage.signIn, "Click Sign In button");
+				Thread.sleep(4000);
+				//Integer.parseInt(AccNumber);
+				type(ContactsPage.idexxAccountNumber, AccNumber, "Enter Customer Account number");
+
+
+				type(ContactsPage.postCode, postCode, "Enter PostCode");
+
 //		    	    type(By.xpath("//input[@id='postalCode']"), "76576", "enter acc number");
-		    	    click(ContactsPage.submitBtn, "Click on continue button");
-		    		
-		    		
-		    		    Thread.sleep(4000);
-		    	    selectByValue(ContactsPage.jobTitleDropdown, jobTitle, "Select Job Title");
-		    	    Thread.sleep(4000);
-		    	  Driver.findElement(By.xpath("//h1[@id='affiliate-result-heading']")).click();
-		    	  Thread.sleep(4000);
-		    	    //click(ContactsPage.finishBtn, "Clcik on finish Button");
-		    	   
-		    	   
-		    	    
-		    	    //String URLString;
-		          if (url.equalsIgnoreCase("https://qaorder.idexx.com")){
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-		          }else if (url.equalsIgnoreCase("https://qabestellung.idexx.at")) {
-		        	  click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-					
-				}else if(url.equalsIgnoreCase("https://qaorder.idexx.com.au")){
-					 click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}else if(url.equalsIgnoreCase("https://qaorder.idexx.be")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}else if(url.equalsIgnoreCase("https://qaorder.idexx.ca")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}else if(url.equalsIgnoreCase("https://qabestellung.idexx.ch")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}else if(url.equalsIgnoreCase("https://qaobjednavky.idexx.cz")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-		    	    Thread.sleep(4000);
-		    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-		    	    Thread.sleep(6000);
-				}else if(url.equalsIgnoreCase("https://qabestellung.idexx.de")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}else if(url.equalsIgnoreCase("https://qaorder.idexx.dk")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qapedido.idexx.es")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.fi")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qacommande.idexx.fr")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.co.uk")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaordini.idexx.it")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.nl")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.no")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.co.nz")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.se")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaobjednavky.idexx.sk")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.com")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}
-				else if(url.equalsIgnoreCase("https://qaorder.idexx.co.za")){
-					click(By.xpath("//input[@name='"+lob+"']"), "select bus focus radio button");
-		        	  Driver.findElement(By.xpath("//input[@id='submit']")).submit();
-			    	    Thread.sleep(4000);
-			    	   JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
-			    	    Thread.sleep(6000);
-				}   
-		    	    
-		    	    
-		    	    
-		    	    
-		    	    JSClick(By.xpath("//a[@id='sso-sign-out-link']"), "Click on sign out");
-		    	    Driver.manage().deleteAllCookies();
-		    	    Driver.navigate().refresh();
-		            Driver.close();
-		        }
-		    }
+				click(ContactsPage.submitBtn, "Click on continue button");
 
-		    Driver.switchTo().window(originalHandle);
-		    Driver.manage().deleteAllCookies();
-    	    Driver.navigate().refresh();
-    	    Thread.sleep(4000);
-    	   // Driver.manage().deleteAllCookies();
-    	    
-    	   // Driver.navigate().refresh();
-    	   // Thread.sleep(4000);
+
+				Thread.sleep(4000);
+				selectByValue(ContactsPage.jobTitleDropdown, jobTitle, "Select Job Title");
+				Thread.sleep(4000);
+				Driver.findElement(By.xpath("//h1[@id='affiliate-result-heading']")).click();
+				Thread.sleep(4000);
+				//click(ContactsPage.finishBtn, "Clcik on finish Button");
+
+
+				//String URLString;
+				if (url.equalsIgnoreCase("https://qaorder.idexx.com")) {
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qabestellung.idexx.at")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.com.au")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.be")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.ca")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qabestellung.idexx.ch")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaobjednavky.idexx.cz")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qabestellung.idexx.de")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.dk")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qapedido.idexx.es")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.fi")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qacommande.idexx.fr")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.co.uk")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaordini.idexx.it")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.nl")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.no")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.co.nz")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.se")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaobjednavky.idexx.sk")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.com")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				} else if (url.equalsIgnoreCase("https://qaorder.idexx.co.za")) {
+					click(By.xpath("//input[@name='" + lob + "']"), "select bus focus radio button");
+					Driver.findElement(By.xpath("//input[@id='submit']")).submit();
+					Thread.sleep(4000);
+					JSClick(ContactsPage.finishBtn, "Clcik on finish Button");
+					Thread.sleep(6000);
+				}
+
+
+				JSClick(By.xpath("//a[@id='sso-sign-out-link']"), "Click on sign out");
+				Driver.manage().deleteAllCookies();
+				Driver.navigate().refresh();
+				Driver.close();
+			}
+		}
+
+		Driver.switchTo().window(originalHandle);
+		Driver.manage().deleteAllCookies();
+		Driver.navigate().refresh();
+		Thread.sleep(4000);
+		// Driver.manage().deleteAllCookies();
+
+		// Driver.navigate().refresh();
+		// Thread.sleep(4000);
 		
 		
 	
 	  /*  String act1= Driver.findElement(By.id("congrats")).getText();
 	    Thread.sleep(6000);
 		assertTextStringMatching(act1, "Your profile has been updated");*/
-	    //Driver.close();
+		//Driver.close();
 	}
 
 
-	public void TestCreateOrder(String url, String email, String password,String customer, String ProdDesc, String Quantity )throws Throwable{
+	public void TestCreateOrder(String url, String email, String password, String customer, String ProdDesc, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().CreateContactPage();
 
@@ -485,7 +468,7 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 
 	}
 
-	public void TestPurchaseSavedOrder(String url, String email, String password,String customer, String ProdDesc, String ordName, String Quantity)throws Throwable{
+	public void TestPurchaseSavedOrder(String url, String email, String password, String customer, String ProdDesc, String ordName, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
@@ -534,7 +517,7 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		Thread.sleep(4000);*/
 	}
 
-	public void TestSaveOrder(String url, String email, String password,String customer, String ProdDesc, String ordName, String Quantity)throws Throwable{
+	public void TestSaveOrder(String url, String email, String password, String customer, String ProdDesc, String ordName, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
@@ -559,7 +542,7 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		click(HomePage.searchIcon, "Click on search Icon");
 		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 		click(HomePage.addToCartBtn, "Click on Add to cart button");
-		waitForElementPresent(ContactsPage.saveForLaterBtn,"Verify the Save for Later button", 10);
+		waitForElementPresent(ContactsPage.saveForLaterBtn, "Verify the Save for Later button", 10);
 		click(ContactsPage.saveForLaterBtn, "Click on Save For Later button");
 		waitForElementPresent(ContactsPage.orderNameDialogeBox, "Verify Order Name Dialogue Box ", 10);
 
@@ -573,7 +556,8 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		/*JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 		Thread.sleep(4000);*/
 	}
-	public void TestDeleteOrder(String url, String email, String password,String customer, String ProdDesc, String ordName, String Quantity)throws Throwable {
+
+	public void TestDeleteOrder(String url, String email, String password, String customer, String ProdDesc, String ordName, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
@@ -583,7 +567,8 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		Thread.sleep(4000);
 
 	}
-	public void TestCreateFavoriteOrder(String url, String email, String password,String customer,String ProdDesc, String favOdrName, String Quantity)throws Throwable {
+
+	public void TestCreateFavoriteOrder(String url, String email, String password, String customer, String ProdDesc, String favOdrName, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
@@ -607,7 +592,19 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		waitForElementPresent(ContactsPage.newFavoriteOrdersBtn, "Verify Saved Order number", 10);
 		click(ContactsPage.newFavoriteOrdersBtn, "Click on favorite Orders link");
 		waitForElementPresent(HomePage.favOrdernameField, "Verify Fav order name field ", 10);
-		type(HomePage.favOrdernameField, favOdrName, "Enter Favorite order");
+
+		//  give your own name or read it from HTML doc
+
+
+		int Num = (int) (Math.random() * 9000) + 1000;
+		// use this String wherever you want
+
+		String RandomNum = Integer.toString(Num);
+
+		String favOdrNameValue = favOdrName + RandomNum;
+		System.out.println(favOdrNameValue);
+
+		type(HomePage.favOrdernameField, favOdrNameValue, "Enter Favorite order");
 
 		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
@@ -620,13 +617,13 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		waitForElementPresent(HomePage.favOrderConfirmationMsg, "Verify Favorite order confirmation ", 10);
 		//String val=getText(By.xpath("//span[contains(text(),'"+favOdrName+"')]"),"Fav order name text");
 
-		String val=getText( HomePage.favOrderNameText(favOdrName),"Fav order name text");
-		verify(val, favOdrName, "verify favorite order text");
+		String val = getText(HomePage.favOrderNameText(favOdrNameValue), "Fav order name text");
+		verify(val, favOdrNameValue, "verify favorite order text");
 		Thread.sleep(3000);
 
 	}
 
-	public void TestCreateFavoriteOrderFromOrder(String url, String email, String password,String customer,String ProdDesc, String purchaseOdrNo, String ordName, String Quantity)throws Throwable {
+	public void TestCreateFavoriteOrderFromOrder(String url, String email, String password, String customer, String ProdDesc, String purchaseOdrNo, String ordName, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
@@ -661,7 +658,7 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
 	}
 
-	public void TestCreateOrderFromFavOrder(String url, String email, String password,String customer,String ProdDesc, String purchaseOdrNo, String ordName, String Quantity)throws Throwable {
+	public void TestCreateOrderFromFavOrder(String url, String email, String password, String customer, String ProdDesc, String purchaseOdrNo, String ordName, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
@@ -682,4 +679,359 @@ public void EnterContactInfo(Hashtable<String, String> data, String accountName,
 		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);
 		Thread.sleep(2000);
 	}
+
+	public void TestCreateScheduleOrder(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+
+		Driver.navigate().to("https://google.com");
+		Thread.sleep(3000);
+		Driver.navigate().to(url);
+		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
+		click(HomePage.signInBtn, "Click on Sign in btn");
+		Thread.sleep(3000);
+		type(ContactsPage.username, email, "Enter Username");
+		type(ContactsPage.password, password, "Enter Password");
+		Thread.sleep(2000);
+
+		click(ContactsPage.signIn, "Click Sign In button");
+		Thread.sleep(2000);
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+		waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
+		click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+        //waitForElementPresent(ContactsPage.deleteOrderBtn,"verify Delete order button",10);
+		if (Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed()){
+			click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+			Thread.sleep(2000);
+			click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+			Thread.sleep(2000);
+			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
+
+		}
+		else {
+			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
+		}
+		/*
+		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Fav order name field ", 10);
+
+
+
+
+		int Num = (int) (Math.random() * 9000) + 1000;
+		// use this String wherever you want
+
+		String RandomNum = Integer.toString(Num);
+
+		ordNameValue = ScheduleOrdName + RandomNum;
+		System.out.println(ordNameValue);
+
+
+
+
+		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
+		type(ContactsPage.scheduleOrderNameField, ordNameValue, "Enter Schedule order name");
+		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+		click(HomePage.searchIcon, "Click on search Icon");
+		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		waitForElementPresent(HomePage.scheduleOrderConfirmationText, "Verify Schedule order Confirmation ", 10);
+		waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+		String val = getText(ContactsPage.scheduleOrderNameField(ordNameValue), "Schedule order name text");
+		verify(val, ordNameValue, "verify Schedule order text");
+		Thread.sleep(3000);
+
+
+*/
+	}
+	public void testMethod(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable{
+		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Fav order name field ", 10);
+
+
+
+
+		int Num = (int) (Math.random() * 9000) + 1000;
+		// use this String wherever you want
+
+		String RandomNum = Integer.toString(Num);
+
+		ordNameValue = ScheduleOrdName + RandomNum;
+		System.out.println(ordNameValue);
+
+
+
+
+		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
+		type(ContactsPage.scheduleOrderNameField, ordNameValue, "Enter Schedule order name");
+		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+		click(HomePage.searchIcon, "Click on search Icon");
+		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		waitForElementPresent(HomePage.scheduleOrderConfirmationText, "Verify Schedule order Confirmation ", 10);
+		waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+		String val = getText(ContactsPage.scheduleOrderNameField(ordNameValue), "Schedule order name text");
+		verify(val, ordNameValue, "verify Schedule order text");
+		Thread.sleep(3000);
+
+
+
+	}
+	public void TestEditScheduleOrderQty(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+
+		waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+		//String qty=getText(HomePage.qtyField,"Qty field value");
+
+
+		String qty=Driver.findElement(HomePage.qtyField).getAttribute("value");
+
+
+
+		int qtyValue=Integer.parseInt(qty);
+
+		int value=qtyValue+1;
+		String QuantityValue = Integer.toString(value);
+		type(HomePage.qtyField, QuantityValue, "Enter Purchase Order No order");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+
+	}
+
+	public void TestDeleteScheduleOrderQty(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+		waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+		waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
+		click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
+		click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+		Thread.sleep(3000);
+	}
+	public void TestCreateSecondScheduleOrder(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		Driver.navigate().to("https://google.com");
+		Thread.sleep(3000);
+		Driver.navigate().to(url);
+		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
+		click(HomePage.signInBtn, "Click on Sign in btn");
+		Thread.sleep(3000);
+		type(ContactsPage.username, email, "Enter Username");
+		type(ContactsPage.password, password, "Enter Password");
+		Thread.sleep(2000);
+
+		click(ContactsPage.signIn, "Click Sign In button");
+		Thread.sleep(2000);
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+
+
+		Select se = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+		List<WebElement> l = se.getOptions();
+		int value=l.size();
+		System.out.println("value of dropdown is " +value);
+		waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
+		click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+		//waitForElementPresent(ContactsPage.deleteOrderBtn,"verify Delete order button",10);
+		if (Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed()){
+			click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+			click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+			Thread.sleep(2000);
+
+		}
+
+
+
+			waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
+
+
+			int Num = (int) (Math.random() * 9000) + 1000;
+			// use this String wherever you want
+
+			String RandomNum = Integer.toString(Num);
+
+			ordNameValue = ScheduleOrdName + RandomNum;
+			System.out.println(ordNameValue);
+			type(ContactsPage.scheduleOrderNameField, ordNameValue, "Enter Schedule order name");
+			type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+			waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+			click(HomePage.searchIcon, "Click on search Icon");
+			waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+			click(HomePage.addToCartBtn, "Click on Add to cart button");
+			waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+			click(HomePage.nextBtn, "Click on Next button");
+			waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+			click(HomePage.submitOrderBtn2, "Click on Submit order button");
+			waitForElementPresent(HomePage.scheduleOrderConfirmationText, "Verify Schedule order Confirmation ", 10);
+			waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+			waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+
+			mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+			click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+			String val = getText(ContactsPage.scheduleOrderNameField(ordNameValue), "Schedule order name text");
+			verify(val, ordNameValue, "verify Schedule order text");
+			Thread.sleep(3000);
+
+		Select se1 = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+		List<WebElement> l1 = se1.getOptions();
+		int value1=l1.size();
+		System.out.println("value of dropdown is " +value1);
+		assert value>value1;
+
+
+	}
+	public void TestSkipShipment(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+		String DateValueBefore=Driver.findElement(ContactsPage.skipShipmentDateText(ordNameValue)).getText();
+
+
+		int val=DateValueBefore.length();
+		System.out.println("val is +++++++++++++ " + val);
+		String DateBefore=DateValueBefore.substring(0,10);
+		System.out.println("DateBefore is " + DateBefore);
+		click(ContactsPage.skipShipmentLink(ordNameValue), "Click on Skip Shipment link");
+		waitForElementPresent(ContactsPage.skipShipmentDialog, "Verify skip shipment dialog box", 10);
+		click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+		Thread.sleep(3000);
+		String DateValueAfter=getText(ContactsPage.skipShipmentDateText(ordNameValue),"Get date after ");
+		String DateAfter=DateValueAfter.substring(0,10);
+		System.out.println("DateAfter is " + DateAfter);
+		assert DateValueBefore!=DateValueAfter;
+	}
+	public void TestAddNewMaterial(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+		type(HomePage.productSearchField2,ProdDesc, "enter new productg");
+		waitForElementPresent(HomePage.searchIcon2, "Verify Product Search field ", 10);
+		click(HomePage.searchIcon2, "Click on search Icon");
+		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
+		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);
+		Thread.sleep(2000);
+
+
+
+
+	}
+	public void TestRemoveExistingMaterial(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+		type(HomePage.productSearchField2,ProdDesc, "enter new productg");
+		waitForElementPresent(HomePage.searchIcon2, "Verify Product Search field ", 10);
+		click(HomePage.searchIcon2, "Click on search Icon");
+		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		/*waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
+		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
+		Thread.sleep(2000);
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+		click(HomePage.deleteIcon, "Click Delete Icon");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		/*waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
+		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
+		Thread.sleep(2000);
+
+
+
+
+	}
+	public void TestChangeArrivalDate(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+		waitForElementPresent(HomePage.arrivalDayDropdown, "Verify Arrival day dropdown",10);
+		Select select = new Select(Driver.findElement(HomePage.arrivalDayDropdown));
+		WebElement option = select.getFirstSelectedOption();
+		String arrivalDay=option.getText().replaceAll("\\s","");
+		System.out.println("arival day is +++++++" +arrivalDay);
+		if (arrivalDay.equalsIgnoreCase("Tuesday")){
+			select.selectByVisibleText("Wednesday");
+		}else if (arrivalDay.equalsIgnoreCase("Wednesday")){
+			select.selectByVisibleText("Thursday");
+		}
+		else if (arrivalDay.equalsIgnoreCase("Thursday")){
+			select.selectByVisibleText("Friday");
+		}
+		else if (arrivalDay.equalsIgnoreCase("Friday")){
+			select.selectByVisibleText("Monday");
+		}
+		else if (arrivalDay.equalsIgnoreCase("Monday")){
+			select.selectByVisibleText("Tuesday");
+		}
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		Thread.sleep(3000);
+	}
+
 }
