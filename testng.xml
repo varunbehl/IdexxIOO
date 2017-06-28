@@ -20,10 +20,26 @@
 			<class name="com.Idexx.scripts.Contacts">
 				<methods>
 
-					 <include name="TestCreateOrder" />
+					<!-- <include name="TestCreateOrder" />
 					<include name="TestSaveOrder" />
 					  <include name="TestPurchaseSavedOrder" />
-					<include name="TestDeleteOrder" />
+					<include name="TestDeleteOrder" />-->
+					<!--<include name="TestCreateFavoriteOrder" />-->
+					<!--<include name="TestCreateFavoriteOrderFromOrder" />
+					<include name="TestCreateOrderFromFavOrder" />-->
+					<!--<include name="TestCreateScheduleOrder" />
+					<include name="TestEditScheduleOrderQty" />
+					<include name="TestDeleteScheduleOrderQty" />
+					<include name="TestCreateSecondScheduleOrder" />-->
+
+					<include name="TestSkipShipment" />
+					<include name="TestAddNewMaterial" />
+					<include name="TestRemoveExistingMaterial" />
+					<include name="TestChangeArrivalDate" />
+
+
+
+
 
 
 
