@@ -32,13 +32,13 @@
 					<include name="TestDeleteScheduleOrderQty" />
 					<include name="TestCreateSecondScheduleOrder" />-->
 
-					<include name="TestSkipShipment" />
+					<!--<include name="TestSkipShipment" />
 					<include name="TestAddNewMaterial" />
 					<include name="TestRemoveExistingMaterial" />
-					<include name="TestChangeArrivalDate" />
+					<include name="TestChangeArrivalDate" />-->
 
 
-
+					<include name="TestDeleteScheduleOrder" />
 
 
 
