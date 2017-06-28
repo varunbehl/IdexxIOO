@@ -41,11 +41,19 @@ public class ContactsPage extends ActionEngine {
 
 	public static By reOrderOptionBtn;
 	public static By favoriteOrdersLink;
+	public static By scheduledOrdersLink;
 	public static By newFavoriteOrdersBtn;
+	public static By newScheduleOrdersBtn;
+	public static By skipShipmentDialog;
+	public static By scheduleOrderNameField;
+	public static By scheduleOrderEditLink;
+	public static By skipShipmentLink;
+	public static By skipShipmentDateText;
+	public static By deleteOrderBtn;
+	public static By goToOrderBtn;
 
 
-	
-	
+
 	
 	public static By contactTab ;
 	public static By viewDropdown;
@@ -103,21 +111,24 @@ public class ContactsPage extends ActionEngine {
 		saveForLaterBtn=By.id("zzbas1salesorder_onetimetempl");
         orderNameDialogeBox=By.className("vex-dialog-form");
 		orderNameField=By.className("vex-dialog-prompt-input");
-
+		scheduleOrderNameField=By.id("zzbas1body_scord_descr");
 		orderNameDialogeOKBtn=By.xpath("//*[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
 		myOrdersBtn=By.xpath("(//li[@class='zzjetborder']/a)[3]");
 		savedOrdersLink=By.xpath("((//li[@class='zzjetborder'])[3]/ul/li/a)[1]");
 
 
 		favoriteOrdersLink= By.xpath("(//li[@class='zzjetborder'])[2]/ul/li[2]/a");
+		scheduledOrdersLink= By.xpath("(//li[@class='zzjetborder'])[2]/ul/li[3]/a");
+
 		orderNowLink=By.xpath("(//a[@class='zzlink_red'])[1]");
 		orderNoVerify=By.xpath("//*[@class='contentrow1 zzhide479_tr']/td");
 		deleteLink=By.xpath("(//a[contains(text(),'Delete')])[1]");
 		reOrderOptionBtn= By.xpath("(//li[@class='zzjetborder']/a)[2]");
 		newFavoriteOrdersBtn= By.xpath("//button[@type='button' and contains(text(),'New Favorite Order')]");
-
-
-
+		newScheduleOrdersBtn= By.xpath("//div[@class='vbuttrow col-100']/button");
+		deleteOrderBtn= By.xpath("//button[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
+		goToOrderBtn=By.xpath("//button[@class='vex-dialog-button-secondary vex-dialog-button vex-last']");
+		skipShipmentDialog=By.xpath("//*[@class='vex-dialog-form']");
 
 	}
    
@@ -157,7 +168,30 @@ public void  Contacts_Page()
 				 accountNameDisplayed = By.xpath(".//td[text()='Account Name']/following-sibling::td/div/a");
 				 
 			}
+
 		
 	}
-	
+	public static By scheduleOrderNameField(String value)
+	{
+		scheduleOrderNameField=By.xpath("//span[contains(text(),'"+value+"')]");
+		return  scheduleOrderNameField;
+	}
+	public static By scheduleOrderEditLink(String value)
+	{
+		scheduleOrderEditLink=By.xpath("//span[contains(text(),'"+value+"')]/../../../following-sibling::td[2]/div/a");
+		return  scheduleOrderEditLink;
+	}
+
+	public static By skipShipmentLink(String value)
+	{
+		skipShipmentLink=By.xpath("//span[contains(text(),'"+value+"')]/../../../following-sibling::td[1]/div[3]/div/a");
+		return  skipShipmentLink;
+	}
+	public static By skipShipmentDateText(String value)
+	{
+		skipShipmentDateText=By.xpath("//span[contains(text(),'"+value+"')]/../../../following-sibling::td[1]/div[3]");
+		return  skipShipmentDateText;
+	}
+
+
 }
