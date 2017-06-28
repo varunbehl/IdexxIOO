@@ -16,23 +16,36 @@ public class HomePage extends ActionEngine {
 	public static By viewOrderBtn;
 
 	public static By productSearchField;
+	public static By productSearchField2;
 	public static By favOrdernameField;
 	public static By addToFavOrderBtn;
+	public static By qtyField;
+	public static By arrivalDayDropdown;
+
+
+
 
 
 	public  static By favSaveBtn;
 	public static By searchIcon;
+	public static By searchIcon2;
 	public static By addToCartBtn;
 	public static By homeBtn;
+	public static By deleteIcon;
+
+
 
 	public static By searchResultPopup;
 	public static By nextBtn;
+	public static By deleteScheduleOrderBtn;
 	public static By submitOrderBtn;
+	public static By submitOrderBtn2;
 	public static By OrderNumberText;
 	public static By thankyouText;
 	public static By thankyouConfirmation;
 	public static By favOrderConfirmationMsg;
 	public static By favOrderNameText;
+	public static By scheduleOrderConfirmationText;
 
 
 
@@ -104,21 +117,26 @@ public class HomePage extends ActionEngine {
 		favOrdernameField=By.xpath("//input[@name='m_ba_bd_LS_H-REFNO']");
 		addToFavOrderBtn=By.id("zzbas1salesorder_savetempl");
 		favSaveBtn=By.xpath("//input[@value='Save']");
-
+		qtyField= By.xpath("(//input[@id='QUANT'])[1]");
 		productSearchField= By.id("artikel1001");
+		productSearchField2= By.id("artikel1002");
 		searchIcon= By.id("searchIcon1001");
+		searchIcon2= By.id("searchIcon1002");
 		addToCartBtn=By.xpath("(//div[@class='vbutton'])[3]");
 		homeBtn=By.xpath("//a[@class='home']");
 		searchResultPopup=By.xpath("//div[@id='searchResult']");
 		nextBtn=By.xpath("(//input[@value='Next'])[1]");
+		deleteScheduleOrderBtn=By.xpath("//input[@value='Delete Scheduled Order']");
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
+		submitOrderBtn2=By.xpath("//input[@value='Submit order']");
+
 		OrderNumberText=By.xpath("//div[@class='form form-stacked orderheader-form']/div/h4/span");
 		thankyouText=By.xpath("//div[@class='form-group col-resp-75']/h1");
 		thankyouConfirmation=By.xpath("//div[@class='form-group col-resp-75']/p");
 		favOrderConfirmationMsg=By.xpath("//h1[@class='zznomargin']");
-		//favOrderNameText=By.xpath("//span[contains(text(),'"+abc+"')]");
-
-
+		scheduleOrderConfirmationText=By.xpath("//h1[@class='zznomargin']");
+		deleteIcon=By.xpath("(//td[@class='center rt_primary']/a/i)[1]");
+		arrivalDayDropdown=By.xpath("//select[@name='m_ba_bd_LS_H-ZZARDAY']");
 
 			myTasksSectionHead = By.xpath("//h3[text()='My Tasks']");
 			newTaskBtn = By.xpath("//input[@title='New Task']");
@@ -178,4 +196,5 @@ public class HomePage extends ActionEngine {
 		 favOrderNameText=By.xpath("//span[contains(text(),'"+value+"')]");
 		 return  favOrderNameText;
 	 }
+
 }
