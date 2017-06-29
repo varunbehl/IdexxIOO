@@ -9,7 +9,6 @@ target
 testng.xml
 testng_chrome.xml
 testng_ie.xml
-
 test-output
 lib
 Drivers
