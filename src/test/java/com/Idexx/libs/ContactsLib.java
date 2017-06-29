@@ -778,8 +778,6 @@ public class ContactsLib extends IdexxLib {
 		System.out.println(ordNameValue);
 
 
-
-
 		//waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
 		type(ContactsPage.newScheduleOrderNameField, ordNameValue, "Enter Schedule order name");
 		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
