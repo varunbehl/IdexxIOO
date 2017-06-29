@@ -22,6 +22,13 @@ public class HomePage extends ActionEngine {
 	public static By qtyField;
 	public static By arrivalDayDropdown;
 
+	public static By viewSavedOrderTxt;
+	public static By editBtn;
+	public static By editSavedOrderTxt;
+	public static By savedOrderConfirmationTxt;
+	public static By orderNameTxt;
+	public static By closeBtn;
+
 
 
 
@@ -130,6 +137,14 @@ public class HomePage extends ActionEngine {
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
 		submitOrderBtn2=By.xpath("//input[@value='Submit order']");
 
+		viewSavedOrderTxt=By.xpath("//div[@id='docdetail']/h1");
+		editBtn=By.xpath("//input[@value='Edit']");
+		editSavedOrderTxt=By.xpath("//div/h1[@class='zznomargin']");
+		saveBtn=By.xpath("//input[@value='Save']");
+		savedOrderConfirmationTxt=By.xpath("//h1[contains(text(),'Saved Order - confirmation')]");
+		orderNameTxt=By.xpath("((//div[@class='highlightbox row zzno_border zzpadding_top']/div)[1]/p)[1]/span");
+		closeBtn=By.xpath("//input[@value='Close']");
+
 		OrderNumberText=By.xpath("//div[@class='form form-stacked orderheader-form']/div/h4/span");
 		thankyouText=By.xpath("//div[@class='form-group col-resp-75']/h1");
 		thankyouConfirmation=By.xpath("//div[@class='form-group col-resp-75']/p");
@@ -175,7 +190,7 @@ public class HomePage extends ActionEngine {
 			customizetabbtn = By.name("customize");
 			rightArrow = By.xpath(".//*[@id='duel_select_0_right']/img");
 			leftArrow = By.xpath(".//*[@id='duel_select_0_left']/img");
-			saveBtn = By.xpath(".//*[@id='bottomButtonRow']/input[1]");
+			//saveBtn = By.xpath(".//*[@id='bottomButtonRow']/input[1]");
 			firstDisplayedTab = By.xpath("//*[@id='duel_select_0']/option[1]");
 			searchCountReturned = By.xpath(".//*[@id='sidetabLink-001']/a[1]/span[2]");
 
@@ -196,5 +211,6 @@ public class HomePage extends ActionEngine {
 		 favOrderNameText=By.xpath("//span[contains(text(),'"+value+"')]");
 		 return  favOrderNameText;
 	 }
+
 
 }
