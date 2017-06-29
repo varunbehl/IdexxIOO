@@ -595,6 +595,32 @@ public class Contacts extends ContactsLib {
 			e.printStackTrace();
 		}
 	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_TestDeleteScheduleOrder() {
+		return TestUtil.getData("TestDeleteScheduleOrder", TestData, "Contacts");
+	}
+
+	/**
+	 * TC-ID : TC2.4 This Test verify whether user can create a duplicate
+	 * contact. Verify whether a validation error will be displayed saying that
+	 * the contact already exists.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestDeleteScheduleOrder")
+	public void TestDeleteScheduleOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+
+				this.reporter.initTestCaseDescription("TC2.20");
+
+				System.out.println("DATA" + data.get("URL"));
+				TestDeleteScheduleOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("ScheduleOrderName"), data.get("Qty"));
+
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
 }
 
 
