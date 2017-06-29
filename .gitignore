@@ -1,1 +1,19 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+.metadata/.plugins/org.eclipse.core.resources/
+.metadata/.plugins/org.eclipse.debug.core/
+target/generated-sources/
+target/generated-test-sources/
+results
+target
+testng.xml
+testng_chrome.xml
+testng_ie.xml
+
+test-output
+lib
+Drivers
+*.iml
+.idea
+HTMLlogs/ICATHTMLlogs.html.2017-06-27-AM
+debug.log
