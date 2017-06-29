@@ -51,6 +51,7 @@ public class ContactsPage extends ActionEngine {
 	public static By skipShipmentDateText;
 	public static By deleteOrderBtn;
 	public static By goToOrderBtn;
+	public static By newScheduleOrderNameField;
 
 
 
@@ -111,7 +112,7 @@ public class ContactsPage extends ActionEngine {
 		saveForLaterBtn=By.id("zzbas1salesorder_onetimetempl");
         orderNameDialogeBox=By.className("vex-dialog-form");
 		orderNameField=By.className("vex-dialog-prompt-input");
-		scheduleOrderNameField=By.id("zzbas1body_scord_descr");
+		newScheduleOrderNameField=By.id("zzbas1body_scord_descr");
 		orderNameDialogeOKBtn=By.xpath("//*[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
 		myOrdersBtn=By.xpath("(//li[@class='zzjetborder']/a)[3]");
 		savedOrdersLink=By.xpath("((//li[@class='zzjetborder'])[3]/ul/li/a)[1]");
