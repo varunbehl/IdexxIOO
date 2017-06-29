@@ -35,9 +35,10 @@
 					<!--<include name="TestSkipShipment" />
 					<include name="TestAddNewMaterial" />
 					<include name="TestRemoveExistingMaterial" />
-					<include name="TestChangeArrivalDate" />-->
+					<include name="TestChangeArrivalDate" />
+					<include name="TestDeleteScheduleOrder" />-->
 
-					<include name="TestDeleteScheduleOrder" />
+					<include name="TestEditSaveOrder" />
 
 
 
