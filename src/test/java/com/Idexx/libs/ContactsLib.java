@@ -704,16 +704,22 @@ public class ContactsLib extends IdexxLib {
 		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
 		waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
 		click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
-        //waitForElementPresent(ContactsPage.deleteOrderBtn,"verify Delete order button",10);
-		if (Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed()){
-			click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
-			Thread.sleep(2000);
-			click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
-			Thread.sleep(2000);
-			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
 
-		}
-		else {
+		try {
+			boolean isPopup =false;
+			isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
+			if (isPopup)
+			{
+				click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+				Thread.sleep(2000);
+				click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+				Thread.sleep(2000);
+				testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+			}
+
+
+		}catch (Exception e) {
+
 			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
 		}
 		/*
@@ -758,7 +764,7 @@ public class ContactsLib extends IdexxLib {
 */
 	}
 	public void testMethod(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable{
-		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Fav order name field ", 10);
+		waitForElementPresent(ContactsPage.newScheduleOrderNameField, "Verify Fav order name field ", 10);
 
 
 
@@ -774,8 +780,8 @@ public class ContactsLib extends IdexxLib {
 
 
 
-		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
-		type(ContactsPage.scheduleOrderNameField, ordNameValue, "Enter Schedule order name");
+		//waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
+		type(ContactsPage.newScheduleOrderNameField, ordNameValue, "Enter Schedule order name");
 		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
 		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
 		click(HomePage.searchIcon, "Click on search Icon");
@@ -1033,5 +1039,33 @@ public class ContactsLib extends IdexxLib {
 		click(HomePage.submitOrderBtn2, "Click on Submit order button");
 		Thread.sleep(3000);
 	}
+
+	public void TestDeleteScheduleOrder(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+
+		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Schedule Orders edit link");
+		waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete Schedule Order button",10);
+		click(HomePage.deleteScheduleOrderBtn, "Delete Schedule Order button");
+		waitForElementPresent(ContactsPage.skipShipmentDialog, "Verify Delete Schedule Order dialog box", 10);
+		click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+		Thread.sleep(3000);
+
+		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
+		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+		try {
+			if (Driver.findElement(ContactsPage.scheduleOrderNameField(ordNameValue)).isDisplayed()){
+				this.reporter.failureReport("Verify the presence of Deleted Schedule Order","Schedule Order " + ordNameValue + " is not deleted");
+			}
+		}
+		catch (Exception e){
+			this.reporter.SuccessReport("Verify the presence of Deleted Schedule Order","Schedule Order " + ordNameValue + " has been deleted");
+		}
+		Thread.sleep(3000);
+	}
+
 
 }
