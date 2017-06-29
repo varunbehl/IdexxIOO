@@ -38,6 +38,7 @@ public class ContactsPage extends ActionEngine {
 	public static By orderNowLink;
 	public static By orderNoVerify;
 	public static By deleteLink;
+	public static By saveOrderEditLink;
 
 	public static By reOrderOptionBtn;
 	public static By favoriteOrdersLink;
@@ -192,6 +193,11 @@ public void  Contacts_Page()
 	{
 		skipShipmentDateText=By.xpath("//span[contains(text(),'"+value+"')]/../../../following-sibling::td[1]/div[3]");
 		return  skipShipmentDateText;
+	}
+	public static By saveOrderEditLink(String value)
+	{
+		saveOrderEditLink=By.xpath("//td[contains(text(),'"+value+"')]/../td[5]/a");
+		return  saveOrderEditLink;
 	}
 
 
