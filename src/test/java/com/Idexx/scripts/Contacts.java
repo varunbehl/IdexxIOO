@@ -621,6 +621,31 @@ public class Contacts extends ContactsLib {
 			e.printStackTrace();
 		}
 	}
+	@DataProvider
+	public Object[][] getTestDataFor_TestEditSaveOrder() {
+		return TestUtil.getData("TestEditSaveOrder", TestData, "Contacts");
+	}
+
+	@Test(dataProvider = "getTestDataFor_TestEditSaveOrder")
+	public void TestEditSaveOrder(Hashtable<String, String> data) {
+		try {
+			if (data.get("RunMode").equals("Y")) {
+				this.reporter.initTestCaseDescription("TC2.6");
+				System.out.println("DATA" + data.get("URL"));
+				//TestSaveOrder(data.get("URL"),data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("Qty"));
+				TestEditSaveOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("OrderName"), data.get("Qty"));
+				/*goToContactsPage();
+				searchAndClickContactUsingGlobalSearch(data.get("contactName"));
+				linkContactWithMultipleAccounts(data);
+				searchAndClickContactUsingGlobalSearch(data.get("contactName"));*/
+				//New account is added for contact as per mentioned in the test steps
+				// Verifying multiple accounts is not scripted - because this feature is not present in the application
+				///
+			}
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+	}
 }
 
 
