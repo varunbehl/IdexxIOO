@@ -17,6 +17,7 @@ import com.Idexx.page.HomePage;
 
 public class ContactsLib extends IdexxLib {
 	String ordNameValue;
+	String saveordName;
 	public boolean viewAllContacts() throws Throwable {
 
 		boolean flag = true;
@@ -522,6 +523,12 @@ public class ContactsLib extends IdexxLib {
 		new ContactsPage().OrderPage();
 		new ContactsPage().CreateContactPage();
 
+		int Num = (int) (Math.random() * 9000) + 1000;
+		// use this String wherever you want
+
+		String RandomNum = Integer.toString(Num);
+		saveordName = ordName + RandomNum;
+		System.out.println(saveordName);
 
 		Driver.navigate().to("https://google.com");
 		Thread.sleep(3000);
@@ -546,8 +553,9 @@ public class ContactsLib extends IdexxLib {
 		click(ContactsPage.saveForLaterBtn, "Click on Save For Later button");
 		waitForElementPresent(ContactsPage.orderNameDialogeBox, "Verify Order Name Dialogue Box ", 10);
 
-		type(ContactsPage.orderNameField, ordName, "Enter Order Name");
+		type(ContactsPage.orderNameField, saveordName, "Enter Order Name");
 		click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+		Thread.sleep(2000);
 		waitForElementPresent(ContactsPage.myOrdersBtn, "Verify My orders button ", 10);
 		//click(ContactsPage.myOrdersBtn, "Click on my orders button");
 		mouseHoverByJavaScript(ContactsPage.myOrdersBtn, "Hover on My Orders button");
@@ -1063,6 +1071,41 @@ public class ContactsLib extends IdexxLib {
 			this.reporter.SuccessReport("Verify the presence of Deleted Schedule Order","Schedule Order " + ordNameValue + " has been deleted");
 		}
 		Thread.sleep(3000);
+	}
+
+	public void TestEditSaveOrder(String url, String email, String password, String customer, String ProdDesc, String ordName, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().OrderPage();
+		new ContactsPage().CreateContactPage();
+
+		TestSaveOrder(url, email, password, customer, ProdDesc, ordName, Quantity);
+
+		click(ContactsPage.saveOrderEditLink(saveordName), "Click on Schedule Orders edit link");
+		waitForElementPresent(HomePage.viewSavedOrderTxt, "Verify View Saved Order text", 10);
+		click(HomePage.editBtn, "Click on Edit button");
+		waitForElementPresent(HomePage.editSavedOrderTxt, "Verify Edit Saved Order text", 10);
+
+		waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+		//String qty=getText(HomePage.qtyField,"Qty field value");
+
+		String qty=Driver.findElement(HomePage.qtyField).getAttribute("value");
+		int qtyValue=Integer.parseInt(qty);
+		int value=qtyValue+1;
+		String QuantityValue = Integer.toString(value);
+		type(HomePage.qtyField, QuantityValue, "Save Order Quantity");
+
+		waitForElementPresent(HomePage.saveBtn, "Verify Save Button ", 10);
+		click(HomePage.saveBtn, "Click on Save button");
+		waitForElementPresent(HomePage.savedOrderConfirmationTxt, "Verify Saved Order - Confirmation text", 10);
+
+		String qty1=Driver.findElement(HomePage.qtyField).getAttribute("value");
+		//int qtyValue1=Integer.parseInt(qty1);
+		//String QuantityValue1 = Integer.toString(qtyValue1);
+
+		verify(QuantityValue,qty1,"Verify Qunatity field edited");
+
+		click(HomePage.closeBtn, "Click on Close button");
+
 	}
 
 
