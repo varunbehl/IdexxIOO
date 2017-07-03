@@ -710,67 +710,75 @@ public class ContactsLib extends IdexxLib {
 
 		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
 		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
-		waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
-		click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
 
+		//waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
 		try {
-			boolean isPopup =false;
-			isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
-			if (isPopup)
-			{
-				click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
-				Thread.sleep(2000);
+			boolean isBtn = false;
+			isBtn = Driver.findElement(By.xpath("//div[@class='row']/h4")).isDisplayed();
+			if (isBtn) {
+				click(By.xpath("//td[@class='rt_primary']/following-sibling::td[2]/div/a"), "Click on Schedule Orders edit link");
+				waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+				waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
+				click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
 				click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
-				Thread.sleep(2000);
+				Thread.sleep(3000);
+				mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+				click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+				Thread.sleep(3000);
+				click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+				try {
+					boolean isPopup =false;
+
+					isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
+					if (isPopup)
+					{
+						click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+						Thread.sleep(2000);
+						click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+						Thread.sleep(2000);
+						testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+					}
+
+
+				}catch (Exception e) {
+
+					testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
+				}
+
+
+			}
+		} catch (Exception e) {
+
+			click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+
+	try{
+
+			if (!tesVerifyPopup(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity)) {
 				testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
 			}
-
-
-		}catch (Exception e) {
-
-			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
+	}catch(Exception e1){
+	        testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);}
 		}
-		/*
-		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Fav order name field ", 10);
 
 
+}
 
+	public  Boolean tesVerifyPopup(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity)throws Throwable{
 
-		int Num = (int) (Math.random() * 9000) + 1000;
-		// use this String wherever you want
-
-		String RandomNum = Integer.toString(Num);
-
-		ordNameValue = ScheduleOrdName + RandomNum;
-		System.out.println(ordNameValue);
-
-
-
-
-		waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
-		type(ContactsPage.scheduleOrderNameField, ordNameValue, "Enter Schedule order name");
-		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
-		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
-		click(HomePage.searchIcon, "Click on search Icon");
-		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
-		click(HomePage.addToCartBtn, "Click on Add to cart button");
-		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
-		click(HomePage.nextBtn, "Click on Next button");
-		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
-		click(HomePage.submitOrderBtn2, "Click on Submit order button");
-		waitForElementPresent(HomePage.scheduleOrderConfirmationText, "Verify Schedule order Confirmation ", 10);
-		waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
-		waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
-
-		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
-		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
-		String val = getText(ContactsPage.scheduleOrderNameField(ordNameValue), "Schedule order name text");
-		verify(val, ordNameValue, "verify Schedule order text");
-		Thread.sleep(3000);
-
-
-*/
+		boolean isPopup=false;
+		isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
+		if (isPopup)
+		{
+			click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+			Thread.sleep(2000);
+			click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+			Thread.sleep(2000);
+			testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+		}
+		return isPopup;
 	}
+
+
 	public void testMethod(String url, String email, String password, String customer, String ProdDesc, String ScheduleOrdName, String Quantity) throws Throwable{
 		waitForElementPresent(ContactsPage.newScheduleOrderNameField, "Verify Fav order name field ", 10);
 
@@ -879,45 +887,27 @@ public class ContactsLib extends IdexxLib {
 		System.out.println("value of dropdown is " +value);
 		waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
 		click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
-		//waitForElementPresent(ContactsPage.deleteOrderBtn,"verify Delete order button",10);
-		if (Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed()){
-			click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
-			click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
-			Thread.sleep(2000);
 
+		try {
+			boolean isPopup =false;
+
+			isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
+			if (isPopup)
+			{
+				click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+				Thread.sleep(2000);
+				click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+				Thread.sleep(2000);
+				testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+			}
+
+
+		}catch (Exception e) {
+
+			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
 		}
 
 
-
-			waitForElementPresent(ContactsPage.scheduleOrderNameField, "Verify Schedule order name field ", 10);
-
-
-			int Num = (int) (Math.random() * 9000) + 1000;
-			// use this String wherever you want
-
-			String RandomNum = Integer.toString(Num);
-
-			ordNameValue = ScheduleOrdName + RandomNum;
-			System.out.println(ordNameValue);
-			type(ContactsPage.scheduleOrderNameField, ordNameValue, "Enter Schedule order name");
-			type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
-			waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
-			click(HomePage.searchIcon, "Click on search Icon");
-			waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
-			click(HomePage.addToCartBtn, "Click on Add to cart button");
-			waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
-			click(HomePage.nextBtn, "Click on Next button");
-			waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
-			click(HomePage.submitOrderBtn2, "Click on Submit order button");
-			waitForElementPresent(HomePage.scheduleOrderConfirmationText, "Verify Schedule order Confirmation ", 10);
-			waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
-			waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
-
-			mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
-			click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
-			String val = getText(ContactsPage.scheduleOrderNameField(ordNameValue), "Schedule order name text");
-			verify(val, ordNameValue, "verify Schedule order text");
-			Thread.sleep(3000);
 
 		Select se1 = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
 
