@@ -196,13 +196,7 @@ public class Contacts extends ContactsLib {
 			this.reporter.initTestCaseDescription("TC2.4");
 			System.out.println("DATA" + data.get("URL"));
 			TestCreateAccount(data.get("URL"), data.get("LOB"), data.get("First name"), data.get("last name"), data.get("Email"), data.get("Country"), data.get("PWD"), data.get("Customer"), data.get("ZIP"), data.get("Job"));
-				/*goToContactsPage();
-				searchAndClickContactUsingGlobalSearch(data.get("contactName"));
-				linkContactWithMultipleAccounts(data);
-				searchAndClickContactUsingGlobalSearch(data.get("contactName"));*/
-			//New account is added for contact as per mentioned in the test steps
-			// Verifying multiple accounts is not scripted - because this feature is not present in the application
-			///}
+
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
@@ -226,13 +220,7 @@ public class Contacts extends ContactsLib {
 			this.reporter.initTestCaseDescription("TC2.5");
 			System.out.println("DATA" + data.get("URL"));
 			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("Qty"));
-				/*goToContactsPage();
-				searchAndClickContactUsingGlobalSearch(data.get("contactName"));
-				linkContactWithMultipleAccounts(data);
-				searchAndClickContactUsingGlobalSearch(data.get("contactName"));*/
-			//New account is added for contact as per mentioned in the test steps
-			// Verifying multiple accounts is not scripted - because this feature is not present in the application
-			///}
+
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
@@ -630,17 +618,11 @@ public class Contacts extends ContactsLib {
 	public void TestEditSaveOrder(Hashtable<String, String> data) {
 		try {
 			if (data.get("RunMode").equals("Y")) {
-				this.reporter.initTestCaseDescription("TC2.6");
+				this.reporter.initTestCaseDescription("TC2.21");
 				System.out.println("DATA" + data.get("URL"));
-				//TestSaveOrder(data.get("URL"),data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("Qty"));
+
 				TestEditSaveOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("OrderName"), data.get("Qty"));
-				/*goToContactsPage();
-				searchAndClickContactUsingGlobalSearch(data.get("contactName"));
-				linkContactWithMultipleAccounts(data);
-				searchAndClickContactUsingGlobalSearch(data.get("contactName"));*/
-				//New account is added for contact as per mentioned in the test steps
-				// Verifying multiple accounts is not scripted - because this feature is not present in the application
-				///
+
 			}
 		} catch (Throwable e) {
 			e.printStackTrace();
