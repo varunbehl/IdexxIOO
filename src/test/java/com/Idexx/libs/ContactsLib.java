@@ -880,41 +880,120 @@ public class ContactsLib extends IdexxLib {
 		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
 
 
-		Select se = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
-
-		List<WebElement> l = se.getOptions();
-		int value=l.size();
-		System.out.println("value of dropdown is " +value);
-		waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
-		click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
-
 		try {
-			boolean isPopup =false;
-
-			isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
-			if (isPopup)
-			{
-				click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
-				Thread.sleep(2000);
+			boolean isBtn = false;
+			isBtn = Driver.findElement(By.xpath("//div[@class='row']/h4")).isDisplayed();
+			//if (isBtn)
+			if(isBtn){
+				click(By.xpath("//td[@class='rt_primary']/following-sibling::td[2]/div/a"), "Click on Schedule Orders edit link");
+				waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+				waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
+				click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
 				click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
-				Thread.sleep(2000);
-				testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+				Thread.sleep(3000);
+				mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+				click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+				Thread.sleep(3000);
+				click(By.xpath("//td[@class='rt_primary']/following-sibling::td[2]/div/a"), "Click on Schedule Orders edit link");
+				waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+				waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
+				click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
+				click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+				Thread.sleep(3000);
+				mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+				click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+				Thread.sleep(3000);
+
+				Select se = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+				List<WebElement> l = se.getOptions();
+				int value=l.size();
+				System.out.println("value of dropdown is " +value);
+				waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
+				click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+
+				try {
+					boolean isPopup =false;
+
+					isPopup = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
+					if (isPopup)
+					{
+						click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+						Thread.sleep(2000);
+						click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+						Thread.sleep(2000);
+						testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+						Select se1 = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+						List<WebElement> l1 = se1.getOptions();
+						int value1=l1.size();
+						System.out.println("value of dropdown is " +value1);
+						assert value>value1;
+					}
+
+
+				}catch (Exception e) {
+
+					testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
+					Select se1 = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+					List<WebElement> l1 = se1.getOptions();
+					int value1=l1.size();
+					System.out.println("value of dropdown is " +value1);
+					assert value>value1;
+				}
+
+
 			}
+		} catch (Exception e) {
 
 
-		}catch (Exception e) {
 
-			testMethod(url, email,password, customer,ProdDesc,ScheduleOrdName,Quantity);
+
+
+			Select se = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+			List<WebElement> l = se.getOptions();
+			int value=l.size();
+			System.out.println("value of dropdown is " +value);
+			waitForElementPresent(ContactsPage.newScheduleOrdersBtn, "Verify new Schedule Order Button", 10);
+			click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+
+			try{
+
+				if (!tesVerifyPopup(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity)) {
+					testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+				}
+			}catch(Exception e1){
+				testMethod(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
+
+
+				try {
+					boolean isBtn = false;
+					isBtn = Driver.findElement(By.xpath("//div[@class='row']/h4")).isDisplayed();
+					//if (isBtn)
+					if (isBtn) {
+						System.out.println("There is no frequency dropdown to be selected");
+
+					}
+				}catch(Exception e2) {
+
+					Select se1 = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
+
+					List<WebElement> l1 = se1.getOptions();
+					int value1 = l1.size();
+					System.out.println("value of dropdown is " + value1);
+					assert value > value1;
+
+				}
+
+
+
+
+
+			}
 		}
 
-
-
-		Select se1 = new Select(Driver.findElement(By.xpath("//select[@id='gv_zzfreq']")));
-
-		List<WebElement> l1 = se1.getOptions();
-		int value1=l1.size();
-		System.out.println("value of dropdown is " +value1);
-		assert value>value1;
 
 
 	}
@@ -974,7 +1053,8 @@ public class ContactsLib extends IdexxLib {
 		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
 
 		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
-		type(HomePage.productSearchField2,ProdDesc, "enter new productg");
+		waitForElementPresent(HomePage.productSearchField2, "Verify Product Search field2 ", 10);
+		type(HomePage.productSearchField2,ProdDesc, "enter new product");
 		waitForElementPresent(HomePage.searchIcon2, "Verify Product Search field ", 10);
 		click(HomePage.searchIcon2, "Click on search Icon");
 		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
@@ -990,7 +1070,9 @@ public class ContactsLib extends IdexxLib {
 		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
 		click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
 		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
+		waitForElementPresent(HomePage.deleteIcon, "Verify Delete Icon ", 10);
 		click(HomePage.deleteIcon, "Click Delete Icon");
+
 		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 		click(HomePage.nextBtn, "Click on Next button");
 		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
