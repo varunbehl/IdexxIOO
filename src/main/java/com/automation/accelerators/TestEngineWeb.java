@@ -151,6 +151,12 @@ public class TestEngineWeb {
 			/*TBD: Not Implemented For Running Using Jenkins*/
 			this.updateConfigurationForCloudBrowserStackJenkins();
 		}
+
+		if (environment.equalsIgnoreCase("Docker"))
+		{
+			/*TBD: Not Implemented For Running Using Jenkins*/
+			this.setWebDriverForDocker(browser);
+		}
 		reporter = CReporter.getCReporter(browser, platformName , environment, true);
 		Driver = new EventFiringWebDriver(this.WebDriver);
 		MyListener myListener = new MyListener();
@@ -209,6 +215,36 @@ public class TestEngineWeb {
 		reporter.closeDetailedReport();		
 		reporter.updateTestCaseStatus();
 	}
+
+	public void setWebDriverForDocker(String browser) throws IOException, InterruptedException {
+		switch (browser) {
+			case "firefox":
+				Thread.sleep(13000);
+				DesiredCapabilities capabilities2 = DesiredCapabilities.firefox();
+				capabilities2.setCapability(CapabilityType.BROWSER_NAME, this.browser);
+				capabilities2.setCapability(CapabilityType.VERSION, this.version);
+				this.WebDriver = new RemoteWebDriver(new URL("http://192.168.99.100:4545/wd/hub"),capabilities2);
+				Thread.sleep(5000);
+				break;
+			case "chrome":
+				Thread.sleep(2000);
+				System.out.println("iam in case Chrome");
+
+
+				DesiredCapabilities capabilities1 = DesiredCapabilities.chrome();
+				capabilities1.setCapability(CapabilityType.BROWSER_NAME, this.browser);
+				capabilities1.setCapability(CapabilityType.VERSION, this.version);
+
+				//capabilities1.setCapability("platform", "LINUX");
+
+				//capabilities1.setCapability(CapabilityType.PLATFORM, this.platform);
+				this.WebDriver = new RemoteWebDriver(new URL("http://192.168.99.100:4545/wd/hub"),capabilities1);
+				Thread.sleep(10000);
+				break;
+		}
+	}
+
+
 
 	public void setWebDriverForLocal(String browser) throws IOException, InterruptedException
 	{
