@@ -717,15 +717,44 @@ public class ContactsLib extends IdexxLib {
 			isBtn = Driver.findElement(By.xpath("//div[@class='row']/h4")).isDisplayed();
 			if (isBtn) {
 				click(By.xpath("//td[@class='rt_primary']/following-sibling::td[2]/div/a"), "Click on Schedule Orders edit link");
-				waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
-				waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
-				click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
-				click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
-				Thread.sleep(3000);
-				mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
-				click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
-				Thread.sleep(3000);
-				click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+
+
+				try {
+					boolean isPopup1 =false;
+
+					isPopup1 = Driver.findElement(ContactsPage.deleteOrderBtn).isDisplayed();
+					if (isPopup1) {
+						click(ContactsPage.deleteOrderBtn, "Click on Delete Order Button");
+						Thread.sleep(2000);
+						click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+						Thread.sleep(2000);
+						waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+						waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
+						click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
+						click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+						Thread.sleep(3000);
+						mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+						click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+						Thread.sleep(3000);
+						click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+					}
+				}catch (Exception e) {
+
+					waitForElementPresent(HomePage.qtyField, "Verify qty field ", 10);
+					waitForElementPresent(HomePage.deleteScheduleOrderBtn, "Verify Delete schedule order Button ", 10);
+					click(HomePage.deleteScheduleOrderBtn, "Click on Delete schedule order Button");
+					click(ContactsPage.orderNameDialogeOKBtn, "Click on OK button");
+					Thread.sleep(3000);
+					mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
+					click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+					Thread.sleep(3000);
+					click(ContactsPage.newScheduleOrdersBtn, "Click on new Schedule Orders Button");
+				}
+
+
+
+
+
 				try {
 					boolean isPopup =false;
 
