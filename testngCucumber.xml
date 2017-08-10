@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Viralgains Test Suite" parallel="tests" configfailurepolicy="continue">
+  <parameter name='suiteExecuted' value='Regression' />
+  <parameter name='executionType' value='Parallel' />
+  <listeners>
+    <listener class-name="com.automation.Listeners.TestNGExecutionListener"/>
+
+    <listener class-name="com.Idexx.CucumberScripts.LocalWebDriverListener" />
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    <listener class-name="com.automation.utilities.AssignTestPriorityTransformer" />
+
+  </listeners>
+
+  <test name="chromeWindowsLocal" preserve-order='false'>
+      <parameter name="browserName" value="chrome"></parameter>
+
+  <classes>
+  <class name="com.Idexx.CucumberScripts.LoginRunner">
+  </class>
+
+  </classes>
+  </test>
+  <test name="chromeWindowsLocal1" preserve-order='false'>
+      <parameter name="browserName" value="chrome"></parameter>
+
+    <classes>
+      <class name="com.Idexx.CucumberScripts.LoginRunner">
+      </class>
+
+    </classes>
+  </test>
+<!--<test name="chromeWindowsLocal1" preserve-order='false'>
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="automationName" value="selenium"></parameter>
+<parameter name="browserVersion" value="46.0"></parameter>
+<parameter name="platformName" value="windows 7"></parameter>
+<parameter name="environment" value="local"></parameter>
+<classes>
+  <class name="com.Idexx.CucumberScripts.LoginRunner">
+
+  </class>
+
+</classes>
+</test>-->
+
+
+
+</suite> <!-- Viralgains Test Suite -->
