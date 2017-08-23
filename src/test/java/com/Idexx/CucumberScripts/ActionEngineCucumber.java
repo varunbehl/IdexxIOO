@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class ActionEngineCucumber {
 
 	private final Logger LOG = Logger.getLogger(ActionEngineCucumber.class);
-	WebDriver driver = DriverManager.getDriver();
+	public WebDriver driver = DriverManager.getDriver();
 	//WebDriver driver = HooksTest.driver;
 	private final String msgClickSuccess = "Successfully Clicked On ";
 	private final String msgClickFailure = "Unable To Click On ";
@@ -124,7 +124,7 @@ public class ActionEngineCucumber {
 	}
 
 	public boolean mouseHoverByJavaScript(By locator, String locatorName)
-			throws Throwable {
+			 {
 		boolean flag = false;
 		try {
 			WebElement mo = driver.findElement(locator);
@@ -142,11 +142,9 @@ public class ActionEngineCucumber {
 			return false;
 		} finally {
 			if (!flag) {
-				reporter.failureReport("MouseOver",
-						"MouseOver action is not perform on" + locatorName);
+
 			} else if (flag) {
-				reporter.SuccessReport("MouseOver",
-						"MouserOver Action is Done on" + locatorName);
+
 			}
 		}
 	}
@@ -323,12 +321,14 @@ public class ActionEngineCucumber {
 		//boolean status = false;
 		try
 		{
-			findElement(locator);
+
 			/*((JavascriptExecutor) this.Driver).executeScript(
 					"arguments[0].scrollIntoView();", locator);*/
-			System.out.println(msgClickSuccess+locatorName);
+
 			Waittime();
+			findElement(locator);
 			driver.findElement(locator).click();
+			System.out.println(msgClickSuccess+locatorName);
 			Thread.sleep(3000);
 			//reporter.SuccessReport("Click : "+locatorName , msgClickSuccess + locatorName);
 			//status = true;
@@ -438,8 +438,9 @@ public class ActionEngineCucumber {
 		boolean status = false;
 		try
 		{
-			findElement(locator);
+
 			Waittime();
+			findElement(locator);
 			driver.findElement(locator).click();
 			driver.findElement(locator).clear();
 			Thread.sleep(sleep);
@@ -564,8 +565,7 @@ public class ActionEngineCucumber {
 	}
 
 	
-	public String getText(By locator, String locatorName)
-			throws Throwable {
+	public String getText(By locator, String locatorName)  {
 		String text = "";
 		boolean flag = false;
 		try {
@@ -574,15 +574,16 @@ public class ActionEngineCucumber {
 				text = driver.findElement(locator).getText();
 				flag = true;
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
+		}  catch (Throwable throwable) {
+			throwable.printStackTrace();
+			LOG.info(throwable.getMessage());
+
+			throw new java.lang.RuntimeException("Test Case failed as Not able to Type on  " + locatorName);
 		} finally {
 			if (flag ==false) {
-				reporter.warningReport("GetText", "Unable to get Text from"
-						+ locatorName);
+
 			} else if (flag == true) {
-				reporter.SuccessReport("GetText", ""
-						+ locatorName+ " is" +text);
+
 			}
 		}
 		return text;
@@ -718,7 +719,7 @@ public class ActionEngineCucumber {
 	
 	
 	public boolean verify(String act, String exp, String value)
-			throws Throwable {
+			 {
 		boolean flag = false;
 		 if(act.contains(exp)){
 			 flag = true;
@@ -728,33 +729,31 @@ public class ActionEngineCucumber {
 		 }
 	
 			if (flag == false) {
-				this.reporter.failureReport("Varification",
-						value+"are not verified");
+
 				return flag;
 			} else if (flag == true) {
-				this.reporter.SuccessReport("Varification",
-						value+" Verified Sucessfully");
+
 				return flag;
 			}
 		
 		return flag;
 	}
+
 	
-	
-	public boolean waitForElementPresent(By by, String locator, int secs)
-			throws Throwable {
+	public boolean waitForElementPresent(By locator, String locatorName, int secs)
+			 {
 		boolean status = false;
 
 		try {
-
+			findElement(locator);
 			WebDriverWait wait = new WebDriverWait(this.driver, 60);
-			wait.until(ExpectedConditions.elementToBeClickable(by));
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
 			/*((JavascriptExecutor) Driver).executeScript(
 					"arguments[0].scrollIntoView();", by);*/
 			
 			for (int i = 0; i < secs/2; i++)
 			{
-				List<WebElement> elements = this.driver.findElements(by);
+				List<WebElement> elements = this.driver.findElements(locator);
 				if (elements.size()>0)
 				{
 					status = true;
@@ -769,9 +768,12 @@ public class ActionEngineCucumber {
 
 
 		} 
-		catch (Exception e) {
+		catch (Throwable throwable) {
+			//return status;
+			LOG.info(throwable.getMessage());
+			throwable.printStackTrace();
+			throw new java.lang.RuntimeException("Test Case failed as Not able to Type on  " + locatorName);
 
-			return status;
 		} 
 
 		return status;

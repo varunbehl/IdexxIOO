@@ -1,5 +1,6 @@
 package com.Idexx.CucumberScripts;
 
+import com.Idexx.libs.createOrderLib;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -23,6 +24,7 @@ import java.util.Date;
  */
 public class BeforeAfterHooks {
   WebDriver driver = DriverManager.getDriver();
+    createOrderLib CO = new createOrderLib();
     static Logger log;
 
     static {
@@ -43,7 +45,7 @@ public class BeforeAfterHooks {
      * Embed a screenshot in test report if test is marked as failed
      */
     @After
-    public void embedScreenshot(Scenario scenario) throws IOException {
+    public void embedScreenshot(Scenario scenario) throws IOException, InterruptedException {
         if ( scenario.isFailed() ) {
             log.error("Scenario failed! Browser: " + DriverManager.getBrowserInfo() + " Taking screenshot...");
             scenario.write("Current Page URL is: " + DriverManager.getDriver().getCurrentUrl());
@@ -54,10 +56,11 @@ public class BeforeAfterHooks {
                 File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                 File dest = new File("target\\screenshot\\" + timestamp() + ".png");
                 FileUtils.copyFile(scr, dest);
+                Thread.sleep(3000);
             } catch (WebDriverException somePlatformsDontSupportScreenshots) {
                 log.error(somePlatformsDontSupportScreenshots.getMessage());
             }
-        }
+        }else {CO.logout();}
     }
     public String timestamp() {
         return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());

@@ -221,8 +221,11 @@ public class TestEngineWeb {
 			case "firefox":
 				Thread.sleep(13000);
 				DesiredCapabilities capabilities2 = DesiredCapabilities.firefox();
-				capabilities2.setCapability(CapabilityType.BROWSER_NAME, this.browser);
-				capabilities2.setCapability(CapabilityType.VERSION, this.version);
+				/*capabilities2.setCapability(CapabilityType.BROWSER_NAME, this.browser);
+				capabilities2.setCapability(CapabilityType.VERSION, this.version);*/
+				capabilities2.setCapability("platform", "LINUX");
+
+				capabilities2.setCapability(CapabilityType.PLATFORM, this.platform);
 				this.WebDriver = new RemoteWebDriver(new URL("http://192.168.99.100:4545/wd/hub"),capabilities2);
 				Thread.sleep(5000);
 				break;
@@ -232,12 +235,12 @@ public class TestEngineWeb {
 
 
 				DesiredCapabilities capabilities1 = DesiredCapabilities.chrome();
-				capabilities1.setCapability(CapabilityType.BROWSER_NAME, this.browser);
-				capabilities1.setCapability(CapabilityType.VERSION, this.version);
+			/*	capabilities1.setCapability(CapabilityType.BROWSER_NAME, this.browser);
+				capabilities1.setCapability(CapabilityType.VERSION, this.version);*/
 
-				//capabilities1.setCapability("platform", "LINUX");
+				capabilities1.setCapability("platform", "LINUX");
 
-				//capabilities1.setCapability(CapabilityType.PLATFORM, this.platform);
+				capabilities1.setCapability(CapabilityType.PLATFORM, this.platform);
 				this.WebDriver = new RemoteWebDriver(new URL("http://192.168.99.100:4545/wd/hub"),capabilities1);
 				Thread.sleep(10000);
 				break;

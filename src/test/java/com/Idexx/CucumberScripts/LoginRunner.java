@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         strict = true,
         monochrome = true,
-        features = "src/test/resources/features/createOrder.feature",
-
-        plugin = {"pretty", "html:target/cucumber-html-report" ,"json:target/cucumber.json","json:target/cucumber1.json"})
+        features = {"src/test/resources/features"},
+        tags = {"~@ignore"},
+        plugin = {"pretty", "html:target/cucumber-html-report" ,"json:target/cucumber.json"})
 
 
 public class LoginRunner  extends AbstractTestNGCucumberTests{

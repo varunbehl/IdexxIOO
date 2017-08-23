@@ -16,7 +16,7 @@ public class GenerateReport {
             File reportOutputDirectory = new File("target/Masterthought");
             List<String> list = new ArrayList<String>();
             list.add("target/cucumber.json");
-           list.add("target/cucumber1.json");
+          // list.add("target/cucumber1.json");
 
             String pluginUrlPath = "";
             String buildNumber = "1";

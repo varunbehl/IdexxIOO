@@ -3,7 +3,7 @@
 <suite name='Idexx Automation test suite' parallel='tests' thread-count='15'>
 
 <parameter name='suiteExecuted' value='Regression' />
-<parameter name='executionType' value='Sequential' />
+<parameter name='executionType' value='Parallel' />
 <listeners>
 	<listener class-name="org.uncommons.reportng.HTMLReporter" />
 	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -12,14 +12,114 @@
 	<test name="chromeWindowsLocal" preserve-order='false'>
 			<parameter name="browser" value="chrome"></parameter>
 			<parameter name="automationName" value="selenium"></parameter>
-			<parameter name="browserVersion" value="46.0"></parameter>
-			<parameter name="platformName" value="windows 7"></parameter>
-			<parameter name="environment" value="local"></parameter>
+		<parameter name="browserVersion" value="46.0"></parameter>
+		<parameter name="platformName" value="LINUX"></parameter>
+			<parameter name="environment" value="Docker"></parameter>
 		<!-- <parameter name="userrole" value="Finance"></parameter> -->
+		<!--<parameter name="environment" value="local"></parameter>
+		<parameter name="automationName" value="selenium"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="platformName" value="LINUX"></parameter>-->
 		 <classes>
 			<class name="com.Idexx.scripts.Contacts">
 				<methods>
 					 <include name="TestCreateOrder" />
+					<include name="TestSaveOrder" />
+
+					<include name="TestDeleteOrder" />
+					<include name="TestCreateFavoriteOrder" />
+					<include name="TestCreateFavoriteOrderFromOrder" />
+					<include name="TestCreateOrderFromFavOrder" />
+					<include name="TestCreateScheduleOrder" />
+					<include name="TestEditScheduleOrderQty" />
+					<include name="TestDeleteScheduleOrderQty" />
+					<include name="TestCreateSecondScheduleOrder" />xsscsc
+
+					<include name="TestSkipShipment" />
+					<include name="TestAddNewMaterial" />
+					<include name="TestRemoveExistingMaterial" />
+					<include name="TestPurchaseSavedOrder" />
+					<include name="TestChangeArrivalDate" />
+					<include name="TestDeleteScheduleOrder" />
+
+					<include name="TestEditSaveOrder" />
+					<!--<include name="testDocker" />-->
+
+
+
+				</methods>
+			 </class>
+
+		 </classes>
+	</test>
+
+<!--
+	<test name="dockerTest" preserve-order='false'>
+		<parameter name="browser" value="chrome"></parameter>
+        <parameter name="automationName" value="selenium"></parameter>
+        <parameter name="browserVersion" value=""></parameter>
+        <parameter name="platformName" value="Windows 7"></parameter>
+        <parameter name="environment" value="local"></parameter>
+		&lt;!&ndash; <parameter name="userrole" value="Finance"></parameter> &ndash;&gt;
+
+		<classes>
+			<class name="com.Idexx.scripts.Contacts">
+				<methods>
+					<include name="TestCreateOrder" />
+                   <include name="TestSaveOrder" />
+
+
+
+
+
+
+				</methods>
+			</class>
+
+		</classes>
+	</test>-->
+
+	<!--<test name="dockerTestFirefox" preserve-order='false'>
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="automationName" value="selenium"></parameter>
+		<parameter name="browserVersion" value=""></parameter>
+		<parameter name="platformName" value="Windows 7"></parameter>
+		<parameter name="environment" value="local"></parameter>
+		&lt;!&ndash; <parameter name="userrole" value="Finance"></parameter> &ndash;&gt;
+
+		<classes>
+			<class name="com.Idexx.scripts.Contacts">
+				<methods>
+					<include name="TestCreateOrder" />
+					<include name="TestSaveOrder" />
+
+
+
+
+
+
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+-->
+
+	<!--<test name="chromeWindowsLocal1" preserve-order='false'>
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="automationName" value="selenium"></parameter>
+		<parameter name="browserVersion" value="46.0"></parameter>
+		<parameter name="platformName" value="LINUX"></parameter>
+		<parameter name="environment" value="Docker"></parameter>
+		&lt;!&ndash; <parameter name="userrole" value="Finance"></parameter> &ndash;&gt;
+		&lt;!&ndash;<parameter name="environment" value="local"></parameter>
+		<parameter name="automationName" value="selenium"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="platformName" value="LINUX"></parameter>&ndash;&gt;
+		<classes>
+			<class name="com.Idexx.scripts.Contacts">
+				<methods>
+					<include name="TestCreateOrder" />
 					<include name="TestSaveOrder" />
 
 					<include name="TestDeleteOrder" />
@@ -39,14 +139,15 @@
 					<include name="TestDeleteScheduleOrder" />
 
 					<include name="TestEditSaveOrder" />
-
+					&lt;!&ndash;<include name="testDocker" />&ndash;&gt;
 
 
 
 				</methods>
-			 </class>
+			</class>
 
-		 </classes>
-	</test>
+		</classes>
+	</test>-->
+
 
 </suite>
