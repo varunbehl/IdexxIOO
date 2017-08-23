@@ -13,12 +13,12 @@ import cucumber.api.java.en.When;
 public class createFavOrderFromOrderSpec extends createOrderLib {
 
     @Then("Verify Home Button")
-    public void Verify_Home_Button(){
+    public void Verify_Home_Button() throws Throwable {
 
         waitForElementPresent(HomePage.homeBtn, "Verify Home Button ", 10);
     }
     @Then("Verify Order Now Button")
-    public void Verify_Order_Now_Button(){
+    public void Verify_Order_Now_Button() throws Throwable {
 
         waitForElementPresent(HomePage.orderNowBtn, "Verify Order Now Button ", 10);
     }

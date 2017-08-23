@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 public class changeArrivalDateSpec extends createOrderLib {
 
     @Then("Verify Arrival day dropdown")
-    public void Verify_Arrival_day_dropdown(){
+    public void Verify_Arrival_day_dropdown() throws Throwable {
 
         waitForElementPresent(HomePage.arrivalDayDropdown, "Verify Arrival day dropdown",10);
         Select select = new Select(driver.findElement(HomePage.arrivalDayDropdown));
