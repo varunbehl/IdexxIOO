@@ -22,11 +22,11 @@ public class skipShipmentSpec extends createOrderLib {
         click(ContactsPage.skipShipmentLink(ordNameValue), "Click on Skip Shipment link");
     }
     @Then("Verify skip shipment dialog box")
-    public void Verify_skip_shipment_dialog_box(){
+    public void Verify_skip_shipment_dialog_box() throws Throwable {
         waitForElementPresent(ContactsPage.skipShipmentDialog, "Verify skip shipment dialog box", 10);
     }
     @Then("Verify date before and date after")
-    public void Verify_date_before_and_date_after(){
+    public void Verify_date_before_and_date_after() throws Throwable {
         String DateValueAfter=getText(ContactsPage.skipShipmentDateText(ordNameValue),"Get date after ");
         String DateAfter=DateValueAfter.substring(0,10);
         System.out.println("DateAfter is " + DateAfter);
