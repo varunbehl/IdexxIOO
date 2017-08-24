@@ -1,7 +1,7 @@
 
 package com.Idexx.CucumberScripts;
 
-import com.automation.accelerators.getBrowser;
+
 import com.automation.report.CReporter;
 import com.automation.report.ReporterConstants;
 import org.apache.log4j.Logger;
