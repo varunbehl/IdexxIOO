@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4b8bf1c-419a-4c79-b20f-21ad8794e5cf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MainLogs/ICATLogs.log.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestData/TestData.xlsx" afterPath="$PROJECT_DIR$/TestData/TestData.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/ActionEngineCucumber.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/ActionEngineCucumber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/BeforeAfterHooks.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/BeforeAfterHooks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/libs/ContactsLib.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/libs/ContactsLib.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logs/GATF.log" afterPath="$PROJECT_DIR$/Logs/GATF.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/automation/Reports/GenerateReport.java" afterPath="$PROJECT_DIR$/src/main/java/com/automation/Reports/GenerateReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/page/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/page/HomePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTMLlogs/ICATHTMLlogs.html" afterPath="$PROJECT_DIR$/HTMLlogs/ICATHTMLlogs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainLogs/ICATLogs.log" afterPath="$PROJECT_DIR$/MainLogs/ICATLogs.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IdexxFramework.iml" afterPath="$PROJECT_DIR$/IdexxFramework.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/LoginRunner.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/LoginRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/automation/accelerators/TestEngineWeb.java" afterPath="$PROJECT_DIR$/src/main/java/com/automation/accelerators/TestEngineWeb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/createFavOrderFromOrderSpec.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/createFavOrderFromOrderSpec.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/createFavOrderSpec.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/createFavOrderSpec.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/createOrderSpec.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/createOrderSpec.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/purchaseSavedOrderSpec.java" afterPath="$PROJECT_DIR$/src/test/java/com/Idexx/CucumberScripts/purchaseSavedOrderSpec.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testngCucumber.xml" afterPath="$PROJECT_DIR$/testngCucumber.xml" />
     </list>
     <ignored path="IdexxFrameWork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,7 +114,7 @@
       <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11282051">
+            <state vertical-scroll-proportion="0.0">
               <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
               <folding />
             </state>
@@ -260,9 +275,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -869,6 +884,7 @@
       <workItem from="1497592672427" duration="7218000" />
       <workItem from="1497853098382" duration="2017000" />
       <workItem from="1503558038922" duration="82000" />
+      <workItem from="1503559310451" duration="108000" />
     </task>
     <task id="LOCAL-00001" summary="commiting extra files">
       <created>1503558097990</created>
@@ -912,7 +928,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45765000" />
+    <option name="totallyTimeSpent" value="45873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -920,12 +936,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6094571" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6083916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24808575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -942,6 +957,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50262696" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1316,7 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.037037">
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1510,7 +1525,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11282051">
+        <state vertical-scroll-proportion="0.0">
           <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding />
         </state>

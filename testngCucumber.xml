@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Viralgains Test Suite" parallel="tests" configfailurepolicy="continue">
+<suite thread-count="1" name="Viralgains Test Suite" parallel="tests" configfailurepolicy="continue">
   <parameter name='suiteExecuted' value='Regression' />
   <parameter name='executionType' value='Parallel' />
   <listeners>
@@ -22,15 +22,15 @@
 
   </classes>
   </test>
-  <test name="chromeWindowsLocal1" preserve-order='false'>
-      <parameter name="browserName" value="chrome"></parameter>
+  <!-- <test name="chromeWindowsLocal1" preserve-order='false'>
+       <parameter name="browserName" value="chrome"></parameter>
 
-    <classes>
-      <class name="com.Idexx.CucumberScripts.LoginRunner">
-      </class>
+     <classes>
+       <class name="com.Idexx.CucumberScripts.LoginRunner2">
+       </class>
 
-    </classes>
-  </test>
+     </classes>
+   </test>-->
 <!--<test name="chromeWindowsLocal1" preserve-order='false'>
 <parameter name="browser" value="firefox"></parameter>
 <parameter name="automationName" value="selenium"></parameter>

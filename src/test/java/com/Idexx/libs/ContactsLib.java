@@ -597,8 +597,8 @@ public class ContactsLib extends IdexxLib {
 
 		mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
 		click(ContactsPage.favoriteOrdersLink, "Click on favorite Orders link");
-		waitForElementPresent(ContactsPage.newFavoriteOrdersBtn, "Verify Saved Order number", 10);
-		click(ContactsPage.newFavoriteOrdersBtn, "Click on favorite Orders link");
+		waitForElementPresent(ContactsPage.newFavoriteOrdersBtn, "Verify new favorite Orders link", 10);
+		click(ContactsPage.newFavoriteOrdersBtn, "Click on new favorite Orders link");
 		waitForElementPresent(HomePage.favOrdernameField, "Verify Fav order name field ", 10);
 
 		//  give your own name or read it from HTML doc
@@ -616,12 +616,12 @@ public class ContactsLib extends IdexxLib {
 
 		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
-		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+		waitForElementPresent(HomePage.searchIcon, "Verify search Icon ", 10);
 		click(HomePage.searchIcon, "Click on search Icon");
 		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 		click(HomePage.addToCartBtn, "Click on Add to cart button");
-		waitForElementPresent(HomePage.favSaveBtn, "Verify Search result pop up ", 10);
-		click(HomePage.favSaveBtn, "Click on Add to cart button");
+		waitForElementPresent(HomePage.favSaveBtn, "Verify save favorite button ", 10);
+		click(HomePage.favSaveBtn, "Click on save favorite button");
 		waitForElementPresent(HomePage.favOrderConfirmationMsg, "Verify Favorite order confirmation ", 10);
 		//String val=getText(By.xpath("//span[contains(text(),'"+favOdrName+"')]"),"Fav order name text");
 
@@ -866,11 +866,11 @@ public class ContactsLib extends IdexxLib {
 
 		int value=qtyValue+1;
 		String QuantityValue = Integer.toString(value);
-		type(HomePage.qtyField, QuantityValue, "Enter Purchase Order No order");
+		type(HomePage.qtyField, QuantityValue, "Enter qty value");
 		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 		click(HomePage.nextBtn, "Click on Next button");
-		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
-		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify second Submit order Button ", 10);
+		click(HomePage.submitOrderBtn2, "Click on second Submit order button");
 
 	}
 
@@ -1056,7 +1056,7 @@ public class ContactsLib extends IdexxLib {
 		TestCreateScheduleOrder(url, email, password, customer, ProdDesc, ScheduleOrdName, Quantity);
 
 		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
-		type(HomePage.productSearchField2,ProdDesc, "enter new productg");
+		type(HomePage.productSearchField2,ProdDesc, "enter new product");
 		waitForElementPresent(HomePage.searchIcon2, "Verify Product Search field ", 10);
 		click(HomePage.searchIcon2, "Click on search Icon");
 		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
@@ -1084,7 +1084,7 @@ public class ContactsLib extends IdexxLib {
 		click(ContactsPage.scheduleOrderEditLink(ordNameValue), "Click on Schedule Orders edit link");
 		waitForElementPresent(HomePage.productSearchField2, "Verify Product Search field2 ", 10);
 		type(HomePage.productSearchField2,ProdDesc, "enter new product");
-		waitForElementPresent(HomePage.searchIcon2, "Verify Product Search field ", 10);
+		waitForElementPresent(HomePage.searchIcon2, "Verify  Search icon ", 10);
 		click(HomePage.searchIcon2, "Click on search Icon");
 		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 		click(HomePage.addToCartBtn, "Click on Add to cart button");

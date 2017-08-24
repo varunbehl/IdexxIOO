@@ -10,7 +10,7 @@ import cucumber.api.java.en.Then;
 public class purchaseSavedOrderSpec extends createOrderLib {
 
     @Then("Verify Order Now Link")
-    public void Verify_Order_Now_Link(){
+    public void Verify_Order_Now_Link() throws Throwable {
         waitForElementPresent(ContactsPage.orderNowLink, "Verify Order Now Link", 10);
     }
     @Then("Click on Order Now link")

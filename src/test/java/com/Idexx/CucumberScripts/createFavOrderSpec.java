@@ -13,11 +13,11 @@ public class createFavOrderSpec extends createOrderLib {
 public static String favodrname;
     public static String favOdrNameValue;
     @Then("Verify ReOrder Option button")
-    public void Verify_ReOrder_Option_button(){
+    public void Verify_ReOrder_Option_button() throws Throwable {
         waitForElementPresent(ContactsPage.reOrderOptionBtn, "Verify ReOrder Option button ", 10);
     }
     @When("Hover on ReOrder Option button")
-    public void Hover_on_ReOrder_Option_button(){
+    public void Hover_on_ReOrder_Option_button() throws Throwable {
         mouseHoverByJavaScript(ContactsPage.reOrderOptionBtn, "Hover on ReOrder Option button");
     }
     @When("Click on favorite Orders link")

@@ -48,6 +48,9 @@ public class HomePage extends ActionEngine {
 	public static By submitOrderBtn;
 	public static By submitOrderBtn2;
 	public static By OrderNumberText;
+	public static By ScheduleOrderNumberText;
+	public static By ScheduleOrderConfirmation;
+	public static By ScheduleConfirmationText;
 	public static By thankyouText;
 	public static By thankyouConfirmation;
 	public static By favOrderConfirmationMsg;
@@ -132,7 +135,8 @@ public class HomePage extends ActionEngine {
 		addToCartBtn=By.xpath("(//div[@class='vbutton'])[3]");
 		homeBtn=By.xpath("//a[@class='home']");
 		searchResultPopup=By.xpath("//div[@id='searchResult']");
-		nextBtn=By.xpath("(//input[@value='Next'])[1]");
+		nextBtn=By.xpath("//input[@value='Next']");
+//		nextBtn=By.xpath("(//input[@value='Next'])[1]");
 		deleteScheduleOrderBtn=By.xpath("//input[@value='Delete Scheduled Order']");
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
 		submitOrderBtn2=By.xpath("//input[@value='Submit order']");
@@ -146,6 +150,9 @@ public class HomePage extends ActionEngine {
 		closeBtn=By.xpath("//input[@value='Close']");
 
 		OrderNumberText=By.xpath("//div[@class='form form-stacked orderheader-form']/div/h4/span");
+		ScheduleOrderNumberText=By.xpath("(//div[@class='form-group col-resp-100']/strong)[1]");
+		ScheduleOrderConfirmation=By.xpath("//div[@id='basbody2']/h1");
+		ScheduleConfirmationText=By.xpath("//div[@id='basbody2']/p");
 		thankyouText=By.xpath("//div[@class='form-group col-resp-75']/h1");
 		thankyouConfirmation=By.xpath("//div[@class='form-group col-resp-75']/p");
 		favOrderConfirmationMsg=By.xpath("//h1[@class='zznomargin']");
