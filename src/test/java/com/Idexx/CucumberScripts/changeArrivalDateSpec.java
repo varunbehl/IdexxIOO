@@ -20,7 +20,7 @@ public class changeArrivalDateSpec extends createOrderLib {
         WebElement option = select.getFirstSelectedOption();
         String arrivalDay=option.getText().replaceAll("\\s","");
         System.out.println("arival day is +++++++" + arrivalDay);
-        
+
         if (arrivalDay.equalsIgnoreCase("Tuesday")){
             select.selectByVisibleText("Wednesday");
         }else if (arrivalDay.equalsIgnoreCase("Wednesday")){
