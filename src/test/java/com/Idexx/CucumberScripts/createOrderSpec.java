@@ -29,7 +29,7 @@ public class createOrderSpec extends createOrderLib {
     }
     @When("Enter username and password")
     public void Enter_username_and_password() throws Throwable {
-        doLogin(getTestData.get("Email"), getTestData.get("PWDaa"));
+        doLogin(getTestData.get("Email"), getTestData.get("PWD"));
     }
     @And("Click on submit button")
     public void Click_on_submit_button() throws Throwable {
