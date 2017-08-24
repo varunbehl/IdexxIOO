@@ -86,7 +86,7 @@ public class createOrderSpec extends createOrderLib {
     }
 
 
-   /* @Then("^Verify schedule Order number")
+    @Then("^Verify schedule Order number")
     public void Verify_Order_number() throws Throwable {
         waitForElementPresent(HomePage.ScheduleOrderNumberText, "Verify Schedule Order number ", 10);
     }
@@ -98,7 +98,7 @@ public class createOrderSpec extends createOrderLib {
     public void Verify_Thank_you_confirmation() throws Throwable {
         waitForElementPresent(HomePage.ScheduleOrderConfirmation, "Verify schedule order Thank you confirmation ", 10);
         Thread.sleep(2000);
-    }*/
+    }
 
 
 
