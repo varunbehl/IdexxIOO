@@ -16,6 +16,7 @@ public class createScheduleOrderSpec extends createOrderLib {
     @And("Click on Schedule Orders link")
     public void Click_on_Schedule_Orders_link() throws Throwable {
         click(ContactsPage.scheduledOrdersLink, "Click on Schedule Orders link");
+        Thread.sleep(2000);
 
     }
     @When("Click on new Schedule Orders Button")
