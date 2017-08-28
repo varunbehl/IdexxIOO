@@ -337,6 +337,7 @@ public class ActionEngineCucumber {
 		{
 			//status = false;
 			LOG.info(e.getMessage());
+			throw new java.lang.RuntimeException("Test Case failed as Not able to Click on  " + locatorName);
 			//reporter.failureReport("Click : "+locatorName, msgClickFailure + locatorName, driver);
 
 		}
