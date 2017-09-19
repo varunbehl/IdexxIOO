@@ -13,8 +13,8 @@
 			<parameter name="browser" value="chrome"></parameter>
 			<parameter name="automationName" value="selenium"></parameter>
 		<parameter name="browserVersion" value="46.0"></parameter>
-		<parameter name="platformName" value="LINUX"></parameter>
-			<parameter name="environment" value="Docker"></parameter>
+		<parameter name="platformName" value="Windows 7"></parameter>
+			<parameter name="environment" value="local"></parameter>
 		<!-- <parameter name="userrole" value="Finance"></parameter> -->
 		<!--<parameter name="environment" value="local"></parameter>
 		<parameter name="automationName" value="selenium"></parameter>
@@ -33,7 +33,7 @@
 					<include name="TestCreateScheduleOrder" />
 					<include name="TestEditScheduleOrderQty" />
 					<include name="TestDeleteScheduleOrderQty" />
-					<include name="TestCreateSecondScheduleOrder" />xsscsc
+					<include name="TestCreateSecondScheduleOrder" />
 
 					<include name="TestSkipShipment" />
 					<include name="TestAddNewMaterial" />
