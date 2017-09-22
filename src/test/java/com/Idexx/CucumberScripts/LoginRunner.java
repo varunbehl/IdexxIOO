@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 /**
  * Created by e002222 on 27-07-2017.
  */
-
+@RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
         monochrome = true,
