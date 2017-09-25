@@ -143,6 +143,7 @@ public class createOrderLib extends ActionEngineCucumber{
 
             click(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
             Thread.sleep(4000);
+            driver.close();
         } catch (Throwable e) {
             e.printStackTrace();
         }
