@@ -168,11 +168,23 @@
 		<artifactId>javassist</artifactId>
 		<version>3.12.1.GA</version>
 	</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.4</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-junit47</artifactId>
+			<version>2.18.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
 <!--
@@ -199,11 +211,18 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.19.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
+
+					<printSummary>true</printSummary>
 					<argLine>-Xmx1024m</argLine>
-					<parallel>methods</parallel>
+					<!--<parallel>methods</parallel>-->
 					<threadCount>5</threadCount>
 					<properties>
 						<!--
@@ -212,10 +231,10 @@
                            <value>false</value>
                         </property>
                         -->
-						<property>
+						<!--<property>
 							<name>listener</name>
 							<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
-						</property>
+						</property>-->
 					</properties>
 					<!--
                     <workingDirectory>target/</workingDirectory>
