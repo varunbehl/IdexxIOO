@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 import com.automation.accelerators.ActionEngine;
 
 public class HomePage extends ActionEngine {
-	
-	
+
+
 	// idexx ecommerce application elements
 	
 	public static By createAccountBtn;
@@ -39,14 +39,18 @@ public class HomePage extends ActionEngine {
 	public static By addToCartBtn;
 	public static By homeBtn;
 	public static By deleteIcon;
+	public static By addToCartLink;
 
 
 
 	public static By searchResultPopup;
 	public static By nextBtn;
+	public static By nextBtn_Fr;
 	public static By deleteScheduleOrderBtn;
 	public static By submitOrderBtn;
 	public static By submitOrderBtn2;
+	public static By submitOrderCheckbox_FR;
+	public static By submitOrderBtn_FR;
 	public static By OrderNumberText;
 	public static By ScheduleOrderNumberText;
 	public static By ScheduleOrderConfirmation;
@@ -133,13 +137,17 @@ public class HomePage extends ActionEngine {
 		searchIcon= By.id("searchIcon1001");
 		searchIcon2= By.id("searchIcon1002");
 		addToCartBtn=By.xpath("(//div[@class='vbutton'])[3]");
+		addToCartLink=By.xpath("//a[contains(@id,'zzbascatres_addtoorder')]");
 		homeBtn=By.xpath("//a[@class='home']");
 		searchResultPopup=By.xpath("//div[@id='searchResult']");
-		nextBtn=By.xpath("//input[@value='Next']");
-//		nextBtn=By.xpath("(//input[@value='Next'])[1]");
+		//nextBtn=By.xpath("//input[@value='Next']");
+		nextBtn=By.xpath("(//input[@value='Next'])[1]");
+		nextBtn_Fr=By.xpath("//input[@value='Suivant']");
 		deleteScheduleOrderBtn=By.xpath("//input[@value='Delete Scheduled Order']");
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
-		submitOrderBtn2=By.xpath("//input[@value='Submit order']");
+		submitOrderBtn2=By.xpath("(//input[@value='Submit order'])[1]");
+		submitOrderCheckbox_FR=By.id("zzacctrm");
+		submitOrderBtn_FR=By.xpath("(//input[@value='soumettre la commande'])[1]");
 
 		viewSavedOrderTxt=By.xpath("//div[@id='docdetail']/h1");
 		editBtn=By.xpath("//input[@value='Edit']");
