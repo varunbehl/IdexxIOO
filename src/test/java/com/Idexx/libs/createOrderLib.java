@@ -2,6 +2,7 @@ package com.Idexx.libs;
 
 import com.Idexx.CucumberScripts.ActionEngineCucumber;
 import com.Idexx.CucumberScripts.DriverManager;
+import com.Idexx.CucumberScripts.HooksTest;
 import com.Idexx.page.ContactsPage;
 import com.Idexx.page.HomePage;
 import com.automation.utilities.TestUtil;
@@ -17,9 +18,12 @@ import java.util.Hashtable;
  */
 public class createOrderLib extends ActionEngineCucumber{
     public static String ordNameValue;
-    public WebDriver driver = DriverManager.getDriver();
+    public WebDriver driver = HooksTest.driver;
+   // public WebDriver driver = HooksTest.driver;
+    //public WebDriver driver = DriverManager.getDriver();
     public Xls_Reader TestData = new Xls_Reader(System.getProperty("user.dir")+"/TestData/TestData.xlsx");
-    public Hashtable<String,String> getTestData=  TestUtil.getDataCucumber("TestCucumber", TestData, "Contacts");
+    public Hashtable<String,String> getTestData=  TestUtil.getDataCucumber("CreateOrder_US", TestData, "Contacts");
+    public Hashtable<String,String> getTestData1=  TestUtil.getDataCucumber("CreateOrder_Fr", TestData, "Contacts");
 
 
     public void goToBaseUrl(String url){
@@ -143,7 +147,7 @@ public class createOrderLib extends ActionEngineCucumber{
 
             click(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
             Thread.sleep(4000);
-            driver.quit();
+            //driver.close();
         } catch (Throwable e) {
             e.printStackTrace();
         }
