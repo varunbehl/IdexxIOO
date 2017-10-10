@@ -24,8 +24,8 @@ import java.util.concurrent.TimeUnit;
 public class ActionEngineCucumber {
 
 	private final Logger LOG = Logger.getLogger(ActionEngineCucumber.class);
-	public WebDriver driver = DriverManager.getDriver();
-	//WebDriver driver = HooksTest.driver;
+	//public WebDriver driver = DriverManager.getDriver();
+	public WebDriver driver = HooksTest.driver;
 	private final String msgClickSuccess = "Successfully Clicked On ";
 	private final String msgClickFailure = "Unable To Click On ";
 	private final String msgTypeSuccess = "Successfully Typed On ";
