@@ -219,7 +219,7 @@ public class Contacts extends ContactsLib {
 			//if (data.get("RunMode").equals("Y")){
 			this.reporter.initTestCaseDescription("TC2.5");
 			System.out.println("DATA" + data.get("URL"));
-			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("ProductDescription"), data.get("Qty"));
+			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 
 		} catch (Throwable e) {
 			e.printStackTrace();
