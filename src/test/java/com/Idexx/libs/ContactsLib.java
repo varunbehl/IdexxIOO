@@ -432,6 +432,7 @@ public class ContactsLib extends IdexxLib {
 	public void TestCreateOrder(String url, String email, String password, String customer, String ProdDesc, String Quantity) throws Throwable {
 		new HomePage().Home_Page();
 		new ContactsPage().CreateContactPage();
+		new ContactsPage().OrderPage();
 
 
 		Driver.navigate().to("https://google.com");
@@ -446,20 +447,41 @@ public class ContactsLib extends IdexxLib {
 
 		click(ContactsPage.signIn, "Click Sign In button");
 		Thread.sleep(2000);
-		click(HomePage.orderNowBtn, "Click Order now button");
+
+
+
+
+			if (url.equalsIgnoreCase("https://qaorder.idexx.com")) {
+				waitForElementPresent(ContactsPage.followingBtn, "Verify the next button ", 10);
+				click(ContactsPage.followingBtn, "Click on next button");
+				Thread.sleep(2000);
+				click(ContactsPage.newOrderlink, "Click on Order Now link");
+
+			} else if (url.equalsIgnoreCase("http://devordercore.idexx.com")) {
+				click(HomePage.orderNowBtn, "Click on Order Now button");
+				Thread.sleep(6000);
+
+			}
+
+
+
 		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
 		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
 		click(HomePage.searchIcon, "Click on search Icon");
 		waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
-		click(HomePage.addToCartBtn, "Click on Add to cart button");
+		click(HomePage.addToCartLink, "Click on Add to order link");
 		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 		click(HomePage.nextBtn, "Click on Next button");
-		waitForElementPresent(HomePage.submitOrderBtn, "Verify Submit order Button ", 10);
-		click(HomePage.submitOrderBtn, "Click on Submit order button");
-		waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		Thread.sleep(2000);
+		waitForElementPresent(HomePage.submitOrderCheckbox_FR, "Verify Submit order Button ", 10);
+		click(HomePage.submitOrderCheckbox_FR, "Click on Submit order button");
+		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		/*waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
 		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
-		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);
+		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
 		Thread.sleep(2000);
 		/*JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 		Thread.sleep(4000);*/
