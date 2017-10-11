@@ -145,7 +145,7 @@ public class HomePage extends ActionEngine {
 		nextBtn_Fr=By.xpath("//input[@value='Suivant']");
 		deleteScheduleOrderBtn=By.xpath("//input[@value='Delete Scheduled Order']");
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
-		submitOrderBtn2=By.xpath("(//input[@value='Submit order'])[1]");
+		submitOrderBtn2=By.xpath("(//input[@value='Submit Order'])[1]");
 		submitOrderCheckbox_FR=By.id("zzacctrm");
 		submitOrderBtn_FR=By.xpath("(//input[@value='soumettre la commande'])[1]");
 
