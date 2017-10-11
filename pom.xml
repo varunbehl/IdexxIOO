@@ -243,7 +243,7 @@
                           <suiteXmlFile>${project.build.testOutputDirectory}/${testset}</suiteXmlFile>
                        </suiteXmlFiles> -->
 					<suiteXmlFiles>
-						<suiteXmlFile>testngCucumber.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
