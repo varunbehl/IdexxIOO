@@ -9,7 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.Idexx.page.ContactsPage;
@@ -447,12 +449,73 @@ public class ContactsLib extends IdexxLib {
 
 		click(ContactsPage.signIn, "Click Sign In button");
 		Thread.sleep(2000);
+try {
+				boolean shipLocScrn = false;
+				shipLocScrn = Driver.findElement(By.id("contentarea")).isDisplayed();
+				 if (shipLocScrn) {
+					click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					 click(ContactsPage.newOrderlink, "Click on Order Now link");
+					 waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+					 type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+					 waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+					 click(HomePage.searchIcon, "Click on search Icon");
+					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+					 click(HomePage.addToCartLink, "Click on Add to order link");
+					 waitForElementPresent(ContactsPage.shipLoc_NxtBtn2, "Verify next Button ", 10);
+					 click(ContactsPage.shipLoc_NxtBtn2, "Click on Next button");
+					 Thread.sleep(2000);
+					 waitForElementPresent(HomePage.submitOrderCheckbox_FR, "Verify Submit order Button ", 10);
+					 click(HomePage.submitOrderCheckbox_FR, "Click on Submit order button");
+					 waitForElementPresent(HomePage.submitOdrBtn, "Verify Submit order Button ", 10);
+
+					 click(HomePage.submitOdrBtn, "Click on Submit order button");
+				}
+			}catch (Exception e){
+					verifyScreen2(ProdDesc);
+			}
+
+
+/*
+			List<WebElement> shipLocScrn1 = Driver.findElements(By.id("contentarea_init"));
+			List<WebElement> shipLocScrn2 = Driver.findElements(By.id("contentarea"));
+			if (shipLocScrn1.size() > 0) {
+				click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+				click(HomePage.orderNowBtn, "Click Order now button");
+			} else if (shipLocScrn2.size() > 0) {
+				click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+				click(HomePage.orderNowBtn, "Click Order now button");
+			}else {
+
+				click(HomePage.orderNowBtn, "Click Order now button");
+			}*/
+			/*try {
+				boolean shipLocScrn2 = false;
+				shipLocScrn = Driver.findElement(By.id("contentarea")).isDisplayed();
+				else if (shipLocScrn2) {
+					click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					click(HomePage.orderNowBtn, "Click Order now button");
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+			}*/
 
 
 
 
-			if (url.equalsIgnoreCase("https://qaorder.idexx.com")) {
-				waitForElementPresent(ContactsPage.followingBtn, "Verify the next button ", 10);
+	/*	try {
+			boolean isBtnNext = false;
+			isBtnNext = Driver.findElement(By.xpath("//input[@id='zzshiptosel_next']")).isDisplayed();
+			if (isBtnNext) {
+				click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+
+			}
+		}catch(Exception e){
+			click(HomePage.orderNowBtn, "Click Order now button");
+		}*/
+
+
+			/*if (url.equalsIgnoreCase("https://qaorder.idexx.com")) {
+				//waitForElementPresent(ContactsPage.followingBtn, "Verify the next button ", 10);
 				click(ContactsPage.followingBtn, "Click on next button");
 				Thread.sleep(2000);
 				click(ContactsPage.newOrderlink, "Click on Order Now link");
@@ -461,11 +524,11 @@ public class ContactsLib extends IdexxLib {
 				click(HomePage.orderNowBtn, "Click on Order Now button");
 				Thread.sleep(6000);
 
-			}
+			}*/
 
 
 
-		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+	/*	waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
 		waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
 		click(HomePage.searchIcon, "Click on search Icon");
@@ -478,7 +541,7 @@ public class ContactsLib extends IdexxLib {
 		click(HomePage.submitOrderCheckbox_FR, "Click on Submit order button");
 		waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
 
-		click(HomePage.submitOrderBtn2, "Click on Submit order button");
+		click(HomePage.submitOrderBtn2, "Click on Submit order button");*/
 		/*waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
 		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
 		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
@@ -489,6 +552,57 @@ public class ContactsLib extends IdexxLib {
 		//Driver.navigate().refresh();
 		//Driver.close();
 
+	}
+
+	public void verifyScreen2(String pro) throws Throwable {
+
+		try {
+				boolean shipLocScrn2 = false;
+				shipLocScrn2 = Driver.findElement(By.id("contentarea_init")).isDisplayed();
+				 if (shipLocScrn2) {
+					click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					click(HomePage.orderNowBtn, "Click Order now button");
+					 waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+					 type(HomePage.productSearchField, pro, "Enter Product Description");
+					 waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+					 click(HomePage.searchIcon, "Click on search Icon");
+					 WebDriverWait wait = new WebDriverWait(Driver, 35);
+					 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='loading']/img")));
+					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+
+					 click(HomePage.addToCartBtn, "Click on Add to order button");
+					 waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+					 click(HomePage.nextBtn, "Click on Next button");
+					 Thread.sleep(2000);
+
+					 waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
+
+					 click(HomePage.submitOrderBtn3, "Click on Submit order button");
+		/*waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+		waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
+		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
+					 Thread.sleep(2000);
+				}
+			}catch (Throwable e){
+			click(HomePage.orderNowBtn, "Click Order now button");
+			waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+			type(HomePage.productSearchField, pro, "Enter Product Description");
+			waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+			click(HomePage.searchIcon, "Click on search Icon");
+			WebDriverWait wait = new WebDriverWait(Driver, 35);
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='loading']/img")));
+			waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+
+			click(HomePage.addToCartBtn, "Click on Add to order button");
+			waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+			click(HomePage.nextBtn, "Click on Next button");
+			Thread.sleep(2000);
+
+			waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
+
+			click(HomePage.submitOrderBtn3, "Click on Submit order button");
+
+			}
 	}
 
 	public void TestPurchaseSavedOrder(String url, String email, String password, String customer, String ProdDesc, String ordName, String Quantity) throws Throwable {
