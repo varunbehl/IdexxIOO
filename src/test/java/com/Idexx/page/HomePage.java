@@ -49,8 +49,10 @@ public class HomePage extends ActionEngine {
 	public static By deleteScheduleOrderBtn;
 	public static By submitOrderBtn;
 	public static By submitOrderBtn2;
+	public static By submitOrderBtn3;
 	public static By submitOrderCheckbox_FR;
 	public static By submitOrderBtn_FR;
+	public static By submitOdrBtn;
 	public static By OrderNumberText;
 	public static By ScheduleOrderNumberText;
 	public static By ScheduleOrderConfirmation;
@@ -146,6 +148,8 @@ public class HomePage extends ActionEngine {
 		deleteScheduleOrderBtn=By.xpath("//input[@value='Delete Scheduled Order']");
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
 		submitOrderBtn2=By.xpath("(//input[@value='Submit Order'])[1]");
+		submitOrderBtn3=By.xpath("(//input[@id='zzpay_send'])[1]");
+		submitOdrBtn=By.id("zzbas1step1_submit");
 		submitOrderCheckbox_FR=By.id("zzacctrm");
 		submitOrderBtn_FR=By.xpath("(//input[@value='soumettre la commande'])[1]");
 
