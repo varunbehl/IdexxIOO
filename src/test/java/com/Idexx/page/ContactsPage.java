@@ -21,8 +21,10 @@ public class ContactsPage extends ActionEngine {
 	public static By submitBtn;
 	public static By followingBtn;
 	public static By newOrderlink;
-	
-	
+	public static By shipLoc_NextBtn;
+
+	public static By shipLoc_NxtBtn2;
+
 	public static By jobTitleDropdown;
 	public static By finishBtn;
 	public static By successMsg;
@@ -135,6 +137,9 @@ public class ContactsPage extends ActionEngine {
 		skipShipmentDialog=By.xpath("//*[@class='vex-dialog-form']");
 
 		followingBtn=By.xpath("//input[@id='zzshiptosel_next']");
+		shipLoc_NextBtn=By.xpath("//button[@id='zzshiptosel_next']");
+
+		shipLoc_NxtBtn2=By.xpath("//input[@id='zzbas1salesorder_next']");
 		newOrderlink=By.xpath("//a[@id='zzprtyp_new_203']");
 
 	}
