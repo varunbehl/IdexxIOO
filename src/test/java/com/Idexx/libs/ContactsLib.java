@@ -454,6 +454,7 @@ try {
 				shipLocScrn = Driver.findElement(By.id("contentarea")).isDisplayed();
 				 if (shipLocScrn) {
 					click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					 Thread.sleep(2000);
 					 click(ContactsPage.newOrderlink, "Click on Order Now link");
 					 waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 					 type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
@@ -560,7 +561,18 @@ try {
 				boolean shipLocScrn2 = false;
 				shipLocScrn2 = Driver.findElement(By.id("contentarea_init")).isDisplayed();
 				 if (shipLocScrn2) {
-					click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					 try{
+						 boolean nextBtn=false;
+						 nextBtn=Driver.findElement(By.xpath("//input[@id='zzshiptosel_next']")).isDisplayed();
+						 if(nextBtn){
+							 click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+						 }
+					 }catch(Exception e)
+					 {
+						 click(By.xpath("//button[@id='zzshiptosel_next']"), "Click on next button");
+					 }
+
+
 					click(HomePage.orderNowBtn, "Click Order now button");
 					 waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 					 type(HomePage.productSearchField, pro, "Enter Product Description");
