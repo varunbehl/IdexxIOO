@@ -170,7 +170,7 @@ public class Contacts extends ContactsLib {
 		try {
 			//Driver.quit();
 			//doLogout();
-			click(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+			JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 			Thread.sleep(4000);
 		} catch (Throwable e) {
 			e.printStackTrace();
