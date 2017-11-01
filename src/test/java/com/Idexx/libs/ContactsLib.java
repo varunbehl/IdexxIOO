@@ -473,6 +473,10 @@ try {
 				}
 			}catch (Exception e){
 					verifyScreen2(ProdDesc);
+			}finally {
+
+					JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+					Thread.sleep(4000);
 			}
 
 
