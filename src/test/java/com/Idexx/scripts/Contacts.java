@@ -165,7 +165,9 @@ public class Contacts extends ContactsLib {
 	/**
 	 * Tear down method for a method logout after every method.
 	 */
-	@AfterMethod
+
+
+	//@AfterMethod
 	public void logout() {
 		try {
 			//Driver.quit();
@@ -214,16 +216,19 @@ public class Contacts extends ContactsLib {
 	 * accounts section of contact page for particular contact.
 	 */
 	@Test(dataProvider = "getTestDataFor_TestCreateOrder")
-	public void TestCreateOrder(Hashtable<String, String> data) {
+	public void TestCreateOrder(Hashtable<String, String> data) throws Throwable {
 		try {
-			//if (data.get("RunMode").equals("Y")){
+			if (data.get("RunMode").equals("Y")){
 			this.reporter.initTestCaseDescription("TC2.5");
 			System.out.println("DATA" + data.get("URL"));
 			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
+				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+		} }catch (Throwable e) {
 
-		} catch (Throwable e) {
 			e.printStackTrace();
-		}
+		}/*finally {
+			JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+		}*/
 
 	}
 
