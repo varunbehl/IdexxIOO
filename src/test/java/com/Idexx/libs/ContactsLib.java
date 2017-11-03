@@ -462,6 +462,8 @@ try {
 					 click(HomePage.searchIcon, "Click on search Icon");
 					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 					 click(HomePage.addToCartLink, "Click on Add to order link");
+					 waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+					 type(HomePage.qtyField,Quantity, "Enter product quantity" );
 					 waitForElementPresent(ContactsPage.shipLoc_NxtBtn2, "Verify next Button ", 10);
 					 click(ContactsPage.shipLoc_NxtBtn2, "Click on Next button");
 					 Thread.sleep(2000);
@@ -472,7 +474,7 @@ try {
 					 click(HomePage.submitOdrBtn, "Click on Submit order button");
 				}
 			}catch (Exception e){
-					verifyScreen2(ProdDesc);
+					verifyScreen2(ProdDesc, Quantity);
 			}finally {
 
 					JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
@@ -559,7 +561,7 @@ try {
 
 	}
 
-	public void verifyScreen2(String pro) throws Throwable {
+	public void verifyScreen2(String pro, String qty) throws Throwable {
 
 		try {
 				boolean shipLocScrn2 = false;
@@ -587,6 +589,8 @@ try {
 					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 
 					 click(HomePage.addToCartBtn, "Click on Add to order button");
+					 waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+					 type(HomePage.qtyField,qty, "Enter product quantity" );
 					 waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 					 click(HomePage.nextBtn, "Click on Next button");
 					 Thread.sleep(2000);
@@ -625,6 +629,8 @@ try {
 			waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 
 			click(HomePage.addToCartBtn, "Click on Add to order button");
+			waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+			type(HomePage.qtyField,qty, "Enter product quantity" );
 			waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 			click(HomePage.nextBtn, "Click on Next button");
 			Thread.sleep(2000);
