@@ -144,13 +144,13 @@ public class HomePage extends ActionEngine {
 		homeBtn=By.xpath("//a[@class='home']");
 		searchResultPopup=By.xpath("//div[@id='searchResult']");
 		//nextBtn=By.xpath("//input[@value='Next']");
-		nextBtn=By.xpath("(//input[@value='Next'])[1]");
+		nextBtn=By.xpath("(//input[@type='button'])[1]");
 		nextBtn_Fr=By.xpath("//input[@value='Suivant']");
 		deleteScheduleOrderBtn=By.xpath("//input[@value='Delete Scheduled Order']");
 		submitOrderBtn=By.xpath("(//input[@id='zzpay_send'])[1]");
-		submitOrderBtn2=By.xpath("(//input[@value='Submit Order'])[1]");
-		submitOrderBtn3=By.xpath("(//input[@id='zzpay_send'])[1]");
-		submitOdrBtn=By.id("zzbas1step1_submit");
+		submitOrderBtn2=By.xpath("(//input[@type='button'])[1]");
+		submitOrderBtn3=By.xpath("(//input[@type='button'])[1]");
+		submitOdrBtn=By.xpath("(//input[@type='button'])[1]");
 		submitOrderCheckbox_FR=By.id("zzacctrm");
 		submitOrderCheckbox1=By.id("acctrm");
 		submitOrderBtn_FR=By.xpath("(//input[@value='soumettre la commande'])[1]");
