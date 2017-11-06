@@ -4,7 +4,7 @@ import java.util.Hashtable;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.xpath.operations.Bool;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -467,8 +467,8 @@ try {
 					 waitForElementPresent(ContactsPage.shipLoc_NxtBtn2, "Verify next Button ", 10);
 					 click(ContactsPage.shipLoc_NxtBtn2, "Click on Next button");
 					 Thread.sleep(2000);
-					 waitForElementPresent(HomePage.submitOrderCheckbox_FR, "Verify Submit order Button ", 10);
-					 click(HomePage.submitOrderCheckbox_FR, "Click on Submit order button");
+					 waitForElementPresent(HomePage.submitOrderCheckbox_FR, "Verify Submit order checkbox ", 10);
+					 click(HomePage.submitOrderCheckbox_FR, "Click on Submit order checkbox");
 					 waitForElementPresent(HomePage.submitOdrBtn, "Verify Submit order Button ", 10);
 
 					 click(HomePage.submitOdrBtn, "Click on Submit order button");
@@ -635,9 +635,21 @@ try {
 			click(HomePage.nextBtn, "Click on Next button");
 			Thread.sleep(2000);
 
-			waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
 
-			click(HomePage.submitOrderBtn3, "Click on Submit order button");
+			try {
+				boolean checkbox1 = false;
+				checkbox1 = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
+				if (checkbox1) {
+					click(HomePage.submitOrderCheckbox1, "Click on next button");
+					waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+					click(HomePage.submitOrderBtn4, "Click on Submit order button");
+				}
+			} catch (Exception t) {
+				waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
+
+				click(HomePage.submitOrderBtn3, "Click on Submit order button");
+				Thread.sleep(2000);
+			}
 
 			}
 	}
