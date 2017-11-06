@@ -22,7 +22,7 @@ public class ContactsPage extends ActionEngine {
 	public static By followingBtn;
 	public static By newOrderlink;
 	public static By shipLoc_NextBtn;
-
+	public static By next_FollowingBtn;
 	public static By shipLoc_NxtBtn2;
 
 	public static By jobTitleDropdown;
@@ -141,6 +141,7 @@ public class ContactsPage extends ActionEngine {
 
 		shipLoc_NxtBtn2=By.xpath("//input[@id='zzbas1salesorder_next']");
 		newOrderlink=By.xpath("//a[@id='zzprtyp_new_203']");
+		next_FollowingBtn=By.xpath("(//input[@type='button'])[1]");
 
 	}
    
