@@ -41,7 +41,7 @@ public class HomePage extends ActionEngine {
 	public static By deleteIcon;
 	public static By addToCartLink;
 
-
+	public static By submitOrderBtn4;
 
 	public static By searchResultPopup;
 	public static By nextBtn;
@@ -154,7 +154,7 @@ public class HomePage extends ActionEngine {
 		submitOrderCheckbox_FR=By.id("zzacctrm");
 		submitOrderCheckbox1=By.id("acctrm");
 		submitOrderBtn_FR=By.xpath("(//input[@value='soumettre la commande'])[1]");
-
+		submitOrderBtn4=By.xpath("(//input[@type='button'])[2]");
 		viewSavedOrderTxt=By.xpath("//div[@id='docdetail']/h1");
 		editBtn=By.xpath("//input[@value='Edit']");
 		editSavedOrderTxt=By.xpath("//div/h1[@class='zznomargin']");
