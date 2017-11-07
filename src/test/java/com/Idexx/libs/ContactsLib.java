@@ -561,7 +561,7 @@ try {
 
 	}
 
-	public void verifyScreen2(String pro, String qty) throws Throwable {
+	public void verifyScreen2(String pro, String qty) throws Throwable, Exception {
 
 		try {
 				boolean shipLocScrn2 = false;
@@ -609,6 +609,13 @@ try {
 						 click(HomePage.submitOrderBtn3, "Click on Submit order button");
 						 Thread.sleep(2000);
 					 }
+					 catch(Throwable e)
+					 {
+						 waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+
+						 click(HomePage.submitOrderBtn4, "Click on Submit order button");
+						 Thread.sleep(2000);
+					 }
 
 
 
@@ -648,6 +655,12 @@ try {
 				waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
 
 				click(HomePage.submitOrderBtn3, "Click on Submit order button");
+				Thread.sleep(2000);
+			}
+			catch (Throwable t) {
+				waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+				click(HomePage.submitOrderBtn2, "Click on Submit order button");
 				Thread.sleep(2000);
 			}
 
