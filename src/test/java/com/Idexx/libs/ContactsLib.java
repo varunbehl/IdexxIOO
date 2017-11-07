@@ -594,29 +594,36 @@ try {
 					 waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 					 click(HomePage.nextBtn, "Click on Next button");
 					 Thread.sleep(2000);
-					 try{
-						 boolean checkbox=false;
-						 checkbox=Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
-						 if(checkbox){
-							 click(HomePage.submitOrderCheckbox1, "Click on next button");
-							 waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
-							 click(HomePage.submitOrderBtn2, "Click on Submit order button");
+					 try {
+						 boolean checkbox = false;
+						 checkbox = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
+						 if (checkbox) {
+							 click(HomePage.submitOrderCheckbox1, "Click on checkbox");
+
+
+							 try {
+								 boolean submitbtnCheck = false;
+								 submitbtnCheck = Driver.findElement(HomePage.submitOrderBtn4).isDisplayed();
+								 if (submitbtnCheck) {
+
+									 waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+									 click(HomePage.submitOrderBtn4, "Click on Submit order button");
+								 }
+							 } catch (Exception t) {
+								 waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+								 click(HomePage.submitOrderBtn2, "Click on Submit order button");
+								 Thread.sleep(2000);
+							 }
+
+
+
+
+
+
 						 }
-					 }catch(Exception e)
-					 {
-						 waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
-
-						 click(HomePage.submitOrderBtn3, "Click on Submit order button");
-						 Thread.sleep(2000);
-					 }
-					 catch(Throwable e)
-					 {
-						 waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
-
-						 click(HomePage.submitOrderBtn4, "Click on Submit order button");
-						 Thread.sleep(2000);
-					 }
-
+					 }catch (Exception e){}
+				 }
 
 
 
@@ -625,7 +632,7 @@ try {
 		waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
 
 				}
-			}catch (Throwable e){
+			catch (Throwable e){
 			click(HomePage.orderNowBtn, "Click Order now button");
 			waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 			type(HomePage.productSearchField, pro, "Enter Product Description");
@@ -643,26 +650,22 @@ try {
 			Thread.sleep(2000);
 
 
-			try {
-				boolean checkbox1 = false;
-				checkbox1 = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
-				if (checkbox1) {
-					click(HomePage.submitOrderCheckbox1, "Click on next button");
-					waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
-					click(HomePage.submitOrderBtn4, "Click on Submit order button");
+
+				try {
+					boolean checkbox1 = false;
+					checkbox1 = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
+					if (checkbox1) {
+						click(HomePage.submitOrderCheckbox1, "Click on next button");
+						waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+						click(HomePage.submitOrderBtn4, "Click on Submit order button");
+					}
+				} catch (Exception t) {
+					waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+					click(HomePage.submitOrderBtn2, "Click on Submit order button");
+					Thread.sleep(2000);
 				}
-			} catch (Exception t) {
-				waitForElementPresent(HomePage.submitOrderBtn3, "Verify Submit order Button ", 10);
 
-				click(HomePage.submitOrderBtn3, "Click on Submit order button");
-				Thread.sleep(2000);
-			}
-			catch (Throwable t) {
-				waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
-
-				click(HomePage.submitOrderBtn2, "Click on Submit order button");
-				Thread.sleep(2000);
-			}
 
 			}
 	}
