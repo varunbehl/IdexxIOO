@@ -456,6 +456,17 @@ try {
 					click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
 					 Thread.sleep(2000);
 					 click(ContactsPage.newOrderlink, "Click on Order Now link");
+					 try{
+						 if(Driver.findElement(By.id("bascontitems")).isDisplayed())
+						 {
+
+							 deleteItemFromOrderList();
+						 }
+					 }catch(Exception e1)
+					 {
+						 e1.printStackTrace();
+					 }
+
 					 waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 					 type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
 					 waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
@@ -560,7 +571,26 @@ try {
 		//Driver.close();
 
 	}
+	public void deleteItemFromOrderList()
+	{
 
+		try {
+
+
+			waitForElementPresent(By.xpath("//input[@class='b_gotobas']"), "Verify View order Button ", 10);
+			click(By.xpath("//input[@class='b_gotobas']"), "Click on View order button");
+			waitForElementPresent(By.xpath("//input[@class='b-sec']"), "Verify cancel  Button ", 10);
+			click(By.xpath("//input[@class='b-sec']"), "Click on cancel button");
+			waitForElementPresent(By.xpath("//form[@class='vex-dialog-form']"), "Verify popup  appears ", 10);
+			waitForElementPresent(By.xpath("//button[@class='vex-dialog-button-primary vex-dialog-button vex-first']"), "Verify OK Button ", 10);
+			click(By.xpath("//button[@class='vex-dialog-button-primary vex-dialog-button vex-first']"), "Click on OK button");
+			click(HomePage.orderNowBtn, "Click Order now button");
+		}
+		catch (Throwable e) {
+
+			e.printStackTrace();
+		}
+	}
 	public void verifyScreen2(String pro, String qty) throws Throwable, Exception {
 
 		try {
@@ -580,6 +610,16 @@ try {
 
 
 					click(HomePage.orderNowBtn, "Click Order now button");
+					 try{
+						 if(Driver.findElement(By.id("bascontitems")).isDisplayed())
+						 {
+
+							 deleteItemFromOrderList();
+						 }
+					 }catch(Exception e1)
+					 {
+						 e1.printStackTrace();
+					 }
 					 waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 					 type(HomePage.productSearchField, pro, "Enter Product Description");
 					 waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
@@ -634,6 +674,16 @@ try {
 				}
 			catch (Throwable e){
 			click(HomePage.orderNowBtn, "Click Order now button");
+				try{
+					if(Driver.findElement(By.id("bascontitems")).isDisplayed())
+					{
+
+						deleteItemFromOrderList();
+					}
+				}catch(Exception e1)
+				{
+					e1.printStackTrace();
+				}
 			waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
 			type(HomePage.productSearchField, pro, "Enter Product Description");
 			waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
