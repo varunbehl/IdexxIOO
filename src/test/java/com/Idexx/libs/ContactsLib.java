@@ -647,17 +647,14 @@ try {
 						 checkbox = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
 						 if (checkbox) {
 							 click(HomePage.submitOrderCheckbox1, "Click on checkbox");
-							  OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
-							 System.out.println("Order Number is " + OrderNumber);
-							 reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
-
-							 try {
+							  try {
 								 boolean submitbtnCheck = false;
 								 submitbtnCheck = Driver.findElement(HomePage.submitOrderBtn4).isDisplayed();
 								 if (submitbtnCheck) {
 
 									 waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
 									 click(HomePage.submitOrderBtn4, "Click on Submit order button");
+									 Thread.sleep(2000);
 									  OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
 									 System.out.println("Order Number is " + OrderNumber);
 									 reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
