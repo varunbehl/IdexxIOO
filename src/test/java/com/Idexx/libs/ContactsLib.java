@@ -20,6 +20,7 @@ import com.Idexx.page.HomePage;
 public class ContactsLib extends IdexxLib {
 	String ordNameValue;
 	String saveordName;
+	String Qtyres;
 	public boolean viewAllContacts() throws Throwable {
 
 		boolean flag = true;
@@ -440,11 +441,12 @@ public class ContactsLib extends IdexxLib {
 		Driver.navigate().to("https://google.com");
 		Thread.sleep(3000);
 		Driver.navigate().to(url);
+		reporter.SuccessReport("URL is" , "<b>"+url+"</b>");
 		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
 		click(HomePage.signInBtn, "Click on Sign in btn");
 		Thread.sleep(3000);
-		type(ContactsPage.username, email, "Enter Username");
-		type(ContactsPage.password, password, "Enter Password");
+		type(ContactsPage.username, email, "Email id is " + "<b>"+email+"</b>");
+		type(ContactsPage.password, password, "Password  is " + "<b>"+password+"</b>");
 		Thread.sleep(2000);
 
 		click(ContactsPage.signIn, "Click Sign In button");
@@ -474,7 +476,8 @@ try {
 					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
 					 click(HomePage.addToCartLink, "Click on Add to order link");
 					 waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
-					 type(HomePage.qtyField,Quantity, "Enter product quantity" );
+					 String Qtyres= Quantity.replaceAll("\\.0*$", "");
+					 type(HomePage.qtyField,Qtyres, "Enter product quantity" );
 					 waitForElementPresent(ContactsPage.shipLoc_NxtBtn2, "Verify next Button ", 10);
 					 click(ContactsPage.shipLoc_NxtBtn2, "Click on Next button");
 					 Thread.sleep(2000);
@@ -485,7 +488,7 @@ try {
 					 click(HomePage.submitOdrBtn, "Click on Submit order button");
 				}
 			}catch (Exception e){
-					verifyScreen2(ProdDesc, Quantity);
+					verifyScreen2(ProdDesc, Qtyres);
 			}finally {
 
 					JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
@@ -630,7 +633,8 @@ try {
 
 					 click(HomePage.addToCartBtn, "Click on Add to order button");
 					 waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
-					 type(HomePage.qtyField,qty, "Enter product quantity" );
+					 String Qtyres= qty.replaceAll("\\.0*$", "");
+					 type(HomePage.qtyField,Qtyres, "Enter product quantity" );
 					 waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 					 click(HomePage.nextBtn, "Click on Next button");
 					 Thread.sleep(2000);
@@ -694,7 +698,8 @@ try {
 
 			click(HomePage.addToCartBtn, "Click on Add to order button");
 			waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
-			type(HomePage.qtyField,qty, "Enter product quantity" );
+				String Qtyres1= qty.replaceAll("\\.0*$", "");
+			type(HomePage.qtyField,Qtyres1, "Enter product quantity" );
 			waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
 			click(HomePage.nextBtn, "Click on Next button");
 			Thread.sleep(2000);
