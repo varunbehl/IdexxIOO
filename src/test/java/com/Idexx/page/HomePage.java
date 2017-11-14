@@ -163,7 +163,7 @@ public class HomePage extends ActionEngine {
 		orderNameTxt=By.xpath("((//div[@class='highlightbox row zzno_border zzpadding_top']/div)[1]/p)[1]/span");
 		closeBtn=By.xpath("//input[@value='Close']");
 
-		OrderNumberText=By.xpath("//div[@class='form form-stacked orderheader-form']/div/h4/span");
+		OrderNumberText=By.xpath("//div[@id='zzordconf']//h4/span");
 		ScheduleOrderNumberText=By.xpath("(//div[@class='form-group col-resp-100']/strong)[1]");
 		ScheduleOrderConfirmation=By.xpath("//div[@id='basbody2']/h1");
 		ScheduleConfirmationText=By.xpath("//div[@id='basbody2']/p");
