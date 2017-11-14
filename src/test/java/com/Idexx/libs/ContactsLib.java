@@ -21,6 +21,7 @@ public class ContactsLib extends IdexxLib {
 	String ordNameValue;
 	String saveordName;
 	String Qtyres;
+	String OrderNumber;
 	public boolean viewAllContacts() throws Throwable {
 
 		boolean flag = true;
@@ -486,6 +487,9 @@ try {
 					 waitForElementPresent(HomePage.submitOdrBtn, "Verify Submit order Button ", 10);
 
 					 click(HomePage.submitOdrBtn, "Click on Submit order button");
+					  OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+					 System.out.println("Order Number is " + OrderNumber);
+					 reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
 				}
 			}catch (Exception e){
 					verifyScreen2(ProdDesc, Qtyres);
@@ -643,7 +647,9 @@ try {
 						 checkbox = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
 						 if (checkbox) {
 							 click(HomePage.submitOrderCheckbox1, "Click on checkbox");
-
+							  OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+							 System.out.println("Order Number is " + OrderNumber);
+							 reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
 
 							 try {
 								 boolean submitbtnCheck = false;
@@ -652,12 +658,18 @@ try {
 
 									 waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
 									 click(HomePage.submitOrderBtn4, "Click on Submit order button");
+									  OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+									 System.out.println("Order Number is " + OrderNumber);
+									 reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
 								 }
 							 } catch (Exception t) {
 								 waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
 
 								 click(HomePage.submitOrderBtn2, "Click on Submit order button");
 								 Thread.sleep(2000);
+								 OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+								 System.out.println("Order Number is " + OrderNumber);
+								 reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
 							 }
 
 
@@ -713,12 +725,19 @@ try {
 						click(HomePage.submitOrderCheckbox1, "Click on next button");
 						waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
 						click(HomePage.submitOrderBtn4, "Click on Submit order button");
+						Thread.sleep(2000);
+						OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+						System.out.println("Order Number is " + OrderNumber);
+						reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
 					}
 				} catch (Exception t) {
 					waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
 
 					click(HomePage.submitOrderBtn2, "Click on Submit order button");
 					Thread.sleep(2000);
+					OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+					System.out.println("Order Number is " + OrderNumber);
+					reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
 				}
 
 
