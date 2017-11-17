@@ -1,8 +1,10 @@
 package com.Idexx.libs;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 
+import com.automation.utilities.Xls_Reader;
 import org.apache.commons.lang3.StringUtils;
 
 import org.openqa.selenium.By;
@@ -22,6 +24,10 @@ public class ContactsLib extends IdexxLib {
 	String saveordName;
 	String Qtyres1;
 	String OrderNumber;
+	int count = 1;
+
+	List<String> OrderNumVal  = new ArrayList<>();
+	public static Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"\\TestData\\TestData.xlsx");
 	public boolean viewAllContacts() throws Throwable {
 
 		boolean flag = true;
@@ -737,6 +743,19 @@ try {
 
 
 			}
+		//OrderNumVal.add(OrderNumber);
+		//System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
+		//for (String s : OrderNumVal) {
+			//System.out.println("s is ++++++" + s);
+
+
+			count = count + 1;
+			//int row1=1;
+			//for(int i=0;i<= ordNameValue.length();i++)
+			xls.setCellData("Products", "ProductNumber", count, OrderNumber);
+			//System.out.println("excel value " + xls.setCellData("CreateOrder", "ProductNumber", 3, s));
+			//row1++;
+		//}
 	}
 
 	public void TestPurchaseSavedOrder(String url, String email, String password, String customer, String ProdDesc, String ordName, String Quantity) throws Throwable {
