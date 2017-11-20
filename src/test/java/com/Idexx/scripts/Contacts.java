@@ -222,6 +222,9 @@ public class Contacts extends ContactsLib {
 			this.reporter.initTestCaseDescription("TC2.5");
 			System.out.println("DATA" + data.get("URL"));
 			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
+				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
+				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
+
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 		} }catch (Throwable e) {
 
