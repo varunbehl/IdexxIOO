@@ -26,7 +26,7 @@ public class ContactsLib extends IdexxLib {
 	String OrderNumber;
 	int count = 1;
 
-	List<String> OrderNumVal  = new ArrayList<>();
+	public List<String> OrderNumVal  = new ArrayList<>();
 	public static Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"\\TestData\\TestData.xlsx");
 	public boolean viewAllContacts() throws Throwable {
 
@@ -447,10 +447,24 @@ public class ContactsLib extends IdexxLib {
 
 		Driver.navigate().to("https://google.com");
 		Thread.sleep(3000);
+
+		Driver.get("chrome://settings/clearBrowserData");
+		sleep(5000);
+
+		Driver.findElement(By.cssSelector("* /deep/ #clearBrowsingDataConfirm")).click();
+
+		sleep(2000);
 		Driver.navigate().to(url);
 		reporter.SuccessReport("URL is" , "<b>"+url+"</b>");
 		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
 		click(HomePage.signInBtn, "Click on Sign in btn");
+		try{
+			if(Driver.findElements(By.xpath("//span[contains(text(),'IDEXX Online Orders')]")).size()>0)
+			{
+				Driver.findElement(By.xpath("//span[contains(text(),'IDEXX Online Orders')]")).click();
+				click(HomePage.signInBtn, "Click on Sign in btn");
+			}}catch(Exception e){e.printStackTrace();
+		}
 		Thread.sleep(3000);
 		type(ContactsPage.username, email, "Email id is " + "<b>"+email+"</b>");
 		type(ContactsPage.password, password, "Password  is " + "<b>"+password+"</b>");
@@ -743,7 +757,7 @@ try {
 
 
 			}
-		//OrderNumVal.add(OrderNumber);
+		OrderNumVal.add(OrderNumber);
 		//System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 		//for (String s : OrderNumVal) {
 			//System.out.println("s is ++++++" + s);
