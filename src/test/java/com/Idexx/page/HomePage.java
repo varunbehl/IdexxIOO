@@ -30,7 +30,15 @@ public class HomePage extends ActionEngine {
 	public static By closeBtn;
 
 
-
+	public static By menuordermanagement;
+	public static By submenupricequotes;
+	public static By requestquotebtn;
+	public static By saveorderbtn;
+	public static By pricequotenumber;
+	public static By convertoorderlink;
+	public static By currentlyactiveorderpopup;
+	public static By deleteactiveorderbtn;
+	public static By okbtn;
 
 
 	public  static By favSaveBtn;
@@ -225,6 +233,16 @@ public class HomePage extends ActionEngine {
 			showMoreLink_contactsBody = By.xpath(".//*[@id='Contact_body']//a[text()='Show More']");
 
 
+		menuordermanagement=By.xpath("//ul[@id=\"jetmenu\"]/li[5]/a");
+		submenupricequotes=By.xpath("//ul[@id=\"jetmenu\"]/li[5]/ul/li[4]/a");
+		requestquotebtn=By.xpath("//div[@class='vbuttrow']/div/input");
+		saveorderbtn=By.xpath("(//div[@class='vbuttrow zzbasbottom']/div/input)[1]");
+		pricequotenumber=By.xpath("//div[@class='col-100 col-resp-100 zzno_padding']/p/span");
+		currentlyactiveorderpopup=By.xpath("//form[@class='vex-dialog-form']");
+		deleteactiveorderbtn=By.xpath("//button[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
+		okbtn=By.xpath("//button[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
+
+
 
 	}
      public static By favOrderNameText(String value)
@@ -232,6 +250,13 @@ public class HomePage extends ActionEngine {
 		 favOrderNameText=By.xpath("//span[contains(text(),'"+value+"')]");
 		 return  favOrderNameText;
 	 }
+
+
+	public static By convertoorderlink(String value)
+	{
+		convertoorderlink=By.xpath("//td[contains(text(),'"+value+"')]/../td[6]");
+		return  convertoorderlink;
+	}
 
 
 }
