@@ -753,6 +753,7 @@ public class ActionEngine extends TestEngineWeb {
 
 		} 
 		catch (Exception e) {
+			reporter.failureReport("Locate: "+locator, "Unable to locate " + locator, Driver);
 
 			return status;
 		} 
