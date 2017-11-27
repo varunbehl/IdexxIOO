@@ -23,8 +23,10 @@ public class ContactsLib extends IdexxLib {
 	String ordNameValue;
 	String saveordName;
 	String Qtyres1;
-	String OrderNumber;
-	int count = 1;
+	public String OrderNumber;
+	public int count = 1;
+	public int count1 = 1;
+	public int count2 = 1;
 
 	public List<String> OrderNumVal  = new ArrayList<>();
 	public static Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"\\TestData\\TestData.xlsx");
@@ -496,6 +498,7 @@ try {
 					 waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
 					 click(HomePage.searchIcon, "Click on search Icon");
 					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+					 waitForElementPresent(By.xpath("//tr[@class='contentrow2']"), "Verify detailed order ", 10);
 					 click(HomePage.addToCartLink, "Click on Add to order link");
 					 waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
 					 type(HomePage.qtyField,Qtyres1, "Enter product quantity" );
@@ -598,6 +601,357 @@ try {
 		//Driver.close();
 
 	}
+
+	public void TestCreateOrder_WithDiscriptionID(String url, String email, String password, String customer, String ProdDesc, String Quantity) throws Throwable {
+		new HomePage().Home_Page();
+		new ContactsPage().CreateContactPage();
+		new ContactsPage().OrderPage();
+
+
+		Driver.navigate().to("https://google.com");
+		Thread.sleep(3000);
+
+		Driver.get("chrome://settings/clearBrowserData");
+		sleep(5000);
+
+		Driver.findElement(By.cssSelector("* /deep/ #clearBrowsingDataConfirm")).click();
+
+		sleep(2000);
+		Driver.navigate().to(url);
+		reporter.SuccessReport("URL is" , "<b>"+url+"</b>");
+		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
+		click(HomePage.signInBtn, "Click on Sign in btn");
+		try{
+			if(Driver.findElements(By.xpath("//span[contains(text(),'IDEXX Online Orders')]")).size()>0)
+			{
+				Driver.findElement(By.xpath("//span[contains(text(),'IDEXX Online Orders')]")).click();
+				click(HomePage.signInBtn, "Click on Sign in btn");
+			}}catch(Exception e){e.printStackTrace();
+		}
+		Thread.sleep(3000);
+		type(ContactsPage.username, email, "Email id is " + "<b>"+email+"</b>");
+		type(ContactsPage.password, password, "Password  is " + "<b>"+password+"</b>");
+		Thread.sleep(2000);
+
+		click(ContactsPage.signIn, "Click Sign In button");
+		Thread.sleep(2000);
+		Qtyres1= Quantity.replaceAll("\\.0*$", "");
+		try {
+			boolean shipLocScrn = false;
+			shipLocScrn = Driver.findElement(By.id("contentarea")).isDisplayed();
+			if (shipLocScrn) {
+				click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+				Thread.sleep(2000);
+				click(ContactsPage.newOrderlink, "Click on Order Now link");
+				try{
+					if(Driver.findElement(By.id("bascontitems")).isDisplayed())
+					{
+
+						deleteItemFromOrderList();
+					}
+				}catch(Exception e1)
+				{
+					e1.printStackTrace();
+				}
+
+				waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+				type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+         /*waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+         click(HomePage.searchIcon, "Click on search Icon");
+         waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+
+
+         waitForElementPresent(By.xpath("//tr[@class='contentrow2']"), "Verify detailed order ", 10);
+         click(HomePage.addToCartLink, "Click on Add to order link");*/
+				waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+				type(HomePage.qtyField,Qtyres1, "Enter product quantity" );
+				waitForElementPresent(ContactsPage.shipLoc_NxtBtn2, "Verify next Button ", 10);
+				click(ContactsPage.shipLoc_NxtBtn2, "Click on Next button");
+				Thread.sleep(2000);
+				//waitForElementPresent(By.xpath("//tr[@class='contentrow1 resp_hide']"),"Verify the order details",10);
+				waitForElementPresent(By.xpath("//div[@id='zzbaspayship']"),"Verify the product details",10);
+				waitForElementPresent(HomePage.submitOrderCheckbox_FR, "Verify Submit order checkbox ", 10);
+				click(HomePage.submitOrderCheckbox_FR, "Click on Submit order checkbox");
+				waitForElementPresent(HomePage.submitOdrBtn, "Verify Submit order Button ", 10);
+
+				click(HomePage.submitOdrBtn, "Click on Submit order button");
+				OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+				System.out.println("Order Number is " + OrderNumber);
+				reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+			}
+		}catch (Exception e){
+			verifyScreen2_withdiscriptionID(ProdDesc, Qtyres1);
+		}finally {
+
+			JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+			Thread.sleep(4000);
+		}
+
+		Thread.sleep(2000);
+
+
+	}
+
+	public void verifyScreen2_withdiscriptionID(String pro, String qty) throws Throwable, Exception {
+
+		try {
+			boolean shipLocScrn2 = false;
+			shipLocScrn2 = Driver.findElement(By.id("contentarea_init")).isDisplayed();
+			if (shipLocScrn2) {
+				try{
+					boolean nextBtn=false;
+					nextBtn=Driver.findElement(By.xpath("//input[@id='zzshiptosel_next']")).isDisplayed();
+					if(nextBtn){
+						click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					}
+				}catch(Exception e)
+				{
+					click(By.xpath("//button[@id='zzshiptosel_next']"), "Click on next button");
+				}
+
+
+				click(HomePage.orderNowBtn, "Click Order now button");
+				try{
+					if(Driver.findElement(By.id("bascontitems")).isDisplayed())
+					{
+
+						deleteItemFromOrderList();
+					}
+				}catch(Exception e1)
+				{
+					e1.printStackTrace();
+				}
+				waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+				type(HomePage.productSearchField, pro, "Enter Product Description");
+         /*waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+         click(HomePage.searchIcon, "Click on search Icon");
+         WebDriverWait wait = new WebDriverWait(Driver, 35);
+         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("/*//*[@id='loading']/img")));
+         waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+         waitForElementPresent(By.xpath("//tr[@class='contentrow2']"), "Verify detailed order ", 10);
+         click(HomePage.addToCartBtn, "Click on Add to order button");*/
+				waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+				type(HomePage.qtyField,qty, "Enter product quantity" );
+				waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+				click(HomePage.nextBtn, "Click on Next button");
+				//waitForElementPresent(By.xpath("//tr[@class='contentrow1 resp_hide']"),"Verify the orderdetails",10);
+				waitForElementPresent(By.xpath("//div[@id='zzbaspayship']"),"Verify the product details",10);
+				Thread.sleep(2000);
+				try {
+					boolean checkbox = false;
+					checkbox = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
+					if (checkbox) {
+						click(HomePage.submitOrderCheckbox1, "Click on checkbox");
+						try {
+							boolean submitbtnCheck = false;
+							submitbtnCheck = Driver.findElement(HomePage.submitOrderBtn4).isDisplayed();
+							if (submitbtnCheck) {
+
+								waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+								click(HomePage.submitOrderBtn4, "Click on Submit order button");
+								Thread.sleep(2000);
+								OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+								System.out.println("Order Number is " + OrderNumber);
+								reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+							}
+						} catch (Exception t) {
+							waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+							click(HomePage.submitOrderBtn2, "Click on Submit order button");
+							Thread.sleep(2000);
+							OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+							System.out.println("Order Number is " + OrderNumber);
+							reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+						}
+
+
+
+
+
+
+					}
+				}catch (Exception e){}
+			}
+
+
+
+   /*waitForElementPresent(HomePage.OrderNumberText, "Verify Order number ", 10);
+   waitForElementPresent(HomePage.thankyouText, "Verify Thank you text ", 10);
+   waitForElementPresent(HomePage.thankyouConfirmation, "Verify Thank you confirmation ", 10);*/
+
+		}
+		catch (Throwable e){
+			click(HomePage.orderNowBtn, "Click Order now button");
+			try{
+				if(Driver.findElement(By.id("bascontitems")).isDisplayed())
+				{
+
+					deleteItemFromOrderList();
+				}
+			}catch(Exception e1)
+			{
+				e1.printStackTrace();
+			}
+			waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+			type(HomePage.productSearchField, pro, "Enter Product Description");
+      /*waitForElementPresent(HomePage.searchIcon, "Verify Product Search field ", 10);
+      click(HomePage.searchIcon, "Click on search Icon");
+      WebDriverWait wait = new WebDriverWait(Driver, 35);
+      wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("/*//*[@id='loading']/img")));
+      waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
+      waitForElementPresent(By.xpath("//tr[@class='contentrow2']"), "Verify detailed order ", 10);
+      click(HomePage.addToCartBtn, "Click on Add to order button");*/
+			waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+			type(HomePage.qtyField,qty, "Enter product quantity" );
+			waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+			click(HomePage.nextBtn, "Click on Next button");
+			Thread.sleep(2000);
+
+			//waitForElementPresent(By.xpath("//tr[@class='contentrow1 resp_hide']"),"Verify the orderdetails",10);
+			waitForElementPresent(By.xpath("//div[@id='zzbaspayship']"),"Verify the product details",10);
+			try {
+				boolean checkbox1 = false;
+				checkbox1 = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
+				if (checkbox1) {
+					click(HomePage.submitOrderCheckbox1, "Click on next button");
+					waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+					click(HomePage.submitOrderBtn4, "Click on Submit order button");
+					Thread.sleep(2000);
+					OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+					System.out.println("Order Number is " + OrderNumber);
+					reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+				}
+			} catch (Exception t) {
+				waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+				click(HomePage.submitOrderBtn2, "Click on Submit order button");
+				Thread.sleep(2000);
+				OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+				System.out.println("Order Number is " + OrderNumber);
+				reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+			}
+
+
+		}
+		OrderNumVal.add(OrderNumber);
+		//System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
+		//for (String s : OrderNumVal) {
+		//System.out.println("s is ++++++" + s);
+
+
+		count1 = count1 + 1;
+		//int row1=1;
+		//for(int i=0;i<= ordNameValue.length();i++)
+		xls.setCellData("Products", "ProductNumber_WithDiscriptionID", count1, OrderNumber);
+		//System.out.println("excel value " + xls.setCellData("CreateOrder", "ProductNumber", 3, s));
+		//row1++;
+		//}
+	}
+	public void CreateOrderFromPriceQuotes(String url, String email, String password, String ProdDesc, String Quantity) throws Throwable {
+
+		new HomePage().Home_Page();
+		new ContactsPage().CreateContactPage();
+		new ContactsPage().OrderPage();
+
+
+		Driver.navigate().to("https://google.com");
+		Thread.sleep(3000);
+
+		Driver.get("chrome://settings/clearBrowserData");
+		sleep(5000);
+
+		Driver.findElement(By.cssSelector("* /deep/ #clearBrowsingDataConfirm")).click();
+
+		sleep(2000);
+		Driver.navigate().to(url);
+		reporter.SuccessReport("URL is" , "<b>"+url+"</b>");
+		waitForElementPresent(HomePage.signInBtn, "Verify Sign In btn ", 10);
+		click(HomePage.signInBtn, "Click on Sign in btn");
+		try{
+			if(Driver.findElements(By.xpath("//span[contains(text(),'IDEXX Online Orders')]")).size()>0)
+			{
+				Driver.findElement(By.xpath("//span[contains(text(),'IDEXX Online Orders')]")).click();
+				click(HomePage.signInBtn, "Click on Sign in btn");
+			}}catch(Exception e){e.printStackTrace();
+		}
+		Thread.sleep(3000);
+		type(ContactsPage.username, email, "Email id is " + "<b>"+email+"</b>");
+		type(ContactsPage.password, password, "Password  is " + "<b>"+password+"</b>");
+		Thread.sleep(2000);
+
+		click(ContactsPage.signIn, "Click Sign In button");
+		Thread.sleep(2000);
+		Qtyres1= Quantity.replaceAll("\\.0*$", "");
+		waitForElementPresent(HomePage.menuordermanagement,"Verify the Order Management Menu",10);
+		mouseHoverByJavaScript(HomePage.menuordermanagement, "Hover on Order Management Menu");
+		waitForElementPresent(HomePage.submenupricequotes,"Verify the Price quotes submenu",10);
+		click(HomePage.submenupricequotes,"Click on Price quotes submenu");
+		waitForElementPresent(HomePage.requestquotebtn,"Verify the Request quotes button",10);
+		click(HomePage.requestquotebtn,"Click on Request quotes button");
+
+		try{
+			if(Driver.findElement(HomePage.currentlyactiveorderpopup).isDisplayed())
+			{
+				click(HomePage.deleteactiveorderbtn,"Click on delete active order button");
+				waitForElementPresent(HomePage.okbtn,"verify the ok button",10);
+				click(HomePage.okbtn,"Click on ok button");
+
+			}}catch(Exception e){e.printStackTrace();}
+
+
+		waitForElementPresent(HomePage.productSearchField, "Verify Product Search field ", 10);
+		type(HomePage.productSearchField, ProdDesc, "Enter Product Description");
+		Qtyres1= Quantity.replaceAll("\\.0*$", "");
+		waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
+		type(HomePage.qtyField,Qtyres1, "Enter product quantity" );
+		waitForElementPresent(HomePage.saveorderbtn,"Verify the save order button",10);
+		click(HomePage.saveorderbtn,"Click on save order button");
+		waitForElementPresent(HomePage.pricequotenumber,"Verify the Price Quote order number",10);
+		String pricequotenumber=Driver.findElement(HomePage.pricequotenumber).getText();
+		System.out.print("Price Quote Number is ++++++++++++"+pricequotenumber);
+		waitForElementPresent(HomePage.menuordermanagement,"Verify the Order Management Menu",10);
+		mouseHoverByJavaScript(HomePage.menuordermanagement, "Hover on Order Management Menu");
+		waitForElementPresent(HomePage.submenupricequotes,"Verify the Price quotes submenu",10);
+		click(HomePage.submenupricequotes,"Click on Price quotes submenu");
+		waitForElementPresent(HomePage.convertoorderlink(pricequotenumber),"Verify convert to order link",10);
+		click(HomePage.convertoorderlink(pricequotenumber),"Click on convert to order link");
+		waitForElementPresent(HomePage.nextBtn, "Verify next Button ", 10);
+		click(HomePage.nextBtn, "Click on Next button");
+		Thread.sleep(2000);
+
+		//waitForElementPresent(By.xpath("//tr[@class='contentrow1 resp_hide']"),"Verify the orderdetails",10);
+		waitForElementPresent(By.xpath("//div[@id='zzbaspayship']"),"Verify the product details",10);
+		try {
+			boolean checkbox1 = false;
+			checkbox1 = Driver.findElement(HomePage.submitOrderCheckbox1).isDisplayed();
+			if (checkbox1) {
+				click(HomePage.submitOrderCheckbox1, "Click on next button");
+				waitForElementPresent(HomePage.submitOrderBtn4, "Verify Submit order Button ", 10);
+				click(HomePage.submitOrderBtn4, "Click on Submit order button");
+				Thread.sleep(2000);
+				OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+				System.out.println("Order Number is " + OrderNumber);
+				reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+			}
+		} catch (Exception t) {
+			waitForElementPresent(HomePage.submitOrderBtn2, "Verify Submit order Button ", 10);
+
+			click(HomePage.submitOrderBtn2, "Click on Submit order button");
+			Thread.sleep(2000);
+			OrderNumber=Driver.findElement(HomePage.OrderNumberText).getText();
+			System.out.println("Order Number is " + OrderNumber);
+			reporter.SuccessReport("Order Number is" , "<b>"+OrderNumber+"</b>");
+		}
+
+
+
+		OrderNumVal.add(OrderNumber);
+		count2 = count2 + 1;
+		xls.setCellData("Products", "ProductNumber_CreateOrderFromPriceQuotes", count2, OrderNumber);
+
+	}
+
+
 	public void deleteItemFromOrderList()
 	{
 
@@ -654,7 +1008,7 @@ try {
 					 WebDriverWait wait = new WebDriverWait(Driver, 35);
 					 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='loading']/img")));
 					 waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
-
+					 waitForElementPresent(By.xpath("//tr[@class='contentrow2']"), "Verify detailed order ", 10);
 					 click(HomePage.addToCartBtn, "Click on Add to order button");
 					 waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
 					 type(HomePage.qtyField,qty, "Enter product quantity" );
@@ -723,7 +1077,7 @@ try {
 			WebDriverWait wait = new WebDriverWait(Driver, 35);
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='loading']/img")));
 			waitForElementPresent(HomePage.searchResultPopup, "Verify Search result pop up ", 10);
-
+				waitForElementPresent(By.xpath("//tr[@class='contentrow2']"), "Verify detailed order ", 10);
 			click(HomePage.addToCartBtn, "Click on Add to order button");
 			waitForElementPresent(HomePage.qtyField, "Verify Qty field",10);
 			type(HomePage.qtyField,qty, "Enter product quantity" );
