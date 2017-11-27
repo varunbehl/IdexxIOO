@@ -237,6 +237,70 @@ public class Contacts extends ContactsLib {
 
 
 	@DataProvider
+	public Object[][] getTestDataFor_TestCreateOrder_WithDiscriptionID() {
+		return TestUtil.getData("TestCreateOrder_WithDiscriptionID", TestData, "CreateOrder_WithDiscriptionID");
+	}
+
+	/**
+	 * TC-ID : TC2.2 This Test verify whether user can link a contact to
+	 * multiple accounts. Verify the accounts linked are displayed in the
+	 * accounts section of contact page for particular contact.
+	 */
+	@Test(dataProvider = "getTestDataFor_TestCreateOrder_WithDiscriptionID")
+	public void TestCreateOrder_WithDiscriptionID(Hashtable<String, String> data) throws Throwable {
+		try {
+			if (data.get("RunMode").equals("Y")){
+				this.reporter.initTestCaseDescription("TC2.5");
+				System.out.println("DATA" + data.get("URL"));
+				TestCreateOrder_WithDiscriptionID(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
+				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
+				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
+
+				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+			} }catch (Throwable e) {
+
+			e.printStackTrace();
+		}/*finally {
+      JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+   }*/
+
+	}
+
+	@DataProvider
+	public Object[][] getTestDataFor_CreateOrderFromPriceQuotes() {
+		return TestUtil.getData("TestCreateOrderFromPriceQuotes", TestData, "CreateOrderFromPriceQuotes");
+	}
+
+	/**
+	 * TC-ID : TC2.2 This Test verify whether user can link a contact to
+	 * multiple accounts. Verify the accounts linked are displayed in the
+	 * accounts section of contact page for particular contact.
+	 */
+	@Test(dataProvider = "getTestDataFor_CreateOrderFromPriceQuotes")
+	public void CreateOrderFromPriceQuotes(Hashtable<String, String> data) throws Throwable {
+		try {
+			if (data.get("RunMode").equals("Y")){
+				this.reporter.initTestCaseDescription("TC2.5");
+				System.out.println("DATA" + data.get("URL"));
+				CreateOrderFromPriceQuotes(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("Product"), data.get("Qty"));
+				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
+				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
+
+				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+			} }catch (Throwable e) {
+
+			e.printStackTrace();
+		}/*finally {
+      JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
+   }*/
+
+	}
+
+
+
+
+
+	@DataProvider
 	public Object[][] getTestDataFor_TestPurchaseSavedOrder() {
 		return TestUtil.getData("TestPurchaseSavedOrder", TestData, "Contacts");
 	}
