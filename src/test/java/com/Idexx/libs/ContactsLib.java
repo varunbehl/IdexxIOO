@@ -881,6 +881,22 @@ try {
 
 		click(ContactsPage.signIn, "Click Sign In button");
 		Thread.sleep(2000);
+		try{
+			boolean shipLocScrn2 = false;
+			shipLocScrn2 = Driver.findElement(By.id("contentarea_init")).isDisplayed();
+			if (shipLocScrn2) {
+				try {
+					boolean nextBtn = false;
+					nextBtn = Driver.findElement(By.xpath("//input[@id='zzshiptosel_next']")).isDisplayed();
+					if (nextBtn) {
+						click(By.xpath("//input[@id='zzshiptosel_next']"), "Click on next button");
+					}
+				} catch (Exception e) {
+					click(By.xpath("//button[@id='zzshiptosel_next']"), "Click on next button");
+				}
+			}}catch(Exception e){
+			e.printStackTrace();
+		}
 		Qtyres1= Quantity.replaceAll("\\.0*$", "");
 		waitForElementPresent(HomePage.menuordermanagement,"Verify the Order Management Menu",10);
 		mouseHoverByJavaScript(HomePage.menuordermanagement, "Hover on Order Management Menu");
@@ -948,6 +964,8 @@ try {
 		OrderNumVal.add(OrderNumber);
 		count2 = count2 + 1;
 		xls.setCellData("Products", "ProductNumber_CreateOrderFromPriceQuotes", count2, OrderNumber);
+		Thread.sleep(2000);
+		JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 
 	}
 
