@@ -219,7 +219,7 @@ public class Contacts extends ContactsLib {
 	public void TestCreateOrder(Hashtable<String, String> data) throws Throwable {
 		try {
 			if (data.get("RunMode").equals("Y")){
-			this.reporter.initTestCaseDescription("TC2.5");
+			this.reporter.initTestCaseDescription("TC2.5- Create order with Search product");
 			System.out.println("DATA" + data.get("URL"));
 			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
@@ -250,7 +250,7 @@ public class Contacts extends ContactsLib {
 	public void TestCreateOrder_WithDiscriptionID(Hashtable<String, String> data) throws Throwable {
 		try {
 			if (data.get("RunMode").equals("Y")){
-				this.reporter.initTestCaseDescription("TC2.5");
+				this.reporter.initTestCaseDescription("TC2.6 - Create order with product ID");
 				System.out.println("DATA" + data.get("URL"));
 				TestCreateOrder_WithDiscriptionID(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
@@ -280,7 +280,7 @@ public class Contacts extends ContactsLib {
 	public void CreateOrderFromPriceQuotes(Hashtable<String, String> data) throws Throwable {
 		try {
 			if (data.get("RunMode").equals("Y")){
-				this.reporter.initTestCaseDescription("TC2.5");
+				this.reporter.initTestCaseDescription("TC2.7 - Create order from Price Quotes");
 				System.out.println("DATA" + data.get("URL"));
 				CreateOrderFromPriceQuotes(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
