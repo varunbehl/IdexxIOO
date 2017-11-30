@@ -224,7 +224,7 @@ public class Contacts extends ContactsLib {
 			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
-
+				reporter.calculateTestCaseExecutionTime();
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 		} }catch (Throwable e) {
 
@@ -255,7 +255,7 @@ public class Contacts extends ContactsLib {
 				TestCreateOrder_WithDiscriptionID(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
-
+				reporter.calculateTestCaseExecutionTime();
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 			} }catch (Throwable e) {
 
@@ -285,7 +285,7 @@ public class Contacts extends ContactsLib {
 				CreateOrderFromPriceQuotes(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
-
+				reporter.calculateTestCaseExecutionTime();
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
 			} }catch (Throwable e) {
 
