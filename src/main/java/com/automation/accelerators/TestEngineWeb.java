@@ -200,7 +200,7 @@ public class TestEngineWeb {
 	{
 		//get browser info		
 
-		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);	
+		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);
 		reporter.initTestCase(this.getClass().getName().substring(0,this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
 	}
 
@@ -210,8 +210,10 @@ public class TestEngineWeb {
 	{
 		//get browser info
 
-		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);				
-		reporter.calculateTestCaseExecutionTime();		
+		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);
+
+		//Commenting the below method for Idexx project for fetching execution time for test data
+		//reporter.calculateTestCaseExecutionTime();
 		reporter.closeDetailedReport();		
 		reporter.updateTestCaseStatus();
 	}
