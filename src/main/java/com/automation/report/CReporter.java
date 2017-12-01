@@ -23,6 +23,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
 
 import com.automation.accelerators.TestEngineWeb;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.screentaker.ViewportPastingStrategy;
+
+import javax.imageio.ImageIO;
 
 /**
  * Class Name: CReporter. Reason for naming class CReporter is to avoid
@@ -1512,8 +1517,8 @@ public class CReporter {
 			return newFileName;
 		}
 	}
-
-	private void screenShot(WebDriver driver, String fileName) {
+//Commenting below screenshot code
+/*	private void screenShot(WebDriver driver, String fileName) {
 		WebDriver driverScreenShot = new Augmenter().augment(driver);
 		File scrFile = ((TakesScreenshot) driverScreenShot).getScreenshotAs(OutputType.FILE);
 		try {
@@ -1521,6 +1526,14 @@ public class CReporter {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}*/
+
+	//Below screenshot code with capture complete screenshot of the page
+	private void screenShot(WebDriver driver, String fileName) throws IOException {
+		//WebDriver driverScreenShot = new Augmenter().augment(driver);
+		Screenshot screenshot;
+		screenshot = new AShot().shootingStrategy(new ViewportPastingStrategy(1000)).takeScreenshot(driver);
+		ImageIO.write(screenshot.getImage(), "PNG", new File(fileName));
 	}
 
 	public void initTestCase(String packageName, String testCaseName,
