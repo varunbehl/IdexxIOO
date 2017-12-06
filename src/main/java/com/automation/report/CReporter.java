@@ -42,6 +42,7 @@ public class CReporter {
 	private String reportPath = null;
 	private static Map<BrowserContext, CReporter> mapBrowserContextReporter = new HashMap<BrowserContext, CReporter>();
 	private String[] package_testname;
+	static Boolean flag = true;
 
 	/**
 	 * @Consturctor for CReporter
@@ -1580,6 +1581,7 @@ public class CReporter {
 			mapResult.put(TestResult.tc_name.get(this.browserContext),
 					ReporterConstants.TEST_CASE_STATUS_FAIL);
 			TestResult.testResults.put(this.browserContext, mapResult);
+			flag=false;
 		} else {
 			Integer passCount = TestResult.passCounter.get(this.browserContext) == null ? 1
 					: TestResult.passCounter.get(this.browserContext) + 1;
@@ -1589,10 +1591,11 @@ public class CReporter {
 			if (mapResult == null) {
 				mapResult = new HashMap<String, String>();
 			}
+			if (flag == true) {
 			mapResult.put(TestResult.tc_name.get(this.browserContext),
 					ReporterConstants.TEST_CASE_STATUS_PASS);
 			TestResult.testResults.put(this.browserContext, mapResult);
-		}
+		}}
 	}
 
 }
