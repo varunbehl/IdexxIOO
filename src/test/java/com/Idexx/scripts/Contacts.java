@@ -298,6 +298,7 @@ public class Contacts extends ContactsLib {
 		try {
 			if (data.get("RunMode").equals("Y")){
 				try{
+					reporter.initTestCase(this.getClass().getName().substring(0, this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
 				this.reporter.initTestCaseDescription("TC2.7 - Create order from Price Quotes");
 				System.out.println("DATA" + data.get("URL"));
 				CreateOrderFromPriceQuotes(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("Product"), data.get("Qty"));
