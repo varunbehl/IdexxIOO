@@ -201,7 +201,9 @@ public class TestEngineWeb {
 		//get browser info		
 
 		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);
-		reporter.initTestCase(this.getClass().getName().substring(0,this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
+
+		//Commenting the below method for Idexx project for fetching execution time for test data
+		//reporter.initTestCase(this.getClass().getName().substring(0,this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
 	}
 
 	@AfterMethod
@@ -212,10 +214,10 @@ public class TestEngineWeb {
 
 		//reporter = CReporter.getCReporter(deviceName, platformName, platformVersion, true);
 
-		//Commenting the below method for Idexx project for fetching execution time for test data
+		//Commenting the below methods for Idexx project for fetching execution time for test data
 		//reporter.calculateTestCaseExecutionTime();
-		reporter.closeDetailedReport();		
-		reporter.updateTestCaseStatus();
+		//reporter.closeDetailedReport();
+		//reporter.updateTestCaseStatus();
 	}
 
 	public void setWebDriverForDocker(String browser) throws IOException, InterruptedException {
