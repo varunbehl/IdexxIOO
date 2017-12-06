@@ -4,6 +4,7 @@
 
 package com.Idexx.scripts;
 
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 
 import org.openqa.selenium.By;
@@ -216,17 +217,26 @@ public class Contacts extends ContactsLib {
 	 * accounts section of contact page for particular contact.
 	 */
 	@Test(dataProvider = "getTestDataFor_TestCreateOrder")
-	public void TestCreateOrder(Hashtable<String, String> data) throws Throwable {
+	public void TestCreateOrder(Hashtable<String, String> data, Method method) throws Throwable {
 		try {
 			if (data.get("RunMode").equals("Y")){
+				try{
+				reporter.initTestCase(this.getClass().getName().substring(0, this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
 			this.reporter.initTestCaseDescription("TC2.5- Create order with Search product");
 			System.out.println("DATA" + data.get("URL"));
 			TestCreateOrder(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
-				reporter.calculateTestCaseExecutionTime();
+
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
-		} }catch (Throwable e) {
+		}finally {
+
+					reporter.calculateTestCaseExecutionTime();
+					reporter.closeDetailedReport();
+					reporter.updateTestCaseStatus();
+				}
+			}
+			}catch (Throwable e) {
 
 			e.printStackTrace();
 		}/*finally {
@@ -247,17 +257,24 @@ public class Contacts extends ContactsLib {
 	 * accounts section of contact page for particular contact.
 	 */
 	@Test(dataProvider = "getTestDataFor_TestCreateOrder_WithDiscriptionID")
-	public void TestCreateOrder_WithDiscriptionID(Hashtable<String, String> data) throws Throwable {
+	public void TestCreateOrder_WithDiscriptionID(Hashtable<String, String> data, Method method) throws Throwable {
 		try {
 			if (data.get("RunMode").equals("Y")){
+				try{
+					reporter.initTestCase(this.getClass().getName().substring(0, this.getClass().getName().lastIndexOf(".")), method.getName(), null, true);
 				this.reporter.initTestCaseDescription("TC2.6 - Create order with product ID");
 				System.out.println("DATA" + data.get("URL"));
 				TestCreateOrder_WithDiscriptionID(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("ShipToCustomer"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
-				reporter.calculateTestCaseExecutionTime();
+
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
-			} }catch (Throwable e) {
+			} finally {
+
+					reporter.calculateTestCaseExecutionTime();
+					reporter.closeDetailedReport();
+					reporter.updateTestCaseStatus();
+				}}}catch (Throwable e) {
 
 			e.printStackTrace();
 		}/*finally {
@@ -277,17 +294,23 @@ public class Contacts extends ContactsLib {
 	 * accounts section of contact page for particular contact.
 	 */
 	@Test(dataProvider = "getTestDataFor_CreateOrderFromPriceQuotes")
-	public void CreateOrderFromPriceQuotes(Hashtable<String, String> data) throws Throwable {
+	public void CreateOrderFromPriceQuotes(Hashtable<String, String> data, Method method) throws Throwable {
 		try {
 			if (data.get("RunMode").equals("Y")){
+				try{
 				this.reporter.initTestCaseDescription("TC2.7 - Create order from Price Quotes");
 				System.out.println("DATA" + data.get("URL"));
 				CreateOrderFromPriceQuotes(data.get("URL"), data.get("Email"), data.get("PWD"), data.get("Product"), data.get("Qty"));
 				System.out.println("OrderNumVal is ++++++++++++= " + OrderNumVal);
 				reporter.SuccessReport("Product numbers generated" , "<b>"+OrderNumVal+"</b>");
-				reporter.calculateTestCaseExecutionTime();
+
 				//JSClick(By.xpath("//div[@class='sso-sign-out']/a"), "Click on sign out");
-			} }catch (Throwable e) {
+			} finally {
+
+					reporter.calculateTestCaseExecutionTime();
+					reporter.closeDetailedReport();
+					reporter.updateTestCaseStatus();
+				}} }catch (Throwable e) {
 
 			e.printStackTrace();
 		}/*finally {
