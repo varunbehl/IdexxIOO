@@ -236,7 +236,7 @@ public class HomePage extends ActionEngine {
 		menuordermanagement=By.xpath("//ul[@id=\"jetmenu\"]/li[5]/a");
 		submenupricequotes=By.xpath("//ul[@id=\"jetmenu\"]/li[5]/ul/li[4]/a");
 		requestquotebtn=By.xpath("//div[@class='vbuttrow']/div/input");
-		saveorderbtn=By.xpath("(//div[@class='vbuttrow zzbasbottom']/div/input)[1]");
+		saveorderbtn=By.xpath("//div[@class='vbuttrow zzbasbottom']/div[2]/input");
 		pricequotenumber=By.xpath("//div[@class='col-100 col-resp-100 zzno_padding']/p/span");
 		currentlyactiveorderpopup=By.xpath("//form[@class='vex-dialog-form']");
 		deleteactiveorderbtn=By.xpath("//button[@class='vex-dialog-button-primary vex-dialog-button vex-first']");
